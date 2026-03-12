@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Noise Overlay ─── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ─── Base ─── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #F2F0E9;
+  color: #1A1A1A;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+a, button, input, textarea, select {
+  cursor: none;
+}
+
+/* ─── Custom Cursor ─── */
+.cursor-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: #CC5833;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+}
+
+.cursor-ring {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid #4E5C35;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s cubic-bezier(0.25,0.46,0.45,0.94),
+              height 0.3s cubic-bezier(0.25,0.46,0.45,0.94),
+              border-color 0.3s ease;
+}
+
+.cursor-ring.hover {
+  width: 48px;
+  height: 48px;
+  border-color: #CC5833;
+}
+
+/* ─── Typography Utilities ─── */
+.font-heading {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-drama {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-mono-brand {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* ─── Section Utilities ─── */
+.section-padding {
+  padding: 6rem 8vw;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 4rem 5vw;
+  }
+}
+
+/* ─── Magnetic Button ─── */
+.btn-magnetic {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.btn-magnetic:hover {
+  transform: scale(1.03);
+}
+
+.btn-magnetic .btn-slide {
+  position: absolute;
+  inset: 0;
+  background: #3A3D2E;
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 0;
+}
+
+.btn-magnetic:hover .btn-slide {
+  transform: translateY(0);
+}
+
+.btn-magnetic .btn-text {
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── Link Hover Lift ─── */
+.link-lift {
+  transition: transform 0.3s ease;
+}
+
+.link-lift:hover {
+  transform: translateY(-1px);
+}
+
+/* ─── Scroll Indicator ─── */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.3); }
+}
+
+.pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* ─── Status Dot ─── */
+@keyframes status-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(74, 222, 128, 0); }
+}
+
+.status-dot {
+  animation: status-pulse 2s ease-in-out infinite;
+}
+
+/* ─── Blinking Cursor ─── */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.blink-cursor {
+  animation: blink 1s step-end infinite;
+}
+
+/* ─── Frosted Glass ─── */
+.glass {
+  background: rgba(242, 240, 233, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(242, 240, 233, 0.15);
+}
+
+/* ─── Card Shadow ─── */
+.card-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 8px 32px rgba(0, 0, 0, 0.06);
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F2F0E9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8A9A55;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6B7A42;
+}
+
+/* ─── Mobile hide cursor ─── */
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+  a, button, input, textarea, select {
+    cursor: auto;
+  }
+  .cursor-dot, .cursor-ring {
+    display: none !important;
+  }
+}
