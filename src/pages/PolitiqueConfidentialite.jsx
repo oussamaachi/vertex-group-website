@@ -5,9 +5,12 @@ export default function PolitiqueConfidentialite() {
   const pageRef = useRef(null);
 
   useEffect(() => {
-    gsap.from(pageRef.current.querySelectorAll('.legal-block'), {
-      y: 30, opacity: 0, duration: 0.6, stagger: 0.1, ease: 'power3.out'
-    });
+    let ctx = gsap.context(() => {
+      gsap.from('.legal-block', {
+        y: 30, opacity: 0, duration: 0.6, stagger: 0.1, ease: 'power3.out'
+      });
+    }, pageRef);
+    return () => ctx.revert();
   }, []);
 
   return (
