@@ -1,28 +1,27 @@
 // Vertex Group — Design System Tokens
 
 export const colors = {
-  mossDark:   '#3A3D2E',
-  moss:       '#4E5C35',
-  mossMid:    '#6B7A42',
-  khaki:      '#8A9A55',
-  khakiLight: '#9AAA60',
-  clay:       '#CC5833',
-  cream:      '#F2F0E9',
-  creamDark:  '#E8E4DC',
-  charcoal:   '#1A1A1A',
-  white:      '#FFFFFF',
+  navyDark:      '#1C221F',
+  navy:          '#2C3430',
+  steel:         '#5B6960',
+  concrete:      '#9FB0A5',
+  concreteLight: '#E8EDE9',
+  safety:        '#8A9560',
+  paper:         '#F9FAF9',
+  paperDark:     '#F0F3F1',
+  charcoal:      '#181C1A',
+  white:         '#FFFFFF',
 };
 
 export const fonts = {
   heading:  '"Plus Jakarta Sans", sans-serif',
-  drama:    '"Cormorant Garamond", serif',
   mono:     '"IBM Plex Mono", monospace',
 };
 
 export const radii = {
-  card:      '2rem',
-  container: '3rem',
-  footer:    '4rem',
+  card:      '0.75rem',
+  container: '1rem',
+  footer:    '1.5rem',
 };
 
 export const easings = {

@@ -33,12 +33,12 @@ function Hero() {
       {/* Background Image */}
       <div ref={imgRef} className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80&auto=format&fit=crop"
+          src="/images/hero-home.png"
           alt="Chantier de construction au coucher du soleil"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0" style={{
-          background: 'linear-gradient(to top, #1A1A1A 0%, rgba(78,92,53,0.55) 50%, rgba(26,26,26,0.15) 100%)'
+          background: 'linear-gradient(to top, #0B1120 0%, rgba(15,23,42,0.55) 50%, rgba(15,23,42,0.15) 100%)'
         }} />
       </div>
 
@@ -46,18 +46,19 @@ function Hero() {
       <div className="relative z-10 w-full px-[8vw] pb-32 lg:pb-24">
         <div className="max-w-3xl">
           <div className="hero-anim mb-4 inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass">
-            <span className="w-2 h-2 bg-khaki-light rounded-full"></span>
-            <span className="font-mono-brand text-xs text-cream/70">Entreprise de construction · IDF</span>
+            <span className="w-2 h-2 bg-concrete-light rounded-full"></span>
+            <span className="font-mono-brand text-xs text-paper/70">Entreprise de construction · IDF</span>
           </div>
-          <h1 className="hero-anim font-heading font-bold text-cream text-xl sm:text-2xl tracking-tight leading-tight mb-2" style={{ letterSpacing: '-0.03em' }}>
-            L'excellence est
+          <h1 className="hero-anim font-heading font-bold text-paper text-xl sm:text-2xl tracking-tight leading-tight mb-2" style={{ letterSpacing: '-0.03em' }}>
+            Bâtir l'Avenir
           </h1>
-          <p className="hero-anim font-drama italic text-cream" style={{ fontSize: 'clamp(3rem, 7vw, 6rem)', lineHeight: 1.05 }}>
-            notre fondation.
+          <p className="hero-anim font-heading font-medium tracking-tight text-paper" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)', lineHeight: 1.05 }}>
+            Maçonnerie Générale &<br />
+            <span className="text-safety">Rénovation Énergétique.</span>
           </p>
-          <p className="hero-anim mt-6 text-cream/60 text-base sm:text-lg max-w-xl leading-relaxed">
-            Maçonnerie · Rénovation énergétique · Étanchéité<br />
-            Des chantiers maîtrisés, des résultats qui durent.
+          <p className="hero-anim mt-6 text-paper/60 text-base sm:text-lg max-w-xl leading-relaxed">
+            Des ouvrages durables, une expertise certifiée en Île-de-France.<br />
+            Gros Œuvre · Rénovation CEE · Étanchéité
           </p>
           <div className="hero-anim mt-8">
             <Button to="/contact" size="lg">
@@ -68,19 +69,19 @@ function Hero() {
       </div>
 
       {/* Stats Pill - Bottom Right */}
-      <div className="hero-anim absolute bottom-8 right-8 hidden lg:flex items-center gap-6 px-6 py-3 rounded-full glass">
-        {['100+ Projets', 'CEE Éligible', 'Zone IDF'].map((stat, i) => (
-          <span key={stat} className="font-mono-brand text-xs text-cream/70 flex items-center gap-3">
-            {i > 0 && <span className="w-px h-4 bg-cream/20" />}
+      <div className="hero-anim absolute bottom-8 right-8 hidden md:flex items-center gap-6 px-6 py-3 rounded-full glass">
+        {['Devis Gratuit', 'CEE Éligible', 'Zone IDF'].map((stat, i) => (
+          <span key={stat} className="font-mono-brand text-xs text-paper/70 flex items-center gap-3">
+            {i > 0 && <span className="w-px h-4 bg-paper/20" />}
             {stat}
           </span>
         ))}
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-        <span className="w-2 h-2 bg-clay rounded-full pulse-dot" />
-        <span className="font-mono-brand text-[10px] text-cream/40 tracking-widest uppercase">Défiler</span>
+      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+        <span className="w-2 h-2 bg-safety rounded-full pulse-dot" />
+        <span className="font-mono-brand text-[8px] sm:text-[10px] text-paper/40 tracking-widest uppercase">Défiler</span>
       </div>
     </section>
   );
@@ -98,7 +99,7 @@ function DiagnosticShuffler() {
   }, []);
 
   return (
-    <div className="bg-white rounded-card card-shadow border border-moss/10 p-8 flex flex-col h-full">
+    <div className="bg-white rounded-card card-shadow border border-navy/10 p-8 flex flex-col h-full">
       {/* Shuffling cards */}
       <div className="relative h-40 mb-6">
         {labels.map((label, i) => {
@@ -106,7 +107,7 @@ function DiagnosticShuffler() {
           return (
             <div
               key={label}
-              className="absolute top-0 left-0 right-0 bg-cream-dark rounded-2xl px-5 py-4 border border-moss/10 transition-all"
+              className="absolute top-0 left-0 right-0 bg-paper-dark rounded-2xl px-5 py-4 border border-navy/10 transition-all"
               style={{
                 transform: `translateY(${offset * 16}px) scale(${1 - offset * 0.04})`,
                 zIndex: labels.length - offset,
@@ -114,7 +115,7 @@ function DiagnosticShuffler() {
                 transition: 'all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)',
               }}
             >
-              <span className="font-mono-brand text-xs text-moss/60 block mb-1">INSPECTION {String(i + 1).padStart(2, '0')}</span>
+              <span className="font-mono-brand text-xs text-navy/60 block mb-1">INSPECTION {String(i + 1).padStart(2, '0')}</span>
               <span className="font-heading font-semibold text-charcoal text-sm">{label}</span>
             </div>
           );
@@ -165,19 +166,19 @@ function TelemetryTypewriter() {
   const currentTyping = msgIndex < messages.length ? messages[msgIndex].slice(0, charIndex) : '';
 
   return (
-    <div className="bg-white rounded-card card-shadow border border-moss/10 p-8 flex flex-col h-full">
+    <div className="bg-white rounded-card card-shadow border border-navy/10 p-8 flex flex-col h-full">
       <div className="flex items-center gap-2 mb-4">
-        <span className="w-2 h-2 bg-clay rounded-full pulse-dot"></span>
-        <span className="font-mono-brand text-xs text-clay font-medium">Live Diagnostic</span>
+        <span className="w-2 h-2 bg-safety rounded-full pulse-dot"></span>
+        <span className="font-mono-brand text-xs text-safety font-medium">Live Diagnostic</span>
       </div>
-      <div className="bg-charcoal rounded-2xl p-5 flex-1 overflow-hidden mb-6 min-h-[140px]">
-        <div className="font-mono-brand text-xs text-cream/60 space-y-1.5">
+      <div className="bg-charcoal rounded-2xl p-5 h-44 shrink-0 overflow-hidden mb-6">
+        <div className="font-mono-brand text-xs text-paper/60 space-y-1.5">
           {lines.map((line, i) => (
-            <p key={i} className="text-khaki-light/80">→ {line}</p>
+            <p key={i} className="text-concrete-light/80">→ {line}</p>
           ))}
           {msgIndex < messages.length && (
-            <p className="text-cream">
-              → {currentTyping}<span className="blink-cursor text-clay">█</span>
+            <p className="text-paper">
+              → {currentTyping}<span className="blink-cursor text-safety">█</span>
             </p>
           )}
         </div>
@@ -212,7 +213,7 @@ function CursorScheduler() {
   }, []);
 
   return (
-    <div className="bg-white rounded-card card-shadow border border-moss/10 p-8 flex flex-col h-full">
+    <div className="bg-white rounded-card card-shadow border border-navy/10 p-8 flex flex-col h-full">
       {/* Grid */}
       <div className="mb-6">
         <div className="grid grid-cols-7 gap-1 mb-3">
@@ -228,7 +229,7 @@ function CursorScheduler() {
               <div
                 key={i}
                 className={`h-6 rounded transition-all duration-500 ${
-                  isActive ? 'bg-clay/80' : 'bg-cream-dark'
+                  isActive ? 'bg-safety/80' : 'bg-paper-dark'
                 }`}
               />
             );
@@ -239,7 +240,7 @@ function CursorScheduler() {
             <span
               key={task}
               className={`font-mono-brand text-[10px] px-2 py-0.5 rounded-full transition-all duration-300 ${
-                i === activeTask ? 'bg-clay text-cream' : 'bg-cream-dark text-charcoal/40'
+                i === activeTask ? 'bg-safety text-paper' : 'bg-paper-dark text-charcoal/40'
               }`}
             >
               {task}
@@ -248,8 +249,8 @@ function CursorScheduler() {
         </div>
       </div>
       {validated && (
-        <div className="mb-4 px-3 py-2 bg-moss/10 rounded-xl text-center">
-          <span className="font-mono-brand text-xs text-moss font-medium">✓ Planning validé</span>
+        <div className="mb-4 px-3 py-2 bg-navy/10 rounded-xl text-center">
+          <span className="font-mono-brand text-xs text-navy font-medium">✓ Planning validé</span>
         </div>
       )}
       <h3 className="font-heading font-bold text-charcoal text-xl mb-2 mt-auto">Coordination de Chantier</h3>
@@ -275,9 +276,9 @@ function Features() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="section-padding bg-cream">
+    <section ref={sectionRef} className="section-padding bg-paper">
       <div className="text-center mb-16">
-        <span className="font-mono-brand text-xs text-moss/60 tracking-widest uppercase">Nos Expertises</span>
+        <span className="font-mono-brand text-xs text-navy/60 tracking-widest uppercase">Nos Expertises</span>
         <h2 className="font-heading font-bold text-charcoal mt-3" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}>
           Trois piliers d'excellence
         </h2>
@@ -316,21 +317,21 @@ function Philosophy() {
     <section ref={sectionRef} className="relative py-32 lg:py-48 bg-charcoal overflow-hidden">
       {/* Concrete texture overlay */}
       <div className="absolute inset-0 opacity-[0.06]" style={{
-        backgroundImage: 'url("https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1200&q=60&auto=format&fit=crop")',
+        backgroundImage: 'url("/images/hero-home.png")',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }} />
 
       <div className="relative z-10 max-w-5xl mx-auto px-[8vw] text-center">
-        <p className="text-cream/45 text-lg sm:text-xl leading-relaxed mb-8">
+        <p className="text-paper/45 text-lg sm:text-xl leading-relaxed mb-8">
           La plupart des chantiers se concentrent sur : la rapidité d'exécution.
         </p>
-        <div className="w-16 h-px bg-clay mx-auto mb-8" />
-        <p className="font-drama italic text-cream leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}>
+        <div className="w-16 h-px bg-safety mx-auto mb-8" />
+        <p className="font-heading font-medium tracking-tight text-paper leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}>
           {statement2Words.map((w, i) => (
             <span key={i} className="word inline-block mr-[0.3em]">{w}</span>
           ))}
-          <span className="word inline-block text-clay font-bold mr-[0.3em]">durabilité</span>
+          <span className="word inline-block text-safety font-bold mr-[0.3em]">durabilité</span>
           <span className="word inline-block">de chaque ouvrage.</span>
         </p>
       </div>
@@ -355,11 +356,9 @@ function Protocol() {
             endTrigger: cards[cards.length - 1],
             end: 'top top',
           });
-          // Animate outgoing cards
           gsap.to(card, {
-            scale: 0.92,
-            filter: 'blur(8px)',
-            opacity: 0.5,
+            scale: 0.90,
+            opacity: 0,
             scrollTrigger: {
               trigger: cards[i + 1],
               start: 'top bottom',
@@ -394,17 +393,17 @@ function Protocol() {
   return (
     <section ref={sectionRef} className="relative">
       {protocols.map((p, i) => (
-        <div key={p.num} className="protocol-card h-screen bg-moss-dark flex items-center overflow-hidden">
+        <div key={p.num} className="protocol-card h-screen bg-navy-dark flex items-center overflow-hidden">
           <div className="w-full max-w-6xl mx-auto px-[8vw] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Canvas / Visual */}
             <div className="hidden lg:flex items-center justify-center">
               <ProtocolVisual index={i} />
             </div>
             {/* Content */}
-            <div className="text-cream">
-              <span className="font-mono-brand text-xs text-khaki/60 tracking-widest">{p.num}</span>
+            <div className="text-paper">
+              <span className="font-mono-brand text-xs text-concrete/60 tracking-widest">{p.num}</span>
               <h3 className="font-heading font-bold text-3xl lg:text-4xl mt-3 mb-6">{p.title}</h3>
-              <p className="text-cream/60 text-lg leading-relaxed max-w-md">{p.desc}</p>
+              <p className="text-paper/60 text-lg leading-relaxed max-w-md">{p.desc}</p>
             </div>
           </div>
         </div>
@@ -436,7 +435,7 @@ function ProtocolVisual({ index }) {
         for (let r = 3; r > 0; r--) {
           ctx.beginPath();
           ctx.arc(cx, cy, 40 + r * 45, 0, Math.PI * 2);
-          ctx.strokeStyle = r === 2 ? '#CC5833' : 'rgba(138,154,85,0.4)';
+          ctx.strokeStyle = r === 2 ? '#EA580C' : 'rgba(148,163,184,0.4)';
           ctx.lineWidth = r === 2 ? 2 : 1;
           ctx.stroke();
         }
@@ -447,7 +446,7 @@ function ProtocolVisual({ index }) {
           ctx.beginPath();
           ctx.moveTo(cx + Math.cos(angle) * r1, cy + Math.sin(angle) * r1);
           ctx.lineTo(cx + Math.cos(angle) * r2, cy + Math.sin(angle) * r2);
-          ctx.strokeStyle = 'rgba(138,154,85,0.3)';
+          ctx.strokeStyle = 'rgba(148,163,184,0.3)';
           ctx.lineWidth = 1;
           ctx.stroke();
         }
@@ -479,7 +478,7 @@ function ProtocolVisual({ index }) {
             const glow = dist < 30;
             ctx.beginPath();
             ctx.arc(dx, dy, glow ? 4 : 2, 0, Math.PI * 2);
-            ctx.fillStyle = glow ? '#CC5833' : 'rgba(138,154,85,0.3)';
+            ctx.fillStyle = glow ? '#EA580C' : 'rgba(148,163,184,0.3)';
             ctx.fill();
           }
         }
@@ -487,39 +486,56 @@ function ProtocolVisual({ index }) {
         ctx.beginPath();
         ctx.moveTo(laserX, 0);
         ctx.lineTo(laserX, size);
-        ctx.strokeStyle = 'rgba(204,88,51,0.4)';
+        ctx.strokeStyle = 'rgba(234,88,12,0.4)';
         ctx.lineWidth = 2;
         ctx.stroke();
       } else {
-        // EKG waveform
+        // Leveling Tool (Niveau à bulle)
+        const cx = size / 2, cy = size / 2;
+        const width = 200, height = 60, radius = 30;
+        
+        // Draw the body of the level
         ctx.beginPath();
-        const cy = size / 2;
-        // Grid
-        for (let x = 0; x < size; x += 30) {
-          ctx.moveTo(x, 0); ctx.lineTo(x, size);
-          ctx.strokeStyle = 'rgba(242,240,233,0.06)';
-        }
+        ctx.roundRect(cx - width/2, cy - height/2, width, height, radius);
+        ctx.strokeStyle = 'rgba(148,163,184,0.3)';
+        ctx.lineWidth = 4;
         ctx.stroke();
+
+        // Draw the inner glass tube
+        const tubeWidth = 100, tubeHeight = 30;
         ctx.beginPath();
-        for (let y = 0; y < size; y += 30) {
-          ctx.moveTo(0, y); ctx.lineTo(size, y);
-        }
-        ctx.strokeStyle = 'rgba(242,240,233,0.06)';
-        ctx.stroke();
-        // Waveform
-        ctx.beginPath();
-        for (let x = 0; x < size; x++) {
-          const phase = (x + frame * 2) * 0.05;
-          const spike = Math.sin(phase) > 0.9 ? Math.sin(phase * 8) * 80 : 0;
-          const y = cy + Math.sin(phase) * 20 + spike;
-          if (x === 0) ctx.moveTo(x, y);
-          else ctx.lineTo(x, y);
-        }
-        ctx.strokeStyle = '#CC5833';
+        ctx.roundRect(cx - tubeWidth/2, cy - tubeHeight/2, tubeWidth, tubeHeight, 15);
+        ctx.fillStyle = 'rgba(242,240,233,0.02)';
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(148,163,184,0.1)';
         ctx.lineWidth = 2;
-        ctx.shadowColor = '#CC5833';
-        ctx.shadowBlur = 8;
         ctx.stroke();
+
+        // Draw the structural markers on the tube
+        ctx.beginPath();
+        ctx.moveTo(cx - 20, cy - tubeHeight/2);
+        ctx.lineTo(cx - 20, cy + tubeHeight/2);
+        ctx.moveTo(cx + 20, cy - tubeHeight/2);
+        ctx.lineTo(cx + 20, cy + tubeHeight/2);
+        ctx.strokeStyle = 'rgba(148,163,184,0.5)';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+        // Animate the bubble
+        // Bubble moves based on a sine wave but eventually centers (simulating stabilization)
+        const stabilizationPhase = Math.min(frame * 0.02, 1); // 0 to 1
+        const sway = Math.sin(frame * 0.05) * 40 * (1 - stabilizationPhase); 
+        // add a tiny continuous micro-jitter so it feels "live"
+        const jitter = Math.sin(frame * 0.1) * 2;
+        
+        const bubbleX = cx + sway + jitter;
+        
+        ctx.beginPath();
+        ctx.arc(bubbleX, cy, 10, 0, Math.PI * 2);
+        ctx.fillStyle = '#EA580C';
+        ctx.shadowColor = '#EA580C';
+        ctx.shadowBlur = 10;
+        ctx.fill();
         ctx.shadowBlur = 0;
       }
 
@@ -535,19 +551,41 @@ function ProtocolVisual({ index }) {
 
 /* ═══════════  GET STARTED  ═══════════ */
 function GetStarted() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        '.gs-anim',
+        { y: 30, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          stagger: 0.1,
+          ease: 'power3.out',
+          scrollTrigger: { trigger: sectionRef.current, start: 'top 80%' },
+        }
+      );
+    }, sectionRef);
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="bg-moss-dark section-padding text-center">
+    <section ref={sectionRef} className="bg-navy-dark section-padding text-center">
       <div className="max-w-3xl mx-auto">
-        <h2 className="font-drama italic text-cream leading-tight mb-6" style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)' }}>
-          Votre projet mérite une <span className="text-clay font-bold">fondation solide.</span>
+        <h2 className="gs-anim font-heading font-medium tracking-tight text-paper leading-tight mb-6" style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)' }}>
+          Votre projet mérite une <span className="text-safety font-bold">fondation solide.</span>
         </h2>
-        <p className="text-cream/50 text-lg mb-10">
+        <p className="gs-anim text-paper/50 text-lg mb-10">
           Contactez-nous pour une étude gratuite et sans engagement.
         </p>
-        <Button to="/contact" size="xl">
-          Demander un Devis Gratuit →
-        </Button>
-        <p className="font-mono-brand text-xs text-cream/30 mt-6 tracking-wide">
+        <div className="gs-anim">
+          <Button to="/contact" size="xl">
+            Demander un Devis Gratuit →
+          </Button>
+        </div>
+        <p className="gs-anim font-mono-brand text-xs text-paper/30 mt-6 tracking-wide">
           Réponse sous 24h · Devis gratuit · Sans engagement
         </p>
       </div>

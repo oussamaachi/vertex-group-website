@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 
-export default function Button({ children, to, href, onClick, variant = 'clay', size = 'md', className = '', type = 'button' }) {
+export default function Button({ children, to, href, onClick, variant = 'safety', size = 'md', className = '', type = 'button' }) {
   const base = 'btn-magnetic inline-flex items-center justify-center font-heading font-semibold rounded-full transition-colors';
   
   const variants = {
-    clay: 'bg-clay text-cream',
-    moss: 'bg-moss text-cream',
-    outline: 'border-2 border-moss text-moss hover:bg-moss hover:text-cream',
+    safety: 'bg-safety text-paper',
+    navy: 'bg-navy text-paper',
+    outline: 'border-2 border-navy text-navy hover:bg-navy hover:text-paper',
   };
   
   const sizes = {
@@ -20,8 +20,8 @@ export default function Button({ children, to, href, onClick, variant = 'clay', 
 
   const inner = (
     <>
-      <span className="btn-slide rounded-full"></span>
-      <span className="btn-text">{children}</span>
+      <span className={`btn-slide rounded-full ${variant === 'outline' ? 'bg-navy' : 'bg-navy-dark'}`}></span>
+      <span className="btn-text relative z-10">{children}</span>
     </>
   );
 

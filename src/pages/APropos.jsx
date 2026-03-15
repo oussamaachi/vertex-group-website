@@ -1,24 +1,50 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Calendar, User } from 'lucide-react';
+import { Calendar, Shield, Target, Zap, Users, Hammer, Leaf } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const timeline = [
-  { date: 'Février 2026', milestone: 'Création de Vertex Group', desc: 'Naissance de l\'entreprise à Fresnes (94).' },
-  { date: 'Mars 2026', milestone: 'Immatriculation RCS', desc: 'Inscription au R.C.S. Créteil.' },
-  { date: '2026', milestone: 'Premiers chantiers IDF', desc: 'Lancement des premières opérations en Île-de-France.' },
+  { date: 'Février 2026', milestone: 'Création de Vertex Group', desc: 'Naissance de l\'entreprise à Fresnes (94), avec une ambition claire : bâtir avec excellence.' },
+  { date: 'Mars 2026', milestone: 'Immatriculation RCS Créteil', desc: 'Inscription officielle au Registre du Commerce et des Sociétés.' },
+  { date: '2026', milestone: 'Premiers chantiers IDF', desc: 'Lancement des opérations de maçonnerie et rénovation en Île-de-France.' },
+];
+
+const values = [
+  {
+    icon: Shield,
+    title: 'Rigueur & Précision',
+    desc: 'Chaque ouvrage est réalisé dans le respect strict des normes DTU et des règles de l\'art. Nous ne faisons aucun compromis sur la qualité des matériaux et la précision de l\'exécution.'
+  },
+  {
+    icon: Leaf,
+    title: 'Engagement Durable',
+    desc: 'Nous privilégions des solutions de construction et de rénovation énergétique qui réduisent l\'empreinte écologique de chaque bâtiment, en ligne avec les objectifs CEE et RE2020.'
+  },
+  {
+    icon: Users,
+    title: 'Proximité Client',
+    desc: 'Un interlocuteur unique du devis à la réception. Nous croyons en une relation de confiance transparente, avec un suivi de chantier rigoureux et des comptes-rendus réguliers.'
+  },
+  {
+    icon: Target,
+    title: 'Respect des Délais',
+    desc: 'Planification millimétrée, coordination efficace des corps de métier, et anticipation des aléas. Nos chantiers sont livrés dans les temps, sans surprise.'
+  },
+];
+
+const engagements = [
+  { number: '100%', label: 'Devis détaillés et transparents' },
+  { number: '24h', label: 'Réponse à toute demande' },
+  { number: 'IDF', label: 'Zone d\'intervention complète' },
+  { number: 'CEE', label: 'Éligibilité aux aides énergétiques' },
 ];
 
 const legalData = [
-  { label: 'Dénomination', value: 'Vertex Group' },
+  { label: 'Entreprise', value: 'Vertex Group' },
   { label: 'SIREN', value: '101 799 591' },
-  { label: 'RCS', value: 'R.C.S. Créteil' },
-  { label: 'Forme juridique', value: 'SAS à associé unique' },
-  { label: 'Capital social', value: '1 000,00 €' },
   { label: 'Siège social', value: '28 Avenue des Pépinières, 94260 Fresnes' },
-  { label: 'Dirigeant', value: 'Salim Abdallah, Président' },
 ];
 
 
@@ -26,6 +52,8 @@ export default function APropos() {
   const heroRef = useRef(null);
   const storyRef = useRef(null);
   const timelineRef = useRef(null);
+  const valuesRef = useRef(null);
+  const engRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -63,45 +91,154 @@ export default function APropos() {
     return () => ctx.revert();
   }, []);
 
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo('.value-card',
+        { y: 40, opacity: 0 },
+        {
+          y: 0, opacity: 1, duration: 0.7, stagger: 0.12, ease: 'power3.out',
+          scrollTrigger: { trigger: valuesRef.current, start: 'top 75%' }
+        }
+      );
+    }, valuesRef);
+    return () => ctx.revert();
+  }, []);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo('.eng-item',
+        { scale: 0.8, opacity: 0 },
+        {
+          scale: 1, opacity: 1, duration: 0.6, stagger: 0.1, ease: 'back.out(1.5)',
+          scrollTrigger: { trigger: engRef.current, start: 'top 75%' }
+        }
+      );
+    }, engRef);
+    return () => ctx.revert();
+  }, []);
+
   return (
     <>
       {/* Hero */}
       <section ref={heroRef} className="relative h-[50dvh] overflow-hidden flex items-end">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1590274853856-f22d5ee3d228?w=1920&q=80&auto=format&fit=crop"
-            alt="Construction durable"
+            src="/images/hero-apropos.png"
+            alt="Chantier de construction professionnel"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0" style={{
-            background: 'linear-gradient(to top, #1A1A1A 0%, rgba(78,92,53,0.55) 50%, rgba(26,26,26,0.15) 100%)'
+            background: 'linear-gradient(to top, #1C221F 0%, rgba(44,52,48,0.55) 50%, rgba(44,52,48,0.15) 100%)'
           }} />
         </div>
         <div className="relative z-10 w-full px-[8vw] pb-16">
-          <span className="apropos-hero-anim block font-mono-brand text-xs text-cream/50 tracking-widest uppercase mb-3">Notre Histoire</span>
-          <h1 className="apropos-hero-anim font-drama italic text-cream leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}>
-            Construits pour <span className="text-clay font-bold">durer.</span>
+          <span className="apropos-hero-anim block font-mono-brand text-xs text-paper/50 tracking-widest uppercase mb-3">Notre Histoire</span>
+          <h1 className="apropos-hero-anim font-heading font-medium tracking-tight text-paper leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}>
+            Bâtir pour <span className="text-safety font-bold">durer.</span>
           </h1>
         </div>
       </section>
 
-      {/* Story */}
-      <section ref={storyRef} className="section-padding bg-cream">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="story-anim font-drama italic text-charcoal/80 text-2xl lg:text-3xl leading-relaxed mb-8">
-            Vertex Group naît en février 2026 d'une vision simple : apporter la rigueur de l'ingénierie de précision aux chantiers de construction et de rénovation en Île-de-France.
-          </p>
-          <p className="story-anim text-charcoal/50 leading-relaxed">
-            Fondée par Salim Abdallah à Fresnes (94), l'entreprise réunit des compétences en maçonnerie, rénovation énergétique, étanchéité et coordination de chantier. Notre engagement : des ouvrages durables, exécutés avec rigueur, dans le respect des normes et des délais.
-          </p>
+      {/* Story / Mission */}
+      <section ref={storyRef} className="section-padding bg-paper">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="story-anim block font-mono-brand text-xs text-safety tracking-widest uppercase mb-4">Notre Mission</span>
+              <h2 className="story-anim font-heading font-bold tracking-tight text-charcoal text-3xl lg:text-4xl leading-tight mb-6">
+                L'excellence au service de vos projets de construction
+              </h2>
+              <p className="story-anim text-charcoal/60 leading-relaxed mb-4">
+                Vertex Group est née d'une conviction : chaque projet de construction mérite une attention sans compromis, de la fondation à la finition. Basée à Fresnes (94), notre entreprise intervient dans toute l'Île-de-France.
+              </p>
+              <p className="story-anim text-charcoal/60 leading-relaxed">
+                Notre équipe réunit des compétences complémentaires en maçonnerie générale, rénovation énergétique, étanchéité, coordination de chantier et fourniture de matériaux. Cette polyvalence nous permet d'accompagner nos clients de A à Z, avec un seul interlocuteur et une vision globale de chaque projet.
+              </p>
+            </div>
+            <div className="story-anim">
+              <img
+                src="/images/hero-coordination.png"
+                alt="Équipe Vertex Group sur chantier"
+                className="rounded-2xl shadow-xl w-full h-80 object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section ref={valuesRef} className="section-padding bg-paper-dark">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-14">
+            <span className="font-mono-brand text-xs text-safety tracking-widest uppercase">Nos Valeurs</span>
+            <h2 className="font-heading font-bold text-charcoal text-2xl lg:text-3xl mt-3">Ce qui nous définit</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {values.map((v, i) => (
+              <div key={i} className="value-card bg-white rounded-2xl p-8 card-shadow hover:shadow-xl transition-shadow duration-300">
+                <div className="w-12 h-12 bg-safety/15 rounded-xl flex items-center justify-center mb-5">
+                  <v.icon className="w-6 h-6 text-safety" />
+                </div>
+                <h3 className="font-heading font-bold text-charcoal text-xl mb-3">{v.title}</h3>
+                <p className="text-charcoal/50 leading-relaxed text-sm">{v.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Engagements Chiffres */}
+      <section ref={engRef} className="py-20 bg-charcoal">
+        <div className="max-w-4xl mx-auto px-[8vw]">
+          <div className="text-center mb-12">
+            <span className="font-mono-brand text-xs text-safety tracking-widest uppercase">Nos Engagements</span>
+            <h2 className="font-heading font-bold text-paper text-2xl lg:text-3xl mt-3">Des promesses concrètes</h2>
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            {engagements.map((e, i) => (
+              <div key={i} className="eng-item text-center p-6 bg-navy/30 rounded-2xl border border-paper/10">
+                <span className="block font-heading font-bold text-safety text-3xl lg:text-4xl mb-2">{e.number}</span>
+                <span className="font-heading text-paper/60 text-sm">{e.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Expertise Image + Text */}
+      <section className="section-padding bg-paper">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <img
+                src="/images/hero-maconnerie.png"
+                alt="Travail de précision en maçonnerie"
+                className="rounded-2xl shadow-xl w-full h-80 object-cover"
+              />
+            </div>
+            <div className="order-1 lg:order-2">
+              <span className="block font-mono-brand text-xs text-safety tracking-widest uppercase mb-4">Notre Expertise</span>
+              <h2 className="font-heading font-bold tracking-tight text-charcoal text-2xl lg:text-3xl leading-tight mb-6">
+                Un savoir-faire complet pour le bâtiment
+              </h2>
+              <div className="space-y-4 text-charcoal/60 leading-relaxed">
+                <p>
+                  De la maçonnerie traditionnelle aux solutions de rénovation énergétique les plus performantes, Vertex Group propose une gamme complète de services adaptés aux projets résidentiels, commerciaux et industriels.
+                </p>
+                <p>
+                  Notre approche repose sur trois piliers fondamentaux : la qualité des matériaux, la précision de l'exécution, et le respect absolu des délais. Chaque chantier est traité comme un projet unique, avec un plan d'intervention sur mesure.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Timeline */}
-      <section ref={timelineRef} className="section-padding bg-cream-dark">
+      <section ref={timelineRef} className="section-padding bg-paper-dark">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <span className="font-mono-brand text-xs text-moss/60 tracking-widest uppercase">Chronologie</span>
+            <span className="font-mono-brand text-xs text-navy/60 tracking-widest uppercase">Chronologie</span>
             <h2 className="font-heading font-bold text-charcoal text-2xl lg:text-3xl mt-3">Les étapes clés</h2>
           </div>
           <div className="flex flex-col lg:flex-row gap-6 lg:gap-0">
@@ -109,13 +246,13 @@ export default function APropos() {
               <div key={i} className="timeline-item flex-1 relative">
                 {/* Connector line (desktop) */}
                 {i < timeline.length - 1 && (
-                  <div className="hidden lg:block absolute top-5 left-1/2 w-full h-px bg-moss/20" />
+                  <div className="hidden lg:block absolute top-5 left-1/2 w-full h-px bg-navy/20" />
                 )}
                 <div className="relative z-10 text-center lg:px-6">
-                  <div className="w-10 h-10 bg-moss rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Calendar size={16} className="text-cream" />
+                  <div className="w-10 h-10 bg-navy rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Calendar size={16} className="text-paper" />
                   </div>
-                  <span className="font-mono-brand text-xs text-clay font-medium">{item.date}</span>
+                  <span className="font-mono-brand text-xs text-safety font-medium">{item.date}</span>
                   <h3 className="font-heading font-bold text-charcoal text-base mt-2 mb-2">{item.milestone}</h3>
                   <p className="text-charcoal/50 text-sm">{item.desc}</p>
                 </div>
@@ -125,48 +262,32 @@ export default function APropos() {
         </div>
       </section>
 
-      {/* Dirigeant Card */}
-      <section className="section-padding bg-cream">
-        <div className="max-w-md mx-auto text-center">
-          <div className="bg-white rounded-card card-shadow p-8">
-            <div className="w-20 h-20 bg-moss/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="font-heading font-bold text-moss text-2xl">SA</span>
-            </div>
-            <h3 className="font-heading font-bold text-charcoal text-xl">Salim Abdallah</h3>
-            <span className="font-mono-brand text-xs text-moss/60">Président</span>
-            <p className="text-charcoal/50 text-sm mt-4 leading-relaxed">
-              Fondateur et dirigeant de Vertex Group, Salim Abdallah porte une vision de construction alliant précision technique et engagement durable.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Philosophy Block */}
+      {/* Philosophy Quote */}
       <section className="py-24 bg-charcoal text-center overflow-hidden">
         <div className="max-w-3xl mx-auto px-[8vw]">
-          <p className="font-drama italic text-cream/80 leading-tight" style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)' }}>
-            « La qualité n'est jamais un accident ; c'est toujours le résultat d'une <span className="text-clay">intention élevée.</span> »
+          <p className="font-heading font-medium tracking-tight text-paper/80 leading-tight" style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)' }}>
+            « La qualité n'est jamais un accident ; c'est toujours le résultat d'une <span className="text-safety">intention élevée.</span> »
           </p>
         </div>
       </section>
 
       {/* Legal Table */}
-      <section className="section-padding bg-moss-dark">
+      <section className="section-padding bg-navy-dark">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
-            <span className="font-mono-brand text-xs text-cream/40 tracking-widest uppercase">Identité Juridique</span>
-            <h2 className="font-heading font-bold text-cream text-2xl mt-3">Informations légales</h2>
+            <span className="font-mono-brand text-xs text-paper/40 tracking-widest uppercase">Identité Juridique</span>
+            <h2 className="font-heading font-bold text-paper text-2xl mt-3">Informations légales</h2>
           </div>
-          <div className="bg-moss-dark border border-cream/10 rounded-card overflow-hidden">
+          <div className="bg-navy-dark border border-paper/10 rounded-card overflow-hidden">
             {legalData.map((item, i) => (
               <div
                 key={item.label}
                 className={`flex flex-col sm:flex-row px-6 py-4 ${
-                  i < legalData.length - 1 ? 'border-b border-cream/10' : ''
+                  i < legalData.length - 1 ? 'border-b border-paper/10' : ''
                 }`}
               >
-                <span className="font-mono-brand text-xs text-cream/40 sm:w-48 flex-shrink-0 mb-1 sm:mb-0">{item.label}</span>
-                <span className="font-mono-brand text-sm text-cream/80">{item.value}</span>
+                <span className="font-mono-brand text-xs text-paper/40 sm:w-48 flex-shrink-0 mb-1 sm:mb-0">{item.label}</span>
+                <span className="font-mono-brand text-sm text-paper/80">{item.value}</span>
               </div>
             ))}
           </div>
