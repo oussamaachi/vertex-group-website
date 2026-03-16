@@ -33,8 +33,8 @@ function Hero() {
       {/* Background Image */}
       <div ref={imgRef} className="absolute inset-0">
         <img
-          src="/images/hero-home.png"
-          alt="Chantier de construction au coucher du soleil"
+          src="/images/hero-renovation.png"
+          alt="Intérieur moderne en cours de rénovation"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0" style={{
@@ -47,18 +47,18 @@ function Hero() {
         <div className="max-w-3xl">
           <div className="hero-anim mb-4 inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass">
             <span className="w-2 h-2 bg-concrete-light rounded-full"></span>
-            <span className="font-mono-brand text-xs text-paper/70">Entreprise de construction · IDF</span>
+            <span className="font-mono-brand text-xs text-paper/70">Rénovation Tous Corps d'État · IDF</span>
           </div>
           <h1 className="hero-anim font-heading font-bold text-paper text-xl sm:text-2xl tracking-tight leading-tight mb-2" style={{ letterSpacing: '-0.03em' }}>
-            Bâtir l'Avenir
+            Transformez Vos Espaces
           </h1>
           <p className="hero-anim font-heading font-medium tracking-tight text-paper" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)', lineHeight: 1.05 }}>
             Maçonnerie Générale &<br />
-            <span className="text-safety">Rénovation Énergétique.</span>
+            <span className="text-safety">Rénovation Intégrale.</span>
           </p>
           <p className="hero-anim mt-6 text-paper/60 text-base sm:text-lg max-w-xl leading-relaxed">
-            Des ouvrages durables, une expertise certifiée en Île-de-France.<br />
-            Gros Œuvre · Rénovation CEE · Étanchéité
+            Un interlocuteur unique pour tous vos projets B2B & B2C en Île-de-France.<br />
+            Maçonnerie · Électricité · Peinture · Revêtements
           </p>
           <div className="hero-anim mt-8">
             <Button to="/contact" size="lg">
@@ -91,7 +91,7 @@ function Hero() {
 
 function DiagnosticShuffler() {
   const [active, setActive] = useState(0);
-  const labels = ['Fondations & radiers', 'Murs porteurs & refends', 'Dalles, chapes & reprises'];
+  const labels = ['Ouverture de murs', 'Menuiserie & isolation', 'Peinture & revêtements'];
 
   useEffect(() => {
     const timer = setInterval(() => setActive((p) => (p + 1) % labels.length), 3000);
@@ -122,7 +122,7 @@ function DiagnosticShuffler() {
         })}
       </div>
       <h3 className="font-heading font-bold text-charcoal text-xl mb-2">Maçonnerie Générale</h3>
-      <p className="text-charcoal/60 text-sm leading-relaxed">Gros œuvre conforme DTU, exécuté avec précision.</p>
+      <p className="text-charcoal/60 text-sm leading-relaxed">Gros œuvre et second œuvre conformes aux normes, exécutés avec précision.</p>
     </div>
   );
 }
@@ -191,7 +191,7 @@ function TelemetryTypewriter() {
 
 function CursorScheduler() {
   const days = ['L', 'M', 'M', 'J', 'V', 'S', 'D'];
-  const tasks = ['Fondations', 'Gros Œuvre', 'Étanchéité', 'Réception'];
+  const tasks = ['Démolition', 'Maçonnerie', 'Second Œuvre', 'Finitions'];
   const [activeTask, setActiveTask] = useState(0);
   const [validated, setValidated] = useState(false);
 
@@ -254,7 +254,7 @@ function CursorScheduler() {
         </div>
       )}
       <h3 className="font-heading font-bold text-charcoal text-xl mb-2 mt-auto">Coordination de Chantier</h3>
-      <p className="text-charcoal/60 text-sm leading-relaxed">Pilotage complet, de la pose des fondations à la réception.</p>
+      <p className="text-charcoal/60 text-sm leading-relaxed">Un interlocuteur unique pour l'ensemble de vos travaux, de A à Z.</p>
     </div>
   );
 }
@@ -317,7 +317,7 @@ function Philosophy() {
     <section ref={sectionRef} className="relative py-32 lg:py-48 bg-charcoal overflow-hidden">
       {/* Concrete texture overlay */}
       <div className="absolute inset-0 opacity-[0.06]" style={{
-        backgroundImage: 'url("/images/hero-home.png")',
+        backgroundImage: 'url("/images/hero-renovation.png")',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }} />

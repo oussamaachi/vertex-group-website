@@ -51,10 +51,10 @@ export default function Maconnerie() {
             <Hammer size={24} className="text-safety" />
           </div>
           <h1 className="hero-anim font-heading font-bold text-paper text-4xl lg:text-5xl leading-tight mb-4 tracking-tight">
-            Maçonnerie Générale <br/><span className="text-concrete">& Gros Œuvre</span>
+            Maçonnerie Générale <br/><span className="text-concrete">& Rénovation</span>
           </h1>
           <p className="hero-anim text-paper/70 text-lg max-w-2xl">
-            Construction neuve, extensions, reprises en sous-œuvre. Nous réalisons tous types de travaux avec une précision ingénierique.
+            Ouvertures de murs porteurs, reprises en sous-œuvre, création d'espaces. Nous réalisons tous types de travaux de maçonnerie avec précision.
           </p>
         </div>
       </section>
@@ -64,7 +64,7 @@ export default function Maconnerie() {
           <div className="content-anim space-y-6">
             <h2 className="font-heading font-bold pl-4 border-l-4 border-safety text-charcoal text-2xl">Notre Expertise</h2>
             <p className="text-charcoal/70 leading-relaxed">
-              Le gros œuvre constitue la colonne vertébrale de tout bâtiment. Chez Vertex Group, nous abordons chaque projet de maçonnerie avec une rigueur absolue, du terrassement aux élévations, en passant par les fondations profondes.
+              La maçonnerie générale est le socle de toute restructuration. Chez Vertex Group, nous abordons chaque projet de rénovation avec une rigueur absolue, de la préparation des supports à la réalisation des ouvertures et aménagements intérieurs.
             </p>
             <p className="text-charcoal/70 leading-relaxed">
               Nous intervenons sur des chantiers complexes en Île-de-France, garantissant la solidité et la durabilité de chaque ouvrage dans le strict respect des DTU.

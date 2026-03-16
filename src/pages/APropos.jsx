@@ -20,7 +20,7 @@ const values = [
   {
     icon: Leaf,
     title: 'Engagement Durable',
-    desc: 'Nous privilégions des solutions de construction et de rénovation énergétique qui réduisent l\'empreinte écologique de chaque bâtiment, en ligne avec les objectifs CEE et RE2020.'
+    desc: 'Nous privilégions des solutions de rénovation énergétique et d\'aménagements intérieurs qui réduisent l\'empreinte écologique, en ligne avec les objectifs environnementaux.'
   },
   {
     icon: Users,
@@ -124,7 +124,7 @@ export default function APropos() {
         <div className="absolute inset-0">
           <img
             src="/images/hero-apropos.png"
-            alt="Chantier de construction professionnel"
+            alt="Chantier de rénovation professionnel"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0" style={{
@@ -146,10 +146,10 @@ export default function APropos() {
             <div>
               <span className="story-anim block font-mono-brand text-xs text-safety tracking-widest uppercase mb-4">Notre Mission</span>
               <h2 className="story-anim font-heading font-bold tracking-tight text-charcoal text-3xl lg:text-4xl leading-tight mb-6">
-                L'excellence au service de vos projets de construction
+                L'excellence au service de vos projets de rénovation
               </h2>
               <p className="story-anim text-charcoal/60 leading-relaxed mb-4">
-                Vertex Group est née d'une conviction : chaque projet de construction mérite une attention sans compromis, de la fondation à la finition. Basée à Fresnes (94), notre entreprise intervient dans toute l'Île-de-France.
+                Vertex Group est née d'une conviction : chaque projet de rénovation mérite une attention sans compromis, du gros œuvre jusqu'aux finitions. Basée à Fresnes (94), notre entreprise intervient dans toute l'Île-de-France.
               </p>
               <p className="story-anim text-charcoal/60 leading-relaxed">
                 Notre équipe réunit des compétences complémentaires en maçonnerie générale, rénovation énergétique, étanchéité, coordination de chantier et fourniture de matériaux. Cette polyvalence nous permet d'accompagner nos clients de A à Z, avec un seul interlocuteur et une vision globale de chaque projet.
@@ -219,7 +219,7 @@ export default function APropos() {
             <div className="order-1 lg:order-2">
               <span className="block font-mono-brand text-xs text-safety tracking-widest uppercase mb-4">Notre Expertise</span>
               <h2 className="font-heading font-bold tracking-tight text-charcoal text-2xl lg:text-3xl leading-tight mb-6">
-                Un savoir-faire complet pour le bâtiment
+                Un savoir-faire complet pour la rénovation
               </h2>
               <div className="space-y-4 text-charcoal/60 leading-relaxed">
                 <p>

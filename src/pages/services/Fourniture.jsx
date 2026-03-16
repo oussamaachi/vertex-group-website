@@ -71,7 +71,7 @@ export default function Fourniture() {
             </p>
             <ul className="space-y-4 pt-4">
               {[
-                'Gros œuvre (ciments, armatures, agrégats, parpaings)',
+                'Maçonnerie (ciments, armatures, agrégats, parpaings)',
                 'Isolation (laine de roche, PSE, PU)',
                 'Étanchéité (rouleaux bitume, résines)',
                 'Organisation des livraisons par camions grues',
