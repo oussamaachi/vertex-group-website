@@ -10,9 +10,9 @@ const services = [
   {
     icon: Hammer,
     slug: '/services/maconnerie-generale',
-    title: 'Maçonnerie Générale & Gros Œuvre',
-    desc: 'Bâtissez sur des bases solides. Des fondations aux reprises en sous-œuvre, nous assurons des ouvrages durables et conformes aux normes.',
-    badges: ['Fondations', 'Élévations', 'Reprises'],
+    title: 'Maçonnerie & Rénovation',
+    desc: 'Restructurez et optimisez vos espaces. Des ouvertures de murs porteurs aux aménagements intérieurs, nous assurons des ouvrages durables et précis.',
+    badges: ['Ouvertures', 'Second Œuvre', 'Aménagements'],
   },
   {
     icon: Thermometer,
@@ -31,9 +31,9 @@ const services = [
   {
     icon: ClipboardList,
     slug: '/services/coordination-chantier',
-    title: 'Coordination & Gestion de Chantier',
-    desc: 'Nous pilotons tous les corps d\'état pour vous livrer un chantier sans surprise, dans les budgets et les délais impartis.',
-    badges: ['MOE', 'Gantt', 'Réunions'],
+    title: 'Coordination & Rénovation Globale',
+    desc: 'Nous pilotons tous les corps d\'état (Peinture, Électricité, Sols) pour vous livrer un projet clé en main, sans surprise et sans intermédiaire.',
+    badges: ['Tous Corps d\'État', 'Suivi de Chantier', 'Clé en main'],
   },
   {
     icon: Package,

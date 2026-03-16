@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 const timeline = [
   { date: 'Février 2026', milestone: 'Création de Vertex Group', desc: 'Naissance de l\'entreprise à Fresnes (94), avec une ambition claire : bâtir avec excellence.' },
   { date: 'Mars 2026', milestone: 'Immatriculation RCS Créteil', desc: 'Inscription officielle au Registre du Commerce et des Sociétés.' },
-  { date: '2026', milestone: 'Premiers chantiers IDF', desc: 'Lancement des opérations de maçonnerie et rénovation en Île-de-France.' },
+  { date: '2026', milestone: 'Premiers chantiers IDF', desc: 'Lancement de nos premiers projets de rénovation complète en Île-de-France.' },
 ];
 
 const values = [
@@ -134,7 +134,7 @@ export default function APropos() {
         <div className="relative z-10 w-full px-[8vw] pb-16">
           <span className="apropos-hero-anim block font-mono-brand text-xs text-paper/50 tracking-widest uppercase mb-3">Notre Histoire</span>
           <h1 className="apropos-hero-anim font-heading font-medium tracking-tight text-paper leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}>
-            Bâtir pour <span className="text-safety font-bold">durer.</span>
+            Rénover pour <span className="text-safety font-bold">durer.</span>
           </h1>
         </div>
       </section>

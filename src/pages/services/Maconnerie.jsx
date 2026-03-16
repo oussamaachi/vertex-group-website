@@ -71,10 +71,10 @@ export default function Maconnerie() {
             </p>
             <ul className="space-y-4 pt-4">
               {[
-                'Fondations superficielles et profondes',
-                'Élévation de murs porteurs (blocs béton, brique, béton banché)',
-                'Dalles, planchers hourdis et chapes',
-                'Ouvertures en sous-œuvre',
+                'Ouvertures en sous-œuvre (murs porteurs)',
+                'Plâtrerie, cloisons & doublages',
+                'Dalles, planchers et chapes de rénovation',
+                'Aménagements et restructuration intérieure',
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 mt-2 rounded bg-safety flex-shrink-0" />
