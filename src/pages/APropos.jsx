@@ -123,8 +123,8 @@ export default function APropos() {
       <section ref={heroRef} className="relative h-[50dvh] overflow-hidden flex items-end">
         <div className="absolute inset-0">
           <img
-            src="/images/hero-apropos.png"
-            alt="Chantier de rénovation professionnel"
+            src="/images/hero-renovation.png"
+            alt="Intérieur raffiné et rénové"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0" style={{
@@ -157,8 +157,8 @@ export default function APropos() {
             </div>
             <div className="story-anim">
               <img
-                src="/images/hero-coordination.png"
-                alt="Équipe Vertex Group sur chantier"
+                src="/images/hero-renovation.png"
+                alt="Projet de rénovation global par Vertex Group"
                 className="rounded-2xl shadow-xl w-full h-80 object-cover"
               />
             </div>

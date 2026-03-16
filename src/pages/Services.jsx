@@ -115,8 +115,8 @@ export default function Services() {
       <section ref={heroRef} className="relative h-[60dvh] overflow-hidden flex items-end">
         <div className="absolute inset-0">
           <img
-            src="/images/hero-home.png"
-            alt="Chantiers et Pôles d'Expertise"
+            src="/images/hero-renovation.png"
+            alt="Expertise en Rénovation et Aménagements"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0" style={{
