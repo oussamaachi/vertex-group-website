@@ -14,23 +14,23 @@ const timeline = [
 const values = [
   {
     icon: Shield,
-    title: 'Rigueur & Précision',
-    desc: 'Chaque ouvrage est réalisé dans le respect strict des normes DTU et des règles de l\'art. Nous ne faisons aucun compromis sur la qualité des matériaux et la précision de l\'exécution.'
+    title: 'Interlocuteur Unique',
+    desc: 'Un seul partenaire pour simplifier la gestion de votre projet et assurer une exécution fluide et professionnelle de A à Z.'
   },
   {
-    icon: Leaf,
-    title: 'Engagement Durable',
-    desc: 'Nous privilégions des solutions de rénovation énergétique et d\'aménagements intérieurs qui réduisent l\'empreinte écologique, en ligne avec les objectifs environnementaux.'
-  },
-  {
-    icon: Users,
-    title: 'Proximité Client',
-    desc: 'Un interlocuteur unique du devis à la réception. Nous croyons en une relation de confiance transparente, avec un suivi de chantier rigoureux et des comptes-rendus réguliers.'
+    icon: Hammer,
+    title: 'Expertise Multidisciplinaire',
+    desc: 'Maçonnerie, plomberie, électricité, peinture... Nous maîtrisons tous les corps d’état pour une cohérence parfaite.'
   },
   {
     icon: Target,
-    title: 'Respect des Délais',
-    desc: 'Planification millimétrée, coordination efficace des corps de métier, et anticipation des aléas. Nos chantiers sont livrés dans les temps, sans surprise.'
+    title: 'Respect Délais & Budget',
+    desc: 'Nous garantissons un résultat de qualité dans le strict respect de vos contraintes financières et temporelles.'
+  },
+  {
+    icon: Zap,
+    title: 'Travail Soigné',
+    desc: 'L’utilisation de matériaux de qualité et une exécution rigoureuse pour des finitions durables et esthétiques.'
   },
 ];
 
@@ -146,13 +146,13 @@ export default function APropos() {
             <div>
               <span className="story-anim block font-mono-brand text-xs text-safety tracking-widest uppercase mb-4">Notre Mission</span>
               <h2 className="story-anim font-heading font-bold tracking-tight text-charcoal text-3xl lg:text-4xl leading-tight mb-6">
-                L'excellence au service de vos projets de rénovation
+                Un accompagnement complet pour vos travaux
               </h2>
               <p className="story-anim text-charcoal/60 leading-relaxed mb-4">
-                Vertex Group est née d'une conviction : chaque projet de rénovation mérite une attention sans compromis, du gros œuvre jusqu'aux finitions. Basée à Fresnes (94), notre entreprise intervient dans toute l'Île-de-France.
+                Chaque projet est étudié avec attention afin de proposer des solutions adaptées à vos besoins et à votre budget. Notre équipe assure la coordination des différents corps de métier pour garantir un chantier organisé, sécurisé et conforme aux standards de qualité.
               </p>
               <p className="story-anim text-charcoal/60 leading-relaxed">
-                Notre équipe réunit des compétences complémentaires en maçonnerie générale, rénovation énergétique, étanchéité, coordination de chantier et fourniture de matériaux. Cette polyvalence nous permet d'accompagner nos clients de A à Z, avec un seul interlocuteur et une vision globale de chaque projet.
+                Que ce soit pour moderniser un appartement, rénover un local commercial ou transformer un espace de vie, nous mettons notre savoir-faire au service de votre projet. Nous intervenons sur tous types de projets professionnels ou personnels.
               </p>
             </div>
             <div className="story-anim">
@@ -170,8 +170,8 @@ export default function APropos() {
       <section ref={valuesRef} className="section-padding bg-paper-dark">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <span className="font-mono-brand text-xs text-safety tracking-widest uppercase">Nos Valeurs</span>
-            <h2 className="font-heading font-bold text-charcoal text-2xl lg:text-3xl mt-3">Ce qui nous définit</h2>
+            <span className="font-mono-brand text-xs text-safety tracking-widest uppercase">Expertise</span>
+            <h2 className="font-heading font-bold text-charcoal text-2xl lg:text-3xl mt-3">Pourquoi nous choisir ?</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {values.map((v, i) => (

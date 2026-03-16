@@ -46,19 +46,15 @@ function Hero() {
       <div className="relative z-10 w-full px-[8vw] pb-32 lg:pb-24">
         <div className="max-w-3xl">
           <div className="hero-anim mb-4 inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass">
-            <span className="w-2 h-2 bg-concrete-light rounded-full"></span>
-            <span className="font-mono-brand text-xs text-paper/70">Rénovation Tous Corps d'État · IDF</span>
+            <span className="w-2 h-2 bg-safety rounded-full pulse-dot"></span>
+            <span className="font-mono-brand text-xs text-paper/70">Un seul partenaire pour tous vos travaux</span>
           </div>
-          <h1 className="hero-anim font-heading font-bold text-paper text-xl sm:text-2xl tracking-tight leading-tight mb-2" style={{ letterSpacing: '-0.03em' }}>
-            Transformez Vos Espaces
+          <h1 className="hero-anim font-heading font-medium tracking-tight text-paper leading-[1.05]" style={{ fontSize: 'clamp(3rem, 7vw, 6rem)' }}>
+            Travaux <br />
+            <span className="text-safety font-bold italic">Tous Corps d'État.</span>
           </h1>
-          <p className="hero-anim font-heading font-medium tracking-tight text-paper" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)', lineHeight: 1.05 }}>
-            Maçonnerie Générale &<br />
-            <span className="text-safety">Rénovation Intégrale.</span>
-          </p>
-          <p className="hero-anim mt-6 text-paper/60 text-base sm:text-lg max-w-xl leading-relaxed">
-            Un interlocuteur unique pour tous vos projets B2B & B2C en Île-de-France.<br />
-            Maçonnerie · Électricité · Peinture · Revêtements
+          <p className="hero-anim mt-6 text-paper/70 text-lg sm:text-xl max-w-xl leading-relaxed">
+            De la conception à la réalisation, nous prenons en charge l’ensemble de vos travaux de rénovation, d’aménagement et de construction.
           </p>
           <div className="hero-anim mt-8">
             <Button to="/contact" size="lg">

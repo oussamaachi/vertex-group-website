@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Hammer, Thermometer, Droplets, ClipboardList, Package, ArrowRight } from 'lucide-react';
+import { Hammer, Thermometer, Droplets, ClipboardList, Package, ArrowRight, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -10,37 +10,44 @@ const services = [
   {
     icon: Hammer,
     slug: '/services/maconnerie-generale',
-    title: 'Maçonnerie & Rénovation',
-    desc: 'Restructurez et optimisez vos espaces. Des ouvertures de murs porteurs aux aménagements intérieurs, nous assurons des ouvrages durables et précis.',
-    badges: ['Ouvertures', 'Second Œuvre', 'Aménagements'],
-  },
-  {
-    icon: Thermometer,
-    slug: '/services/renovation-energetique',
-    title: 'Rénovation Énergétique',
-    desc: 'Isolation thermique performante et montage de vos dossiers CEE / MaPrimeRénov\' pour des économies d\'énergie rapides.',
-    badges: ['ITE', 'Isolation Combles', 'CEE'],
+    title: 'Maçonnerie & Gros Œuvre',
+    desc: 'Ouvrages structurels, murs porteurs et restructuration complète de vos espaces.',
+    badges: ['Murs porteurs', 'Ouvertures', 'Dalles'],
   },
   {
     icon: Droplets,
-    slug: '/services/etancheite-toitures',
-    title: 'Étanchéité & Toitures-Terrasses',
-    desc: 'Protégez vos bâtiments de l\'eau. Traitement des toitures, terrasses et façades pour prévenir et traiter toute infiltration.',
-    badges: ['Membranes SBS', 'Étanchéité Liquide', 'Recherche de fuites'],
+    slug: '/services/plomberie-sanitaires',
+    title: 'Plomberie & Sanitaires',
+    desc: 'Installations complètes, réseaux d\'évacuation et pose d\'équipements sanitaires.',
+    badges: ['Réseaux', 'Installations', 'Mise aux normes'],
   },
   {
-    icon: ClipboardList,
-    slug: '/services/coordination-chantier',
-    title: 'Coordination & Rénovation Globale',
-    desc: 'Nous pilotons tous les corps d\'état (Peinture, Électricité, Sols) pour vous livrer un projet clé en main, sans surprise et sans intermédiaire.',
-    badges: ['Tous Corps d\'État', 'Suivi de Chantier', 'Clé en main'],
+    icon: Zap,
+    slug: '/services/electricite-normes',
+    title: 'Électricité & Normes',
+    desc: 'Mise aux normes NF C 15-100, tableaux électriques et réseaux courants forts/faibles.',
+    badges: ['Armoires', 'Câblage', 'Sécurité'],
+  },
+  {
+    icon: Thermometer,
+    slug: '/services/cloisons-isolation',
+    title: 'Cloisons & Isolation',
+    desc: 'Distribution d\'espaces, isolation thermique et acoustique, pose de faux plafonds.',
+    badges: ['Placo', 'Laine de roche', 'Acoustique'],
   },
   {
     icon: Package,
-    slug: '/services/fourniture-materiaux',
-    title: 'Fourniture de Matériaux',
-    desc: 'Approvisionnez facilement vos chantiers avec nos filières pro. Nous fournissons des matériaux normés aux meilleurs tarifs.',
-    badges: ['Sourcing industriel', 'Livraison Grues', 'Normes NF/CE'],
+    slug: '/services/peinture-revetements',
+    title: 'Peinture & Finitions',
+    desc: 'Travaux de peinture, revêtements muraux et décoration pour un rendu impeccable.',
+    badges: ['Murs & Plafonds', 'Sols', 'Décoration'],
+  },
+  {
+    icon: ClipboardList,
+    slug: '/services/renovation-integrale',
+    title: 'Rénovation Intégrale',
+    desc: 'Appartements, maisons et locaux professionnels. Nous pilotons votre projet de A à Z.',
+    badges: ['Clé en main', 'B2B / B2C', 'Logistique'],
   },
 ];
 
