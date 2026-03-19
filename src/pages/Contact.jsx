@@ -186,7 +186,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={submitted}
-                className={`btn-magnetic w-full py-4 rounded-xl font-heading font-semibold text-sm flex items-center justify-center gap-2 transition-all duration-500 ${
+                className={`btn-magnetic w-full py-4 rounded-xl font-heading font-semibold text-sm flex items-center justify-center gap-2 transition-all duration-500 whitespace-nowrap ${
                   submitted
                     ? 'bg-navy text-paper'
                     : 'bg-safety text-paper'
@@ -199,7 +199,7 @@ export default function Contact() {
                 ) : (
                   <>
                     <span className="btn-slide bg-navy-dark rounded-xl"></span>
-                    <span className="btn-text flex items-center gap-2 relative z-10">
+                    <span className="btn-text flex items-center justify-center gap-2 relative z-10 whitespace-nowrap w-full">
                       <Send size={16} /> Envoyer ma Demande
                     </span>
                   </>

@@ -33,7 +33,7 @@ export default function PolitiqueConfidentialite() {
               <p>Le responsable du traitement des données personnelles est :</p>
               <p><strong className="text-charcoal">Vertex Group</strong></p>
               <p>28 Avenue des Pépinières, 94260 Fresnes</p>
-              <p>E-mail : contact@vertexgroup.fr</p>
+              <p>E-mail : contact@vertex-group.fr</p>
             </div>
           </div>
 
@@ -95,8 +95,8 @@ export default function PolitiqueConfidentialite() {
               </ul>
               <p className="mt-4">
                 Pour exercer ces droits, contactez-nous à :{' '}
-                <a href="mailto:contact@vertexgroup.fr" className="text-safety underline hover:text-charcoal transition-colors">
-                  contact@vertexgroup.fr
+                <a href="mailto:contact@vertex-group.fr" className="text-safety underline hover:text-charcoal transition-colors">
+                  contact@vertex-group.fr
                 </a>
               </p>
             </div>

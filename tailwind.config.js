@@ -7,15 +7,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        'navy-dark': '#1C221F',
-        'navy': '#2C3430',
-        'steel': '#5B6960',
-        'concrete': '#9FB0A5',
-        'concrete-light': '#E8EDE9',
-        'safety': '#8A9560',
-        'paper': '#F9FAF9',
-        'paper-dark': '#F0F3F1',
-        'charcoal': '#181C1A',
+        'navy-dark': '#2E312B',
+        'navy': '#363932', /* Extracted Primary Dark Olive */
+        'steel': '#65633A',
+        'concrete': '#B1B0A1',
+        'concrete-light': '#E9E9E5',
+        'safety': '#858456', /* Extracted Accent Olive Gold */
+        'paper': '#FAF9F6', 
+        'paper-dark': '#F4F4F0',
+        'charcoal': '#22241F', /* Deepest Charcoal Olive */
       },
       fontFamily: {
         'heading': ['"Plus Jakarta Sans"', 'sans-serif'],

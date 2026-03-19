@@ -1,30 +1,28 @@
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
-const Logo = ({ scrolled }) => (
+const Logo = ({ forceDarkText }) => (
   <Link to="/" className="flex items-center gap-2 link-lift">
-    {scrolled ? (
-      <img src="/logo-w.png" alt="Vertex Group" className="h-11 w-auto object-contain transition-all duration-300" />
-    ) : (
-      <div className="bg-white/90 backdrop-blur-sm rounded-xl p-1 shadow-sm transition-all duration-300">
-        <img src="/logo-w.png" alt="Vertex Group" className="h-11 w-auto object-contain" />
-      </div>
-    )}
+    <img 
+      src="/logo-w.png" 
+      alt="Vertex Group" 
+      className={`h-11 w-auto object-contain transition-all duration-300 ${forceDarkText ? 'brightness-0 opacity-90' : ''}`} 
+    />
   </Link>
 );
 
 const navLinks = [
-  { 
-    to: '/services', 
+  {
+    to: '/services',
     label: 'Services',
     dropdown: [
-      { to: '/services/maconnerie-generale', label: 'Maçonnerie Générale' },
+      { to: '/services/maconnerie-generale', label: 'Travaux Tous Corps d’État' },
       { to: '/services/renovation-energetique', label: 'Rénovation Énergétique' },
       { to: '/services/etancheite-toitures', label: 'Étanchéité & Toitures' },
       { to: '/services/coordination-chantier', label: 'Coordination de Chantier' },
       { to: '/services/fourniture-materiaux', label: 'Fourniture de Matériaux' },
-    ]
+    ],
   },
   { to: '/a-propos', label: 'À Propos' },
   { to: '/contact', label: 'Contact' },
@@ -37,16 +35,18 @@ export default function Navbar() {
   const navRef = useRef(null);
 
   useEffect(() => {
-    setMobileOpen(false);
-  }, [location]);
-
-  useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 80);
     };
+
+    handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const isLightHero = location.pathname === '/';
+  const forceDarkText = scrolled || isLightHero;
 
   return (
     <>
@@ -54,33 +54,31 @@ export default function Navbar() {
         ref={navRef}
         className={`fixed top-6 left-1/2 -translate-x-1/2 z-[1000] w-[calc(100%-3rem)] max-w-[1200px] h-16 px-6 flex items-center justify-between transition-all duration-500 ${
           scrolled
-            ? 'bg-paper/90 backdrop-blur-xl border border-navy/10 shadow-lg rounded-full'
+            ? 'bg-paper/90 backdrop-blur-xl border border-charcoal/10 shadow-lg rounded-full'
             : 'bg-transparent rounded-full'
         }`}
         style={{ willChange: 'background, border, box-shadow' }}
       >
-        <div className={scrolled ? 'text-charcoal' : 'text-paper'}>
-          <Logo scrolled={scrolled} />
+        <div className={forceDarkText ? 'text-charcoal' : 'text-paper'}>
+          <Logo forceDarkText={forceDarkText} />
         </div>
 
-        {/* Desktop Links */}
         <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <div key={link.to} className="relative group">
               <Link
                 to={link.to}
                 className={`font-heading text-sm font-medium tracking-wide link-lift transition-colors duration-300 flex items-center gap-1 ${
-                  scrolled ? 'text-charcoal hover:text-navy' : 'text-paper/80 hover:text-paper'
-                } ${location.pathname.startsWith(link.to) && link.to !== '/' ? (scrolled ? 'text-navy' : 'text-paper') : ''}`}
+                  forceDarkText ? 'text-charcoal hover:text-safety' : 'text-paper/80 hover:text-paper'
+                } ${location.pathname.startsWith(link.to) && link.to !== '/' ? (forceDarkText ? 'text-safety' : 'text-paper') : ''}`}
               >
                 {link.label}
               </Link>
               {link.dropdown && (
                 <div className="absolute top-full left-1/2 -translate-x-[50%] pt-6 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300">
-                  <div className="bg-white rounded-xl shadow-xl border border-concrete-light w-64 overflow-hidden py-2 relative">
-                    {/* Invisible bridge to prevent mouseout */}
+                  <div className="relative w-64 overflow-hidden rounded-xl border border-concrete-light bg-white py-2 shadow-xl">
                     <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
-                    {link.dropdown.map(drop => (
+                    {link.dropdown.map((drop) => (
                       <Link
                         key={drop.to}
                         to={drop.to}
@@ -94,37 +92,38 @@ export default function Navbar() {
               )}
             </div>
           ))}
+
           <Link
             to="/contact"
-            className="btn-magnetic inline-flex items-center px-5 py-2.5 bg-safety text-paper font-heading text-sm font-semibold rounded-full"
+            className="btn-magnetic inline-flex items-center px-5 py-2.5 bg-safety text-paper font-heading text-sm font-semibold rounded-full whitespace-nowrap"
           >
-            <span className="btn-slide rounded-full"></span>
+            <span className="btn-slide rounded-full" />
             <span className="btn-text">Devis Gratuit</span>
           </Link>
         </div>
 
-        {/* Mobile Burger */}
         <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className={`lg:hidden p-2 ${scrolled ? 'text-charcoal' : 'text-paper'}`}
+          type="button"
+          onClick={() => setMobileOpen((current) => !current)}
+          className={`lg:hidden p-2 ${forceDarkText ? 'text-charcoal' : 'text-paper'}`}
           aria-label="Menu"
+          aria-expanded={mobileOpen}
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </nav>
 
-      {/* Mobile Overlay */}
       <div
         className={`fixed inset-0 z-[999] bg-navy flex flex-col items-center justify-center gap-8 transition-all duration-500 overflow-y-auto py-24 ${
           mobileOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >
-        {navLinks.map((link, i) => (
-          <div 
-            key={link.to} 
-            className="text-center w-full px-8"
+        {navLinks.map((link, index) => (
+          <div
+            key={link.to}
+            className="w-full px-8 text-center"
             style={{
-              transitionDelay: mobileOpen ? `${i * 80}ms` : '0ms',
+              transitionDelay: mobileOpen ? `${index * 80}ms` : '0ms',
               transform: mobileOpen ? 'translateY(0)' : 'translateY(20px)',
               opacity: mobileOpen ? 1 : 0,
               transition: 'transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94), opacity 0.5s ease',
@@ -133,18 +132,18 @@ export default function Navbar() {
             <Link
               to={link.to}
               onClick={() => setMobileOpen(false)}
-              className="font-heading font-medium tracking-tight text-paper text-3xl hover:text-concrete-light transition-colors block mb-2"
+              className="mb-2 block font-heading text-3xl font-medium tracking-tight text-paper transition-colors hover:text-concrete-light"
             >
               {link.label}
             </Link>
             {link.dropdown && (
-              <div className="flex flex-col gap-4 mt-6 mb-4">
-                {link.dropdown.map(drop => (
+              <div className="mt-6 mb-4 flex flex-col gap-4">
+                {link.dropdown.map((drop) => (
                   <Link
                     key={drop.to}
                     to={drop.to}
                     onClick={() => setMobileOpen(false)}
-                    className="font-heading text-paper/60 text-lg hover:text-safety transition-colors"
+                    className="font-heading text-lg text-paper/60 transition-colors hover:text-safety"
                   >
                     {drop.label}
                   </Link>
@@ -153,10 +152,11 @@ export default function Navbar() {
             )}
           </div>
         ))}
+
         <Link
           to="/contact"
           onClick={() => setMobileOpen(false)}
-          className="btn-magnetic mt-8 inline-flex items-center px-8 py-3 bg-safety text-paper font-heading text-lg font-semibold rounded-full shrink-0"
+          className="btn-magnetic mt-8 inline-flex shrink-0 items-center rounded-full bg-safety px-8 py-3 font-heading text-lg font-semibold text-paper whitespace-nowrap"
           style={{
             transitionDelay: mobileOpen ? `${navLinks.length * 80}ms` : '0ms',
             transform: mobileOpen ? 'translateY(0)' : 'translateY(20px)',
@@ -164,7 +164,7 @@ export default function Navbar() {
             transition: 'transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94), opacity 0.5s ease',
           }}
         >
-          <span className="btn-slide rounded-full"></span>
+          <span className="btn-slide rounded-full" />
           <span className="btn-text">Devis Gratuit</span>
         </Link>
       </div>

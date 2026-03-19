@@ -1,0 +1,268 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - link "Vertex Group" [ref=e5]:
+      - /url: /
+      - img "Vertex Group" [ref=e7]
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link "Services" [ref=e10]:
+          - /url: /services
+        - generic:
+          - generic:
+            - link "Travaux Tous Corps d’État":
+              - /url: /services/maconnerie-generale
+            - link "Rénovation Énergétique":
+              - /url: /services/renovation-energetique
+            - link "Étanchéité & Toitures":
+              - /url: /services/etancheite-toitures
+            - link "Coordination de Chantier":
+              - /url: /services/coordination-chantier
+            - link "Fourniture de Matériaux":
+              - /url: /services/fourniture-materiaux
+      - link "À Propos" [ref=e12]:
+        - /url: /a-propos
+      - link "Contact" [ref=e14]:
+        - /url: /contact
+      - link "Devis Gratuit" [ref=e15]:
+        - /url: /contact
+        - generic [ref=e17]: Devis Gratuit
+  - generic:
+    - generic:
+      - link "Services":
+        - /url: /services
+      - generic:
+        - link "Travaux Tous Corps d’État":
+          - /url: /services/maconnerie-generale
+        - link "Rénovation Énergétique":
+          - /url: /services/renovation-energetique
+        - link "Étanchéité & Toitures":
+          - /url: /services/etancheite-toitures
+        - link "Coordination de Chantier":
+          - /url: /services/coordination-chantier
+        - link "Fourniture de Matériaux":
+          - /url: /services/fourniture-materiaux
+    - generic:
+      - link "À Propos":
+        - /url: /a-propos
+    - generic:
+      - link "Contact":
+        - /url: /contact
+    - link "Devis Gratuit":
+      - /url: /contact
+      - generic: Devis Gratuit
+  - main [ref=e18]:
+    - generic [ref=e26]:
+      - generic [ref=e29]: Un seul partenaire pour tous vos travaux
+      - heading "Travaux Tous Corps d'État" [level=1] [ref=e30]:
+        - text: Travaux
+        - text: Tous Corps d'État
+      - paragraph [ref=e31]: De la conception à la réalisation, nous prenons en charge l’ensemble de vos travaux de rénovation, d’aménagement et de construction.
+      - generic [ref=e32]:
+        - link "Demander un devis gratuit" [ref=e33]:
+          - /url: /contact
+          - generic [ref=e35]: Demander un devis gratuit
+        - link "Découvrir nos prestations" [ref=e36]:
+          - /url: /services
+          - generic [ref=e38]: Découvrir nos prestations
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - img [ref=e41]
+          - text: Rénovation tous corps d’état
+        - generic [ref=e43]:
+          - img [ref=e44]
+          - text: Interlocuteur unique
+        - generic [ref=e46]:
+          - img [ref=e47]
+          - text: Travail soigné
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - img [ref=e52]
+          - paragraph [ref=e56]: Peinture & finitions
+          - paragraph [ref=e57]: Une seule équipe pour coordonner vos travaux avec fluidité et professionnalisme.
+        - generic [ref=e58]:
+          - img [ref=e60]
+          - paragraph [ref=e62]: Électricité & mise aux normes
+          - paragraph [ref=e63]: Une seule équipe pour coordonner vos travaux avec fluidité et professionnalisme.
+        - generic [ref=e64]:
+          - img [ref=e66]
+          - paragraph [ref=e68]: Aménagement intérieur
+          - paragraph [ref=e69]: Une seule équipe pour coordonner vos travaux avec fluidité et professionnalisme.
+      - generic [ref=e70]:
+        - generic [ref=e71]: Appartements et maisons
+        - generic [ref=e72]: Bureaux et commerces
+        - generic [ref=e73]: Locaux professionnels
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - text: Travaux Tous Corps d'État
+        - heading "Une seule équipe pour tous vos travaux" [level=2] [ref=e77]
+        - paragraph [ref=e78]: De la conception à la réalisation, nous prenons en charge l’ensemble de vos travaux de rénovation, d’aménagement et de construction.
+        - paragraph [ref=e79]: Grâce à notre expertise en tous corps d’état, nous coordonnons chaque étape du chantier afin de vous garantir un résultat de qualité, dans le respect des délais et de votre budget.
+        - paragraph [ref=e80]: "Notre objectif : vous offrir un interlocuteur unique pour simplifier la gestion de votre projet et assurer une exécution fluide et professionnelle."
+        - heading "Nos prestations" [level=3] [ref=e81]
+        - paragraph [ref=e82]: "Nous intervenons sur tous types de projets professionnels ou personnels, qu’il s’agisse de rénovation complète, d’aménagement intérieur ou de travaux spécifiques, notamment :"
+        - generic [ref=e83]:
+          - generic [ref=e86]: Maçonnerie et gros œuvre
+          - generic [ref=e89]: Plomberie et installations sanitaires
+          - generic [ref=e92]: Électricité et mise aux normes
+          - generic [ref=e95]: Peinture et revêtements muraux
+          - generic [ref=e98]: Carrelage et revêtements de sols
+          - generic [ref=e101]: Menuiserie intérieure et extérieure
+          - generic [ref=e104]: Cloisons, isolation et faux plafonds
+          - generic [ref=e107]: Rénovation d’appartements, maisons et locaux professionnels
+          - generic [ref=e110]: Décoration, menuiserie
+      - generic [ref=e112]:
+        - text: Pourquoi nous choisir ?
+        - generic [ref=e113]:
+          - generic [ref=e114]:
+            - img [ref=e115]
+            - generic [ref=e117]: Expertise en travaux tous corps d’état
+          - generic [ref=e118]:
+            - img [ref=e119]
+            - generic [ref=e121]: Un interlocuteur unique pour votre chantier
+          - generic [ref=e122]:
+            - img [ref=e123]
+            - generic [ref=e125]: Respect des délais et du budget
+          - generic [ref=e126]:
+            - img [ref=e127]
+            - generic [ref=e129]: Travail soigné et matériaux de qualité
+          - generic [ref=e130]:
+            - img [ref=e131]
+            - generic [ref=e133]: Accompagnement de A à Z
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - img "Rénovation énergétique et certificats CEE" [ref=e137]
+        - generic [ref=e139]:
+          - generic [ref=e140]: Rénovation Énergétique
+          - heading "Réduisez vos coûts énergétiques tout en finançant vos travaux" [level=2] [ref=e141]
+          - paragraph [ref=e142]: "CEE : transformez vos travaux en économies durables."
+      - generic [ref=e143]:
+        - generic [ref=e144]:
+          - text: Certificats d'Économies d'Énergie
+          - heading "Réduisez vos coûts énergétiques tout en finançant vos travaux" [level=3] [ref=e145]
+          - paragraph [ref=e146]: Nous accompagnons les entreprises et acteurs du secteur tertiaire dans l’obtention de primes liées aux Certificats d’Économies d’Énergie (CEE).
+          - paragraph [ref=e147]: Ce dispositif permet de financer une partie de vos travaux d’amélioration énergétique tout en diminuant durablement vos consommations.
+          - paragraph [ref=e148]: "Isolation, modernisation des équipements ou optimisation des systèmes énergétiques : ces améliorations permettent de réaliser de véritables économies sur vos factures d’énergie tout en valorisant vos bâtiments."
+          - paragraph [ref=e149]: Notre équipe vous accompagne de l’étude jusqu’à l’obtention des primes, afin de simplifier toutes les démarches et optimiser les financements liés au dispositif CEE.
+          - paragraph [ref=e150]: "CEE : transformez vos travaux en économies durables."
+        - generic [ref=e151]:
+          - text: Primes & Financement
+          - heading "Simulation personnalisée" [level=3] [ref=e152]
+          - paragraph [ref=e153]: "Nous réalisons une simulation personnalisée afin d’estimer :"
+          - generic [ref=e154]:
+            - generic [ref=e155]:
+              - img [ref=e156]
+              - generic [ref=e159]: les aides financières disponibles
+            - generic [ref=e160]:
+              - img [ref=e161]
+              - generic [ref=e164]: les travaux éligibles
+            - generic [ref=e165]:
+              - img [ref=e166]
+              - generic [ref=e169]: les économies d’énergie potentielles
+    - generic [ref=e171]:
+      - generic [ref=e172]:
+        - text: Champs d'intervention
+        - heading "Des espaces de vie aux environnements professionnels" [level=2] [ref=e173]
+        - paragraph [ref=e174]: Nous intervenons aussi bien sur des appartements, maisons et projets de rénovation intérieure que sur des bureaux, hôtels, commerces ou salons. Notre approche reste celle d’une entreprise capable de coordonner tous les corps d’état avec un seul interlocuteur.
+      - generic [ref=e175]:
+        - generic [ref=e176]:
+          - img [ref=e178]
+          - paragraph [ref=e181]: Appartements & maisons
+        - generic [ref=e182]:
+          - img [ref=e184]
+          - paragraph [ref=e188]: Bureaux & tertiaire
+        - generic [ref=e189]:
+          - img [ref=e191]
+          - paragraph [ref=e194]: Hôtellerie & hébergement
+        - generic [ref=e195]:
+          - img [ref=e197]
+          - paragraph [ref=e201]: Commerces & salons
+    - generic [ref=e203]:
+      - generic [ref=e204]:
+        - text: Un accompagnement complet
+        - heading "Un accompagnement complet" [level=2] [ref=e205]
+        - paragraph [ref=e206]: Chaque projet est étudié avec attention afin de proposer des solutions adaptées à vos besoins et à votre budget.
+        - paragraph [ref=e207]: Notre équipe assure la coordination des différents corps de métier pour garantir un chantier organisé, sécurisé et conforme aux standards de qualité.
+        - paragraph [ref=e208]: Que ce soit pour moderniser un appartement, rénover un local commercial ou transformer un espace de vie, nous mettons notre savoir-faire au service de votre projet.
+      - generic [ref=e209]:
+        - generic [ref=e210]:
+          - text: "01"
+          - heading "Étude du projet" [level=3] [ref=e211]
+          - paragraph [ref=e212]: Chaque projet est étudié avec attention afin de proposer des solutions adaptées à vos besoins et à votre budget.
+        - generic [ref=e213]:
+          - text: "02"
+          - heading "Coordination des métiers" [level=3] [ref=e214]
+          - paragraph [ref=e215]: Notre équipe assure la coordination des différents corps de métier pour garantir un chantier organisé, sécurisé et conforme aux standards de qualité.
+        - generic [ref=e216]:
+          - text: "03"
+          - heading "Réalisation fluide" [level=3] [ref=e217]
+          - paragraph [ref=e218]: Que ce soit pour moderniser un appartement, rénover un local commercial ou transformer un espace de vie, nous mettons notre savoir-faire au service de votre projet.
+    - generic [ref=e220]:
+      - generic [ref=e221]:
+        - generic [ref=e223]: RGE
+        - paragraph [ref=e224]: Reconnu Garant de l'Environnement
+      - generic [ref=e225]:
+        - generic [ref=e227]: PRO
+        - paragraph [ref=e228]: Garantie Décennale incluse
+      - generic [ref=e229]:
+        - generic [ref=e231]: CEE
+        - paragraph [ref=e232]: Éligible Certificats d'Économies d'Énergie
+      - generic [ref=e233]:
+        - generic [ref=e235]: IDF
+        - paragraph [ref=e236]: Intervention experte en Île-de-France
+    - generic [ref=e238]:
+      - heading "Votre projet mérite un interlocuteur unique" [level=2] [ref=e239]
+      - paragraph [ref=e240]: "Travaux tous corps d’état, rénovation intérieure ou amélioration énergétique : nous vous accompagnons de A à Z."
+      - link "Parler de votre projet" [ref=e242]:
+        - /url: /contact
+        - generic [ref=e244]:
+          - text: Parler de votre projet
+          - img [ref=e245]
+      - paragraph [ref=e247]: Réponse rapide · Étude personnalisée · Devis gratuit
+  - contentinfo [ref=e248]:
+    - generic [ref=e250]:
+      - generic [ref=e251]:
+        - link "Vertex Group" [ref=e252]:
+          - /url: /
+          - img "Vertex Group" [ref=e253]
+        - paragraph [ref=e254]: Bâtisseurs d'excellence en Île-de-France.
+        - generic [ref=e255]: Opérationnel · Disponible
+      - generic [ref=e257]:
+        - heading "Services" [level=4] [ref=e258]
+        - list [ref=e259]:
+          - listitem [ref=e260]:
+            - link "Maçonnerie Générale" [ref=e261]:
+              - /url: /services/maconnerie-generale
+          - listitem [ref=e262]:
+            - link "Rénovation Énergétique" [ref=e263]:
+              - /url: /services/renovation-energetique
+          - listitem [ref=e264]:
+            - link "Étanchéité & Toitures" [ref=e265]:
+              - /url: /services/etancheite-toitures
+          - listitem [ref=e266]:
+            - link "Coordination de Chantier" [ref=e267]:
+              - /url: /services/coordination-chantier
+          - listitem [ref=e268]:
+            - link "Fourniture Matériaux" [ref=e269]:
+              - /url: /services/fourniture-materiaux
+      - generic [ref=e270]:
+        - heading "Entreprise" [level=4] [ref=e271]
+        - list [ref=e272]:
+          - listitem [ref=e273]:
+            - link "À Propos" [ref=e274]:
+              - /url: /a-propos
+          - listitem [ref=e275]:
+            - link "Contact" [ref=e276]:
+              - /url: /contact
+      - generic [ref=e277]:
+        - heading "Légal" [level=4] [ref=e278]
+        - list [ref=e279]:
+          - listitem [ref=e280]:
+            - link "Mentions Légales" [ref=e281]:
+              - /url: /mentions-legales
+          - listitem [ref=e282]:
+            - link "Politique de Confidentialité" [ref=e283]:
+              - /url: /politique-de-confidentialite
+        - generic [ref=e284]:
+          - paragraph [ref=e285]: "Vertex Group · SIREN : 101 799 591"
+          - paragraph [ref=e286]: 28 Av. des Pépinières, 94260 Fresnes
+    - paragraph [ref=e288]: © 2026 Vertex Group · 28 Av. des Pépinières, 94260 Fresnes · SIREN 101 799 591

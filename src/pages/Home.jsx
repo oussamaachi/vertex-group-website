@@ -1,601 +1,484 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ArrowDown } from 'lucide-react';
+import { ArrowRight, BadgeEuro, BriefcaseBusiness, Check, Hotel, House, Paintbrush, Store, Wrench, Zap } from 'lucide-react';
 import Button from '../components/Button';
 import CertBar from '../components/CertBar';
 
 gsap.registerPlugin(ScrollTrigger);
 
-/* ═══════════  HERO  ═══════════ */
+const trades = [
+  'Maçonnerie générale et aménagement',
+  'Plomberie et installations sanitaires',
+  'Électricité et mise aux normes',
+  'Peinture et revêtements muraux',
+  'Carrelage et revêtements de sols',
+  'Menuiserie intérieure et extérieure',
+  'Cloisons, isolation et faux plafonds',
+  'Rénovation d’appartements, maisons et locaux professionnels',
+  'Décoration, menuiserie',
+];
+
+const sectors = [
+  { icon: House, label: 'Appartements & maisons' },
+  { icon: BriefcaseBusiness, label: 'Bureaux & tertiaire' },
+  { icon: Hotel, label: 'Hôtellerie & hébergement' },
+  { icon: Store, label: 'Commerces & salons' },
+];
+
+const renovationHighlights = [
+  { icon: Paintbrush, label: 'Peinture & finitions' },
+  { icon: Zap, label: 'Électricité & mise aux normes' },
+  { icon: Wrench, label: 'Aménagement intérieur' },
+];
+
+const whyChooseItems = [
+  'Expertise en travaux tous corps d’état',
+  'Un interlocuteur unique pour votre chantier',
+  'Respect des délais et du budget',
+  'Travail soigné et matériaux de qualité',
+  'Accompagnement de A à Z',
+];
+
+const fundingItems = [
+  'les aides financières disponibles',
+  'les travaux éligibles',
+  'les économies d’énergie potentielles',
+];
+
 function Hero() {
   const heroRef = useRef(null);
-  const imgRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Ken Burns
-      gsap.fromTo(imgRef.current,
-        { scale: 1.05 },
-        { scale: 1, duration: 2.5, ease: 'power2.out' }
-      );
-      // Stagger entrance
-      gsap.fromTo('.hero-anim',
-        { y: 40, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, stagger: 0.08, ease: 'power3.out', delay: 0.3 }
+      gsap.fromTo(
+        '.hero-anim',
+        { y: 36, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.9, stagger: 0.08, ease: 'power3.out', delay: 0.25 }
       );
     }, heroRef);
+
     return () => ctx.revert();
   }, []);
 
   return (
-    <section ref={heroRef} className="relative h-[100dvh] overflow-hidden flex items-end">
-      {/* Background Image */}
-      <div ref={imgRef} className="absolute inset-0">
-        <img
-          src="/images/hero-renovation.png"
-          alt="Intérieur moderne en cours de rénovation"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0" style={{
-          background: 'linear-gradient(to top, #0B1120 0%, rgba(15,23,42,0.55) 50%, rgba(15,23,42,0.15) 100%)'
-        }} />
+    <section ref={heroRef} className="relative min-h-[100dvh] overflow-hidden flex items-end">
+      <div className="absolute inset-0">
+        <img src="/images/hero-home-new.png" alt="Rénovation Intérieure Premium Haut de Gamme" className="absolute inset-0 w-full h-full object-cover object-center" />
+        <div className="absolute inset-0 bg-gradient-to-r from-paper/95 via-paper/80 to-transparent" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 w-full px-[8vw] pb-32 lg:pb-24">
-        <div className="max-w-3xl">
-          <div className="hero-anim mb-4 inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass">
-            <span className="w-2 h-2 bg-safety rounded-full pulse-dot"></span>
-            <span className="font-mono-brand text-xs text-paper/70">Un seul partenaire pour tous vos travaux</span>
+      <div className="relative z-10 w-full px-[8vw] pb-24 lg:pb-20 pt-32">
+        <div className="max-w-5xl">
+          <div className="hero-anim mb-5 inline-flex items-center gap-2 px-4 py-2 border border-safety/20 bg-safety/5 rounded-full backdrop-blur-md">
+            <span className="w-2 h-2 bg-safety rounded-full pulse-dot" />
+            <span className="font-mono-brand text-[11px] sm:text-xs text-charcoal tracking-wide uppercase" style={{ opacity: 0.8 }}>
+              Une seule équipe pour tous vos travaux
+            </span>
           </div>
-          <h1 className="hero-anim font-heading font-medium tracking-tight text-paper leading-[1.05]" style={{ fontSize: 'clamp(3rem, 7vw, 6rem)' }}>
-            Travaux <br />
-            <span className="text-safety font-bold italic">Tous Corps d'État.</span>
+
+          <h1
+            className="hero-anim font-heading text-charcoal leading-[0.98]"
+            style={{ fontSize: 'clamp(3.1rem, 7vw, 6.4rem)' }}
+          >
+            Experts en
+            <br />
+            <span className="text-safety font-semibold italic">Rénovation Intérieure</span>
           </h1>
-          <p className="hero-anim mt-6 text-paper/70 text-lg sm:text-xl max-w-xl leading-relaxed">
-            De la conception à la réalisation, nous prenons en charge l’ensemble de vos travaux de rénovation, d’aménagement et de construction.
+
+          <p className="hero-anim mt-6 max-w-2xl text-charcoal/80 text-lg sm:text-xl leading-relaxed">
+            De la conception à la réalisation, nous prenons en charge l’ensemble de vos travaux d’aménagement complet
+            pour vos appartements, maisons ou locaux professionnels.
           </p>
-          <div className="hero-anim mt-8">
+
+          <div className="hero-anim mt-8 flex flex-wrap gap-3">
             <Button to="/contact" size="lg">
-              Demander un Devis Gratuit →
+              Demander une étude
+            </Button>
+            <Button to="/services" variant="outline" size="lg" className="border-charcoal/20 text-charcoal hover:border-charcoal/40 bg-white/50 backdrop-blur-sm">
+              Découvrir nos réalisations
             </Button>
           </div>
-        </div>
-      </div>
 
-      {/* Stats Pill - Bottom Right */}
-      <div className="hero-anim absolute bottom-8 right-8 hidden md:flex items-center gap-6 px-6 py-3 rounded-full glass">
-        {['Devis Gratuit', 'CEE Éligible', 'Zone IDF'].map((stat, i) => (
-          <span key={stat} className="font-mono-brand text-xs text-paper/70 flex items-center gap-3">
-            {i > 0 && <span className="w-px h-4 bg-paper/20" />}
-            {stat}
-          </span>
-        ))}
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-        <span className="w-2 h-2 bg-safety rounded-full pulse-dot" />
-        <span className="font-mono-brand text-[8px] sm:text-[10px] text-paper/40 tracking-widest uppercase">Défiler</span>
-      </div>
-    </section>
-  );
-}
-
-/* ═══════════  FEATURES  ═══════════ */
-
-function DiagnosticShuffler() {
-  const [active, setActive] = useState(0);
-  const labels = ['Ouverture de murs', 'Menuiserie & isolation', 'Peinture & revêtements'];
-
-  useEffect(() => {
-    const timer = setInterval(() => setActive((p) => (p + 1) % labels.length), 3000);
-    return () => clearInterval(timer);
-  }, []);
-
-  return (
-    <div className="bg-white rounded-card card-shadow border border-navy/10 p-8 flex flex-col h-full">
-      {/* Shuffling cards */}
-      <div className="relative h-40 mb-6">
-        {labels.map((label, i) => {
-          const offset = (i - active + labels.length) % labels.length;
-          return (
-            <div
-              key={label}
-              className="absolute top-0 left-0 right-0 bg-paper-dark rounded-2xl px-5 py-4 border border-navy/10 transition-all"
-              style={{
-                transform: `translateY(${offset * 16}px) scale(${1 - offset * 0.04})`,
-                zIndex: labels.length - offset,
-                opacity: offset === 0 ? 1 : 0.6 - offset * 0.15,
-                transition: 'all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)',
-              }}
-            >
-              <span className="font-mono-brand text-xs text-navy/60 block mb-1">INSPECTION {String(i + 1).padStart(2, '0')}</span>
-              <span className="font-heading font-semibold text-charcoal text-sm">{label}</span>
-            </div>
-          );
-        })}
-      </div>
-      <h3 className="font-heading font-bold text-charcoal text-xl mb-2">Maçonnerie Générale</h3>
-      <p className="text-charcoal/60 text-sm leading-relaxed">Gros œuvre et second œuvre conformes aux normes, exécutés avec précision.</p>
-    </div>
-  );
-}
-
-function TelemetryTypewriter() {
-  const messages = [
-    'Audit thermique en cours...',
-    'Pont thermique détecté : façade nord',
-    'Solution CEE identifiée : ITE éligible',
-    'Économies projetées : -38 % / an',
-    'Dossier MaPrimeRénov\' : prêt à soumettre',
-  ];
-  const [lines, setLines] = useState([]);
-  const [charIndex, setCharIndex] = useState(0);
-  const [msgIndex, setMsgIndex] = useState(0);
-
-  useEffect(() => {
-    if (msgIndex >= messages.length) {
-      const timer = setTimeout(() => {
-        setLines([]);
-        setCharIndex(0);
-        setMsgIndex(0);
-      }, 2500);
-      return () => clearTimeout(timer);
-    }
-
-    const currentMsg = messages[msgIndex];
-    if (charIndex < currentMsg.length) {
-      const timer = setTimeout(() => setCharIndex(charIndex + 1), 30);
-      return () => clearTimeout(timer);
-    } else {
-      const timer = setTimeout(() => {
-        setLines((prev) => [...prev, currentMsg]);
-        setCharIndex(0);
-        setMsgIndex(msgIndex + 1);
-      }, 800);
-      return () => clearTimeout(timer);
-    }
-  }, [charIndex, msgIndex]);
-
-  const currentTyping = msgIndex < messages.length ? messages[msgIndex].slice(0, charIndex) : '';
-
-  return (
-    <div className="bg-white rounded-card card-shadow border border-navy/10 p-8 flex flex-col h-full">
-      <div className="flex items-center gap-2 mb-4">
-        <span className="w-2 h-2 bg-safety rounded-full pulse-dot"></span>
-        <span className="font-mono-brand text-xs text-safety font-medium">Live Diagnostic</span>
-      </div>
-      <div className="bg-charcoal rounded-2xl p-5 h-44 shrink-0 overflow-hidden mb-6">
-        <div className="font-mono-brand text-xs text-paper/60 space-y-1.5">
-          {lines.map((line, i) => (
-            <p key={i} className="text-concrete-light/80">→ {line}</p>
-          ))}
-          {msgIndex < messages.length && (
-            <p className="text-paper">
-              → {currentTyping}<span className="blink-cursor text-safety">█</span>
-            </p>
-          )}
-        </div>
-      </div>
-      <h3 className="font-heading font-bold text-charcoal text-xl mb-2">Rénovation Énergétique</h3>
-      <p className="text-charcoal/60 text-sm leading-relaxed">Éligible CEE & MaPrimeRénov'. Économies garanties.</p>
-    </div>
-  );
-}
-
-function CursorScheduler() {
-  const days = ['L', 'M', 'M', 'J', 'V', 'S', 'D'];
-  const tasks = ['Démolition', 'Maçonnerie', 'Second Œuvre', 'Finitions'];
-  const [activeTask, setActiveTask] = useState(0);
-  const [validated, setValidated] = useState(false);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveTask((prev) => {
-        if (prev >= tasks.length - 1) {
-          setValidated(true);
-          setTimeout(() => {
-            setValidated(false);
-            setActiveTask(0);
-          }, 2000);
-          return prev;
-        }
-        return prev + 1;
-      });
-    }, 2000);
-    return () => clearInterval(timer);
-  }, []);
-
-  return (
-    <div className="bg-white rounded-card card-shadow border border-navy/10 p-8 flex flex-col h-full">
-      {/* Grid */}
-      <div className="mb-6">
-        <div className="grid grid-cols-7 gap-1 mb-3">
-          {days.map((d, i) => (
-            <span key={i} className="font-mono-brand text-[10px] text-charcoal/40 text-center">{d}</span>
-          ))}
-        </div>
-        <div className="grid grid-cols-7 gap-1">
-          {Array.from({ length: 28 }, (_, i) => {
-            const taskIndex = Math.floor(i / 7);
-            const isActive = taskIndex === activeTask;
-            return (
-              <div
-                key={i}
-                className={`h-6 rounded transition-all duration-500 ${
-                  isActive ? 'bg-safety/80' : 'bg-paper-dark'
-                }`}
-              />
-            );
-          })}
-        </div>
-        <div className="flex flex-wrap gap-2 mt-3">
-          {tasks.map((task, i) => (
-            <span
-              key={task}
-              className={`font-mono-brand text-[10px] px-2 py-0.5 rounded-full transition-all duration-300 ${
-                i === activeTask ? 'bg-safety text-paper' : 'bg-paper-dark text-charcoal/40'
-              }`}
-            >
-              {task}
-            </span>
-          ))}
-        </div>
-      </div>
-      {validated && (
-        <div className="mb-4 px-3 py-2 bg-navy/10 rounded-xl text-center">
-          <span className="font-mono-brand text-xs text-navy font-medium">✓ Planning validé</span>
-        </div>
-      )}
-      <h3 className="font-heading font-bold text-charcoal text-xl mb-2 mt-auto">Coordination de Chantier</h3>
-      <p className="text-charcoal/60 text-sm leading-relaxed">Un interlocuteur unique pour l'ensemble de vos travaux, de A à Z.</p>
-    </div>
-  );
-}
-
-function Features() {
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.fromTo('.feature-card',
-        { y: 60, opacity: 0 },
-        {
-          y: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: 'power3.out',
-          scrollTrigger: { trigger: sectionRef.current, start: 'top 75%' }
-        }
-      );
-    }, sectionRef);
-    return () => ctx.revert();
-  }, []);
-
-  return (
-    <section ref={sectionRef} className="section-padding bg-paper">
-      <div className="text-center mb-16">
-        <span className="font-mono-brand text-xs text-navy/60 tracking-widest uppercase">Nos Expertises</span>
-        <h2 className="font-heading font-bold text-charcoal mt-3" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}>
-          Trois piliers d'excellence
-        </h2>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        <div className="feature-card"><DiagnosticShuffler /></div>
-        <div className="feature-card"><TelemetryTypewriter /></div>
-        <div className="feature-card"><CursorScheduler /></div>
-      </div>
-    </section>
-  );
-}
-
-/* ═══════════  PHILOSOPHY  ═══════════ */
-function Philosophy() {
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const words = sectionRef.current.querySelectorAll('.word');
-      gsap.fromTo(words,
-        { opacity: 0, y: 20 },
-        {
-          opacity: 1, y: 0, duration: 0.6, stagger: 0.08, ease: 'power3.out',
-          scrollTrigger: { trigger: sectionRef.current, start: 'top 60%' }
-        }
-      );
-    }, sectionRef);
-    return () => ctx.revert();
-  }, []);
-
-  const statement2 = 'Chez Vertex Group, nous nous concentrons sur : la';
-  const statement2Words = statement2.split(' ');
-
-  return (
-    <section ref={sectionRef} className="relative py-32 lg:py-48 bg-charcoal overflow-hidden">
-      {/* Concrete texture overlay */}
-      <div className="absolute inset-0 opacity-[0.06]" style={{
-        backgroundImage: 'url("/images/hero-renovation.png")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }} />
-
-      <div className="relative z-10 max-w-5xl mx-auto px-[8vw] text-center">
-        <p className="text-paper/45 text-lg sm:text-xl leading-relaxed mb-8">
-          La plupart des chantiers se concentrent sur : la rapidité d'exécution.
-        </p>
-        <div className="w-16 h-px bg-safety mx-auto mb-8" />
-        <p className="font-heading font-medium tracking-tight text-paper leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}>
-          {statement2Words.map((w, i) => (
-            <span key={i} className="word inline-block mr-[0.3em]">{w}</span>
-          ))}
-          <span className="word inline-block text-safety font-bold mr-[0.3em]">durabilité</span>
-          <span className="word inline-block">de chaque ouvrage.</span>
-        </p>
-      </div>
-    </section>
-  );
-}
-
-/* ═══════════  PROTOCOL (Sticky Stacker)  ═══════════ */
-function Protocol() {
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const cards = gsap.utils.toArray('.protocol-card');
-      cards.forEach((card, i) => {
-        if (i < cards.length - 1) {
-          ScrollTrigger.create({
-            trigger: card,
-            start: 'top top',
-            pin: true,
-            pinSpacing: false,
-            endTrigger: cards[cards.length - 1],
-            end: 'top top',
-          });
-          gsap.to(card, {
-            scale: 0.90,
-            opacity: 0,
-            scrollTrigger: {
-              trigger: cards[i + 1],
-              start: 'top bottom',
-              end: 'top top',
-              scrub: true,
-            }
-          });
-        }
-      });
-    }, sectionRef);
-    return () => ctx.revert();
-  }, []);
-
-  const protocols = [
-    {
-      num: '01',
-      title: 'Diagnostic & Étude',
-      desc: 'Visite sur site, analyse technique, étude de faisabilité. Identification précise de vos besoins avant tout engagement.',
-    },
-    {
-      num: '02',
-      title: 'Devis & Planification',
-      desc: 'Chiffrage détaillé, phasage des travaux, sélection des matériaux. Transparence totale sur les coûts et les délais.',
-    },
-    {
-      num: '03',
-      title: 'Exécution & Réception',
-      desc: 'Chantier maîtrisé, contrôles qualité à chaque étape. Livraison dans les délais convenus, avec garanties complètes.',
-    },
-  ];
-
-  return (
-    <section ref={sectionRef} className="relative">
-      {protocols.map((p, i) => (
-        <div key={p.num} className="protocol-card h-screen bg-navy-dark flex items-center overflow-hidden">
-          <div className="w-full max-w-6xl mx-auto px-[8vw] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Canvas / Visual */}
-            <div className="hidden lg:flex items-center justify-center">
-              <ProtocolVisual index={i} />
-            </div>
-            {/* Content */}
-            <div className="text-paper">
-              <span className="font-mono-brand text-xs text-concrete/60 tracking-widest">{p.num}</span>
-              <h3 className="font-heading font-bold text-3xl lg:text-4xl mt-3 mb-6">{p.title}</h3>
-              <p className="text-paper/60 text-lg leading-relaxed max-w-md">{p.desc}</p>
-            </div>
+          <div className="hero-anim mt-8 flex flex-wrap gap-3">
+            {['Rénovation tous corps d’état', 'Interlocuteur unique', 'Matériaux premium'].map((item) => (
+              <span
+                key={item}
+                className="inline-flex items-center gap-2 rounded-full border border-charcoal/10 bg-white/60 px-4 py-2 text-sm text-charcoal backdrop-blur-sm shadow-sm"
+              >
+                <Check size={14} className="text-safety" />
+                {item}
+              </span>
+            ))}
           </div>
+
+          <div className="hero-anim mt-10 grid max-w-4xl grid-cols-1 md:grid-cols-3 gap-4">
+            {renovationHighlights.map((item) => (
+              <div key={item.label} className="rounded-2xl border border-concrete-light bg-white/80 p-6 backdrop-blur-md card-shadow hover:-translate-y-1 transition-transform duration-500">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-safety/10 text-safety mb-4">
+                  <item.icon size={22} strokeWidth={1.5} />
+                </div>
+                <h3 className="font-heading text-xl font-medium text-charcoal">{item.label}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-charcoal/60">
+                  Une équipe dédiée pour sublimer vos espaces avec précision et élégance.
+                </p>
+              </div>
+            ))}
+          </div>
+
         </div>
-      ))}
+      </div>
     </section>
   );
 }
 
-function ProtocolVisual({ index }) {
-  const canvasRef = useRef(null);
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    const size = 400;
-    canvas.width = size;
-    canvas.height = size;
-    let frame = 0;
-    let animId;
-
-    const draw = () => {
-      ctx.clearRect(0, 0, size, size);
-      frame++;
-
-      if (index === 0) {
-        // Rotating concentric rings
-        const cx = size / 2, cy = size / 2;
-        for (let r = 3; r > 0; r--) {
-          ctx.beginPath();
-          ctx.arc(cx, cy, 40 + r * 45, 0, Math.PI * 2);
-          ctx.strokeStyle = r === 2 ? '#EA580C' : 'rgba(148,163,184,0.4)';
-          ctx.lineWidth = r === 2 ? 2 : 1;
-          ctx.stroke();
-        }
-        // Tick marks
-        for (let i = 0; i < 36; i++) {
-          const angle = (i * 10 + frame * 0.3) * Math.PI / 180;
-          const r1 = 155, r2 = 170;
-          ctx.beginPath();
-          ctx.moveTo(cx + Math.cos(angle) * r1, cy + Math.sin(angle) * r1);
-          ctx.lineTo(cx + Math.cos(angle) * r2, cy + Math.sin(angle) * r2);
-          ctx.strokeStyle = 'rgba(148,163,184,0.3)';
-          ctx.lineWidth = 1;
-          ctx.stroke();
-        }
-      } else if (index === 1) {
-        // Scanning laser on dot grid
-        const cols = 14, rows = 9;
-        const gap = size / (cols + 1);
-        const laserX = ((frame * 2) % size);
-        // Grid lines
-        for (let x = 1; x <= cols; x++) {
-          ctx.beginPath();
-          ctx.moveTo(x * gap, 0);
-          ctx.lineTo(x * gap, size);
-          ctx.strokeStyle = 'rgba(242,240,233,0.06)';
-          ctx.stroke();
-        }
-        for (let y = 1; y <= rows; y++) {
-          ctx.beginPath();
-          ctx.moveTo(0, y * (size / (rows + 1)));
-          ctx.lineTo(size, y * (size / (rows + 1)));
-          ctx.strokeStyle = 'rgba(242,240,233,0.06)';
-          ctx.stroke();
-        }
-        // Dots
-        for (let x = 1; x <= cols; x++) {
-          for (let y = 1; y <= rows; y++) {
-            const dx = x * gap, dy = y * (size / (rows + 1));
-            const dist = Math.abs(dx - laserX);
-            const glow = dist < 30;
-            ctx.beginPath();
-            ctx.arc(dx, dy, glow ? 4 : 2, 0, Math.PI * 2);
-            ctx.fillStyle = glow ? '#EA580C' : 'rgba(148,163,184,0.3)';
-            ctx.fill();
-          }
-        }
-        // Laser line
-        ctx.beginPath();
-        ctx.moveTo(laserX, 0);
-        ctx.lineTo(laserX, size);
-        ctx.strokeStyle = 'rgba(234,88,12,0.4)';
-        ctx.lineWidth = 2;
-        ctx.stroke();
-      } else {
-        // Leveling Tool (Niveau à bulle)
-        const cx = size / 2, cy = size / 2;
-        const width = 200, height = 60, radius = 30;
-        
-        // Draw the body of the level
-        ctx.beginPath();
-        ctx.roundRect(cx - width/2, cy - height/2, width, height, radius);
-        ctx.strokeStyle = 'rgba(148,163,184,0.3)';
-        ctx.lineWidth = 4;
-        ctx.stroke();
-
-        // Draw the inner glass tube
-        const tubeWidth = 100, tubeHeight = 30;
-        ctx.beginPath();
-        ctx.roundRect(cx - tubeWidth/2, cy - tubeHeight/2, tubeWidth, tubeHeight, 15);
-        ctx.fillStyle = 'rgba(242,240,233,0.02)';
-        ctx.fill();
-        ctx.strokeStyle = 'rgba(148,163,184,0.1)';
-        ctx.lineWidth = 2;
-        ctx.stroke();
-
-        // Draw the structural markers on the tube
-        ctx.beginPath();
-        ctx.moveTo(cx - 20, cy - tubeHeight/2);
-        ctx.lineTo(cx - 20, cy + tubeHeight/2);
-        ctx.moveTo(cx + 20, cy - tubeHeight/2);
-        ctx.lineTo(cx + 20, cy + tubeHeight/2);
-        ctx.strokeStyle = 'rgba(148,163,184,0.5)';
-        ctx.lineWidth = 2;
-        ctx.stroke();
-
-        // Animate the bubble
-        // Bubble moves based on a sine wave but eventually centers (simulating stabilization)
-        const stabilizationPhase = Math.min(frame * 0.02, 1); // 0 to 1
-        const sway = Math.sin(frame * 0.05) * 40 * (1 - stabilizationPhase); 
-        // add a tiny continuous micro-jitter so it feels "live"
-        const jitter = Math.sin(frame * 0.1) * 2;
-        
-        const bubbleX = cx + sway + jitter;
-        
-        ctx.beginPath();
-        ctx.arc(bubbleX, cy, 10, 0, Math.PI * 2);
-        ctx.fillStyle = '#EA580C';
-        ctx.shadowColor = '#EA580C';
-        ctx.shadowBlur = 10;
-        ctx.fill();
-        ctx.shadowBlur = 0;
-      }
-
-      animId = requestAnimationFrame(draw);
-    };
-
-    draw();
-    return () => cancelAnimationFrame(animId);
-  }, [index]);
-
-  return <canvas ref={canvasRef} className="w-full max-w-[400px] aspect-square rounded-3xl" />;
-}
-
-/* ═══════════  GET STARTED  ═══════════ */
-function GetStarted() {
+function ServiceOverview() {
   const sectionRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
-        '.gs-anim',
-        { y: 30, opacity: 0 },
+        '.overview-anim',
+        { y: 40, opacity: 0 },
         {
           y: 0,
           opacity: 1,
           duration: 0.8,
           stagger: 0.1,
           ease: 'power3.out',
+          scrollTrigger: { trigger: sectionRef.current, start: 'top 75%' },
+        }
+      );
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
+  return (
+    <section ref={sectionRef} className="section-padding bg-paper">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 xl:grid-cols-[1.2fr_0.8fr] gap-8">
+        <div className="overview-anim bg-white rounded-card card-shadow border border-concrete-light p-8 lg:p-10">
+          <span className="font-mono-brand text-xs tracking-[0.25em] uppercase text-navy/50">Travaux Tous Corps d&apos;État</span>
+          <h2 className="font-heading font-bold text-charcoal mt-4" style={{ fontSize: 'clamp(2rem, 4vw, 3.3rem)' }}>
+            Une seule équipe pour tous vos travaux
+          </h2>
+          <p className="mt-5 text-charcoal/75 leading-relaxed">
+            De la conception à la réalisation, nous prenons en charge l’ensemble de vos travaux de rénovation,
+            d’aménagement et de construction.
+          </p>
+          <p className="mt-4 text-charcoal/75 leading-relaxed">
+            Grâce à notre expertise en tous corps d’état, nous coordonnons chaque étape du chantier afin de vous
+            garantir un résultat de qualité, dans le respect des délais et de votre budget.
+          </p>
+          <p className="mt-4 text-charcoal/75 leading-relaxed">
+            Notre objectif : vous offrir un interlocuteur unique pour simplifier la gestion de votre projet et assurer
+            une exécution fluide et professionnelle.
+          </p>
+
+          <h3 className="mt-8 font-heading font-bold text-charcoal text-2xl">Nos prestations</h3>
+          <p className="mt-4 text-charcoal/75 leading-relaxed">
+            Nous intervenons sur tous types de projets professionnels ou personnels, qu’il s’agisse de rénovation
+            complète, d’aménagement intérieur ou de travaux spécifiques, notamment :
+          </p>
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-3">
+            {trades.map((trade) => (
+              <div key={trade} className="flex items-start gap-3 rounded-2xl bg-paper-dark px-4 py-3 border border-concrete-light">
+                <span className="mt-1 w-2 h-2 rounded-full bg-safety flex-shrink-0" />
+                <span className="text-sm text-charcoal">{trade}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="overview-anim">
+          <div className="rounded-card bg-paper-dark border border-concrete-light text-charcoal p-8 lg:p-10 card-shadow h-full">
+            <span className="font-mono-brand text-xs tracking-[0.25em] uppercase text-charcoal/50">
+              Pourquoi nous choisir ?
+            </span>
+            <div className="mt-8 space-y-5">
+              {whyChooseItems.map((item) => (
+                <div key={item} className="flex items-start gap-4 border-b border-charcoal/10 pb-5 last:border-b-0 last:pb-0">
+                  <Check size={20} className="mt-0.5 text-safety flex-shrink-0" strokeWidth={2} />
+                  <span className="text-charcoal/80 text-lg leading-tight">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function EnergySection() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        '.energy-anim',
+        { y: 36, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          stagger: 0.1,
+          ease: 'power3.out',
+          scrollTrigger: { trigger: sectionRef.current, start: 'top 75%' },
+        }
+      );
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
+  return (
+    <section ref={sectionRef} className="section-padding bg-[#eef3f7]">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-8 items-stretch">
+        <div className="energy-anim relative overflow-hidden rounded-card min-h-[420px] card-shadow">
+          <img src="/images/hero-renovation.png" alt="Rénovation énergétique et certificats CEE" className="absolute inset-0 w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-paper via-paper/60 to-transparent" />
+          <div className="relative z-10 flex h-full flex-col justify-end p-8 lg:p-10 text-charcoal">
+            <span className="font-mono-brand text-xs tracking-[0.25em] uppercase text-safety" style={{ opacity: 0.9 }}>
+              Rénovation Énergétique
+            </span>
+            <h2 className="font-heading font-bold mt-3" style={{ fontSize: 'clamp(2rem, 4vw, 3.1rem)' }}>
+              Réduisez vos coûts énergétiques tout en finançant vos travaux
+            </h2>
+            <p className="mt-4 max-w-lg text-charcoal/80 leading-relaxed">
+              CEE : transformez vos travaux en économies durables.
+            </p>
+          </div>
+        </div>
+
+        <div className="energy-anim flex flex-col gap-6">
+          <div className="bg-white rounded-card border border-concrete-light card-shadow p-8 lg:p-10">
+            <span className="font-mono-brand text-xs tracking-[0.25em] uppercase text-navy/50">Certificats d&apos;Économies d&apos;Énergie</span>
+            <h3 className="font-heading font-bold text-charcoal text-3xl mt-4">Réduisez vos coûts énergétiques tout en finançant vos travaux</h3>
+            <p className="mt-5 text-charcoal/75 leading-relaxed">
+              Nous accompagnons les entreprises et acteurs du secteur tertiaire dans l’obtention de primes liées aux
+              Certificats d’Économies d’Énergie (CEE).
+            </p>
+            <p className="mt-4 text-charcoal/75 leading-relaxed">
+              Ce dispositif permet de financer une partie de vos travaux d’amélioration énergétique tout en diminuant
+              durablement vos consommations.
+            </p>
+            <p className="mt-4 text-charcoal/75 leading-relaxed">
+              Isolation, modernisation des équipements ou optimisation des systèmes énergétiques : ces améliorations
+              permettent de réaliser de véritables économies sur vos factures d’énergie tout en valorisant vos
+              bâtiments.
+            </p>
+            <p className="mt-4 text-charcoal/75 leading-relaxed">
+              Notre équipe vous accompagne de l’étude jusqu’à l’obtention des primes, afin de simplifier toutes les
+              démarches et optimiser les financements liés au dispositif CEE.
+            </p>
+            <p className="mt-4 text-charcoal/75 leading-relaxed">
+              CEE : transformez vos travaux en économies durables.
+            </p>
+          </div>
+
+          <div className="rounded-card border border-safety/20 bg-safety/5 text-charcoal p-8 lg:p-10 card-shadow">
+            <span className="font-mono-brand text-xs tracking-[0.25em] uppercase text-safety">Primes &amp; Financement</span>
+            <h3 className="font-heading font-bold text-2xl mt-4">Simulation personnalisée</h3>
+            <p className="mt-4 text-charcoal/80 leading-relaxed">
+              Nous réalisons une simulation personnalisée afin d’estimer :
+            </p>
+            <div className="mt-6 space-y-3">
+              {fundingItems.map((item) => (
+                <div key={item} className="flex items-center gap-3 rounded-xl bg-white px-4 py-3 border border-concrete-light">
+                  <BadgeEuro size={16} className="text-safety" />
+                  <span className="text-sm text-charcoal">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Sectors() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        '.sector-anim',
+        { y: 30, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.7,
+          stagger: 0.08,
+          ease: 'power3.out',
           scrollTrigger: { trigger: sectionRef.current, start: 'top 80%' },
         }
       );
     }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
+  return (
+    <section ref={sectionRef} className="section-padding bg-charcoal text-paper overflow-hidden">
+      <div className="max-w-6xl mx-auto">
+        <div className="sector-anim max-w-3xl">
+          <span className="font-mono-brand text-xs tracking-[0.25em] uppercase text-paper" style={{ opacity: 0.4 }}>
+            Champs d&apos;intervention
+          </span>
+          <h2 className="font-heading font-bold mt-4" style={{ fontSize: 'clamp(2rem, 4vw, 3.4rem)' }}>
+            Des espaces de vie aux environnements professionnels
+          </h2>
+          <p className="mt-5 text-paper leading-relaxed" style={{ opacity: 0.68 }}>
+            Nous intervenons aussi bien sur des appartements, maisons et projets de rénovation intérieure que sur des
+            bureaux, hôtels, commerces ou salons. Notre approche reste celle d’une entreprise capable de coordonner
+            tous les corps d’état avec un seul interlocuteur.
+          </p>
+        </div>
+
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {sectors.map((sector) => (
+            <div key={sector.label} className="sector-anim rounded-3xl border border-paper/10 bg-paper/5 p-6 backdrop-blur-sm">
+              <div className="w-12 h-12 rounded-2xl bg-safety/15 text-safety flex items-center justify-center">
+                <sector.icon size={22} />
+              </div>
+              <p className="mt-4 font-heading font-semibold text-xl">{sector.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Protocol() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        '.protocol-anim',
+        { y: 36, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          stagger: 0.12,
+          ease: 'power3.out',
+          scrollTrigger: { trigger: sectionRef.current, start: 'top 75%' },
+        }
+      );
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
+  const steps = [
+    {
+      number: '01',
+      title: 'Étude du projet',
+      text: 'Chaque projet est étudié avec attention afin de proposer des solutions adaptées à vos besoins et à votre budget.',
+    },
+    {
+      number: '02',
+      title: 'Coordination des métiers',
+      text: 'Notre équipe assure la coordination des différents corps de métier pour garantir un chantier organisé, sécurisé et conforme aux standards de qualité.',
+    },
+    {
+      number: '03',
+      title: 'Réalisation fluide',
+      text: 'Que ce soit pour moderniser un appartement, rénover un local commercial ou transformer un espace de vie, nous mettons notre savoir-faire au service de votre projet.',
+    },
+  ];
+
+  return (
+    <section ref={sectionRef} className="section-padding bg-paper">
+      <div className="max-w-6xl mx-auto">
+        <div className="protocol-anim max-w-3xl">
+          <span className="font-mono-brand text-xs tracking-[0.25em] uppercase text-navy/50">Un accompagnement complet</span>
+          <h2 className="font-heading font-bold text-charcoal mt-4" style={{ fontSize: 'clamp(2rem, 4vw, 3.2rem)' }}>
+            Un accompagnement complet
+          </h2>
+          <p className="mt-5 text-charcoal/75 leading-relaxed">
+            Chaque projet est étudié avec attention afin de proposer des solutions adaptées à vos besoins et à votre
+            budget.
+          </p>
+          <p className="mt-4 text-charcoal/75 leading-relaxed">
+            Notre équipe assure la coordination des différents corps de métier pour garantir un chantier organisé,
+            sécurisé et conforme aux standards de qualité.
+          </p>
+          <p className="mt-4 text-charcoal/75 leading-relaxed">
+            Que ce soit pour moderniser un appartement, rénover un local commercial ou transformer un espace de vie,
+            nous mettons notre savoir-faire au service de votre projet.
+          </p>
+        </div>
+
+        <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {steps.map((step) => (
+            <div key={step.number} className="protocol-anim rounded-card border border-concrete-light bg-white p-8 card-shadow">
+              <span className="font-mono-brand text-xs text-safety tracking-[0.25em]">{step.number}</span>
+              <h3 className="font-heading font-bold text-charcoal text-2xl mt-4">{step.title}</h3>
+              <p className="mt-4 text-charcoal/70 leading-relaxed">{step.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function GetStarted() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        '.cta-anim',
+        { y: 30, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.75,
+          stagger: 0.08,
+          ease: 'power3.out',
+          scrollTrigger: { trigger: sectionRef.current, start: 'top 82%' },
+        }
+      );
+    }, sectionRef);
+
     return () => ctx.revert();
   }, []);
 
   return (
     <section ref={sectionRef} className="bg-navy-dark section-padding text-center">
       <div className="max-w-3xl mx-auto">
-        <h2 className="gs-anim font-heading font-medium tracking-tight text-paper leading-tight mb-6" style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)' }}>
-          Votre projet mérite une <span className="text-safety font-bold">fondation solide.</span>
+        <h2 className="cta-anim font-heading font-medium tracking-tight text-paper leading-tight" style={{ fontSize: 'clamp(2.4rem, 5vw, 4.5rem)' }}>
+          Votre projet mérite un <span className="text-safety font-bold">interlocuteur unique</span>
         </h2>
-        <p className="gs-anim text-paper/50 text-lg mb-10">
-          Contactez-nous pour une étude gratuite et sans engagement.
+        <p className="cta-anim mt-6 text-paper text-lg leading-relaxed" style={{ opacity: 0.55 }}>
+          Travaux tous corps d’état, rénovation intérieure ou amélioration énergétique : nous vous accompagnons de A à Z.
         </p>
-        <div className="gs-anim">
+        <div className="cta-anim mt-10">
           <Button to="/contact" size="xl">
-            Demander un Devis Gratuit →
+            Parler de votre projet <ArrowRight size={18} className="ml-2" />
           </Button>
         </div>
-        <p className="gs-anim font-mono-brand text-xs text-paper/30 mt-6 tracking-wide">
-          Réponse sous 24h · Devis gratuit · Sans engagement
+        <p className="cta-anim font-mono-brand text-xs text-paper mt-6 tracking-wide" style={{ opacity: 0.3 }}>
+          Réponse rapide · Étude personnalisée · Devis gratuit
         </p>
       </div>
     </section>
   );
 }
 
-/* ═══════════  HOME PAGE  ═══════════ */
 export default function Home() {
   return (
     <>
       <Hero />
-      <Features />
-      <Philosophy />
+      <ServiceOverview />
+      <EnergySection />
+      <Sectors />
       <Protocol />
       <CertBar />
       <GetStarted />

@@ -11,7 +11,7 @@ export default function Footer() {
               <img src="/logo-w.png" alt="Vertex Group" className="h-20 w-auto object-contain drop-shadow-sm" />
             </Link>
             <p className="font-heading font-medium tracking-tight text-paper/50 text-lg">
-              Bâtisseurs d'excellence en Île-de-France.
+              Experts en rénovation intérieure et aménagement.
             </p>
             <div className="flex items-center gap-2 font-mono-brand text-xs text-paper/40">
               <span className="w-2 h-2 bg-green-400 rounded-full status-dot inline-block"></span>

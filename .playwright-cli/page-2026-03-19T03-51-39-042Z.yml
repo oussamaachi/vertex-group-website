@@ -1,0 +1,138 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - link "Vertex Group" [ref=e5]:
+      - /url: /
+      - img "Vertex Group" [ref=e7]
+    - button "Menu" [ref=e8]:
+      - img [ref=e9]
+  - generic:
+    - generic:
+      - link "Services":
+        - /url: /services
+      - generic:
+        - link "Travaux Tous Corps d’État":
+          - /url: /services/maconnerie-generale
+        - link "Rénovation Énergétique":
+          - /url: /services/renovation-energetique
+        - link "Étanchéité & Toitures":
+          - /url: /services/etancheite-toitures
+        - link "Coordination de Chantier":
+          - /url: /services/coordination-chantier
+        - link "Fourniture de Matériaux":
+          - /url: /services/fourniture-materiaux
+    - generic:
+      - link "À Propos":
+        - /url: /a-propos
+    - generic:
+      - link "Contact":
+        - /url: /contact
+    - link "Devis Gratuit":
+      - /url: /contact
+      - generic: Devis Gratuit
+  - main [ref=e10]:
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e16]: Contact
+        - heading "Parlons de votre projet." [level=1] [ref=e17]
+        - generic [ref=e18]:
+          - generic [ref=e19]:
+            - img [ref=e21]
+            - generic [ref=e24]:
+              - heading "Adresse" [level=4] [ref=e25]
+              - paragraph [ref=e26]:
+                - text: 28 Avenue des Pépinières
+                - text: 94260 Fresnes
+          - generic [ref=e27]:
+            - img [ref=e29]
+            - generic [ref=e32]:
+              - heading "Délai de réponse" [level=4] [ref=e33]
+              - generic [ref=e36]: Réponse sous 24h
+          - generic [ref=e37]:
+            - img [ref=e39]
+            - generic [ref=e41]:
+              - heading "Téléphone" [level=4] [ref=e42]
+              - paragraph [ref=e43]: +33 1 XX XX XX XX
+          - generic [ref=e44]:
+            - img [ref=e46]
+            - generic [ref=e49]:
+              - heading "Email" [level=4] [ref=e50]
+              - paragraph [ref=e51]: contact@vertex-group.fr
+        - paragraph [ref=e54]: "SIREN : 101 799 591"
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - generic [ref=e58]: Nom complet
+            - textbox "Votre nom" [ref=e59]
+          - generic [ref=e60]:
+            - generic [ref=e61]:
+              - generic [ref=e62]: Téléphone
+              - textbox "06 XX XX XX XX" [ref=e63]
+            - generic [ref=e64]:
+              - generic [ref=e65]: Email
+              - textbox "votre@email.fr" [ref=e66]
+          - generic [ref=e67]:
+            - generic [ref=e68]: Type de travaux
+            - combobox [ref=e69]:
+              - option "Sélectionnez un type" [selected]
+              - option "Maçonnerie"
+              - option "Rénovation Énergétique"
+              - option "Étanchéité"
+              - option "Coordination de Chantier"
+              - option "Fourniture de Matériaux"
+              - option "Autre"
+          - generic [ref=e70]:
+            - generic [ref=e71]: Description du projet
+            - textbox "Décrivez brièvement votre projet..." [ref=e72]
+          - button "Envoyer ma Demande" [ref=e73]:
+            - generic [ref=e75]:
+              - img [ref=e76]
+              - text: Envoyer ma Demande
+        - paragraph [ref=e79]: 28 Avenue des Pépinières, 94260 Fresnes · SIREN 101 799 591
+  - contentinfo [ref=e80]:
+    - generic [ref=e82]:
+      - generic [ref=e83]:
+        - link "Vertex Group" [ref=e84]:
+          - /url: /
+          - img "Vertex Group" [ref=e85]
+        - paragraph [ref=e86]: Bâtisseurs d'excellence en Île-de-France.
+        - generic [ref=e87]: Opérationnel · Disponible
+      - generic [ref=e89]:
+        - heading "Services" [level=4] [ref=e90]
+        - list [ref=e91]:
+          - listitem [ref=e92]:
+            - link "Maçonnerie Générale" [ref=e93]:
+              - /url: /services/maconnerie-generale
+          - listitem [ref=e94]:
+            - link "Rénovation Énergétique" [ref=e95]:
+              - /url: /services/renovation-energetique
+          - listitem [ref=e96]:
+            - link "Étanchéité & Toitures" [ref=e97]:
+              - /url: /services/etancheite-toitures
+          - listitem [ref=e98]:
+            - link "Coordination de Chantier" [ref=e99]:
+              - /url: /services/coordination-chantier
+          - listitem [ref=e100]:
+            - link "Fourniture Matériaux" [ref=e101]:
+              - /url: /services/fourniture-materiaux
+      - generic [ref=e102]:
+        - heading "Entreprise" [level=4] [ref=e103]
+        - list [ref=e104]:
+          - listitem [ref=e105]:
+            - link "À Propos" [ref=e106]:
+              - /url: /a-propos
+          - listitem [ref=e107]:
+            - link "Contact" [ref=e108]:
+              - /url: /contact
+      - generic [ref=e109]:
+        - heading "Légal" [level=4] [ref=e110]
+        - list [ref=e111]:
+          - listitem [ref=e112]:
+            - link "Mentions Légales" [ref=e113]:
+              - /url: /mentions-legales
+          - listitem [ref=e114]:
+            - link "Politique de Confidentialité" [ref=e115]:
+              - /url: /politique-de-confidentialite
+        - generic [ref=e116]:
+          - paragraph [ref=e117]: "Vertex Group · SIREN : 101 799 591"
+          - paragraph [ref=e118]: 28 Av. des Pépinières, 94260 Fresnes
+    - paragraph [ref=e120]: © 2026 Vertex Group · 28 Av. des Pépinières, 94260 Fresnes · SIREN 101 799 591

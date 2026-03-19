@@ -8,7 +8,27 @@
   }
 }
 
-/* ─── Noise Overlay ─── */
+@layer utilities {
+  .text-paper\/30 { color: rgba(249, 250, 249, 0.3) !important; }
+  .text-paper\/40 { color: rgba(249, 250, 249, 0.4) !important; }
+  .text-paper\/45 { color: rgba(249, 250, 249, 0.45) !important; }
+  .text-paper\/50 { color: rgba(249, 250, 249, 0.5) !important; }
+  .text-paper\/55 { color: rgba(249, 250, 249, 0.55) !important; }
+  .text-paper\/60 { color: rgba(249, 250, 249, 0.6) !important; }
+  .text-paper\/65 { color: rgba(249, 250, 249, 0.65) !important; }
+  .text-paper\/68 { color: rgba(249, 250, 249, 0.68) !important; }
+  .text-paper\/70 { color: rgba(249, 250, 249, 0.7) !important; }
+  .text-paper\/72 { color: rgba(249, 250, 249, 0.72) !important; }
+  .text-paper\/75 { color: rgba(249, 250, 249, 0.75) !important; }
+  .text-paper\/78 { color: rgba(249, 250, 249, 0.78) !important; }
+  .text-paper\/80 { color: rgba(249, 250, 249, 0.8) !important; }
+  .text-paper\/90 { color: rgba(249, 250, 249, 0.9) !important; }
+  .text-paper\/92 { color: rgba(249, 250, 249, 0.92) !important; }
+  .hover\:text-paper\/80:hover { color: rgba(249, 250, 249, 0.8) !important; }
+  .hover\:text-paper\/90:hover { color: rgba(249, 250, 249, 0.9) !important; }
+}
+
+/* Noise Overlay */
 body::before {
   content: '';
   position: fixed;
@@ -19,7 +39,7 @@ body::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
-/* ─── Base ─── */
+/* Base */
 *,
 *::before,
 *::after {
@@ -34,8 +54,8 @@ html {
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  background-color: #F8FAFC;
-  color: #0F172A;
+  background-color: #FAF9F6;
+  color: #22241F;
   overflow-x: hidden;
   cursor: none;
 }
@@ -44,12 +64,12 @@ a, button, input, textarea, select {
   cursor: none;
 }
 
-/* ─── Custom Cursor ─── */
+/* Custom Cursor */
 .cursor-dot {
   position: fixed;
   width: 8px;
   height: 8px;
-  background: #EA580C;
+  background: #858456;
   border-radius: 50%;
   pointer-events: none;
   z-index: 99999;
@@ -61,7 +81,7 @@ a, button, input, textarea, select {
   position: fixed;
   width: 32px;
   height: 32px;
-  border: 1.5px solid #0B1120;
+  border: 1.5px solid #22241F;
   border-radius: 50%;
   pointer-events: none;
   z-index: 99998;
@@ -74,10 +94,10 @@ a, button, input, textarea, select {
 .cursor-ring.hover {
   width: 48px;
   height: 48px;
-  border-color: #EA580C;
+  border-color: #858456;
 }
 
-/* ─── Typography Utilities ─── */
+/* Typography Utilities */
 .font-heading {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
@@ -90,7 +110,7 @@ a, button, input, textarea, select {
   font-family: 'IBM Plex Mono', monospace;
 }
 
-/* ─── Section Utilities ─── */
+/* Section Utilities */
 .section-padding {
   padding: 6rem 8vw;
 }
@@ -101,7 +121,7 @@ a, button, input, textarea, select {
   }
 }
 
-/* ─── Magnetic Button ─── */
+/* Magnetic Button */
 .btn-magnetic {
   position: relative;
   overflow: hidden;
@@ -129,7 +149,7 @@ a, button, input, textarea, select {
   z-index: 1;
 }
 
-/* ─── Link Hover Lift ─── */
+/* Link Hover Lift */
 .link-lift {
   transition: transform 0.3s ease;
 }
@@ -138,7 +158,7 @@ a, button, input, textarea, select {
   transform: translateY(-1px);
 }
 
-/* ─── Scroll Indicator ─── */
+/* Scroll Indicator */
 @keyframes pulse-dot {
   0%, 100% { opacity: 1; transform: scale(1); }
   50% { opacity: 0.5; transform: scale(1.3); }
@@ -148,7 +168,7 @@ a, button, input, textarea, select {
   animation: pulse-dot 2s ease-in-out infinite;
 }
 
-/* ─── Status Dot ─── */
+/* Status Dot */
 @keyframes status-pulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4); }
   50% { box-shadow: 0 0 0 6px rgba(74, 222, 128, 0); }
@@ -158,7 +178,7 @@ a, button, input, textarea, select {
   animation: status-pulse 2s ease-in-out infinite;
 }
 
-/* ─── Blinking Cursor ─── */
+/* Blinking Cursor */
 @keyframes blink {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
@@ -168,7 +188,7 @@ a, button, input, textarea, select {
   animation: blink 1s step-end infinite;
 }
 
-/* ─── Frosted Glass ─── */
+/* Frosted Glass */
 .glass {
   background: rgba(248, 250, 252, 0.6);
   backdrop-filter: blur(20px);
@@ -184,12 +204,12 @@ a, button, input, textarea, select {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* ─── Card Shadow ─── */
+/* Card Shadow */
 .card-shadow {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 8px 32px rgba(0, 0, 0, 0.06);
 }
 
-/* ─── Scrollbar ─── */
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -207,20 +227,23 @@ a, button, input, textarea, select {
   background: #475569;
 }
 
-/* ─── Mobile hide cursor ─── */
+/* Mobile hide cursor */
 @media (max-width: 768px) {
   body {
     cursor: auto;
   }
+
   a, button, input, textarea, select {
     cursor: auto;
   }
-  .cursor-dot, .cursor-ring {
+
+  .cursor-dot,
+  .cursor-ring {
     display: none !important;
   }
 }
 
-/* ─── Cookie Consent Slide Up ─── */
+/* Cookie Consent Slide Up */
 @keyframes slide-up {
   from {
     transform: translateY(100%);

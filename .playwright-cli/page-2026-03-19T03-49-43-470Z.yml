@@ -1,0 +1,152 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - link "Vertex Group" [ref=e5]:
+      - /url: /
+      - img "Vertex Group" [ref=e7]
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link "Services" [ref=e10]:
+          - /url: /services
+        - generic:
+          - generic:
+            - link "Travaux Tous Corps d’État":
+              - /url: /services/maconnerie-generale
+            - link "Rénovation Énergétique":
+              - /url: /services/renovation-energetique
+            - link "Étanchéité & Toitures":
+              - /url: /services/etancheite-toitures
+            - link "Coordination de Chantier":
+              - /url: /services/coordination-chantier
+            - link "Fourniture de Matériaux":
+              - /url: /services/fourniture-materiaux
+      - link "À Propos" [ref=e12]:
+        - /url: /a-propos
+      - link "Contact" [ref=e14]:
+        - /url: /contact
+      - link "Devis Gratuit" [ref=e15]:
+        - /url: /contact
+        - generic [ref=e17]: Devis Gratuit
+  - generic:
+    - generic:
+      - link "Services":
+        - /url: /services
+      - generic:
+        - link "Travaux Tous Corps d’État":
+          - /url: /services/maconnerie-generale
+        - link "Rénovation Énergétique":
+          - /url: /services/renovation-energetique
+        - link "Étanchéité & Toitures":
+          - /url: /services/etancheite-toitures
+        - link "Coordination de Chantier":
+          - /url: /services/coordination-chantier
+        - link "Fourniture de Matériaux":
+          - /url: /services/fourniture-materiaux
+    - generic:
+      - link "À Propos":
+        - /url: /a-propos
+    - generic:
+      - link "Contact":
+        - /url: /contact
+    - link "Devis Gratuit":
+      - /url: /contact
+      - generic: Devis Gratuit
+  - main [ref=e18]:
+    - generic [ref=e19]:
+      - img "Rénovation énergétique CEE" [ref=e21]
+      - generic [ref=e23]:
+        - img [ref=e25]
+        - text: Rénovation Énergétique
+        - heading "Certificats d'Économies d'Énergie" [level=1] [ref=e27]
+        - paragraph [ref=e28]: Réduisez vos coûts énergétiques tout en finançant vos travaux.
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - heading "Rénovation Énergétique" [level=2] [ref=e32]
+        - heading "Certificats d'Économies d'Énergie" [level=3] [ref=e33]
+        - paragraph [ref=e34]: Nous accompagnons les entreprises et acteurs du secteur tertiaire dans l’obtention de primes liées aux Certificats d’Économies d’Énergie (CEE).
+        - paragraph [ref=e35]: Ce dispositif permet de financer une partie de vos travaux d’amélioration énergétique tout en diminuant durablement vos consommations.
+        - paragraph [ref=e36]: "Isolation, modernisation des équipements ou optimisation des systèmes énergétiques : ces améliorations permettent de réaliser de véritables économies sur vos factures d’énergie tout en valorisant vos bâtiments."
+        - paragraph [ref=e37]: Notre équipe vous accompagne de l’étude jusqu’à l’obtention des primes, afin de simplifier toutes les démarches et optimiser les financements liés au dispositif CEE.
+        - paragraph [ref=e38]: "CEE : transformez vos travaux en économies durables."
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - img [ref=e41]
+            - paragraph [ref=e44]: Isolation
+          - generic [ref=e45]:
+            - img [ref=e46]
+            - paragraph [ref=e49]: Modernisation des équipements
+          - generic [ref=e50]:
+            - img [ref=e51]
+            - paragraph [ref=e54]: Optimisation des systèmes énergétiques
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - generic [ref=e57]: Primes & Financement
+          - heading "Primes & Financement" [level=3] [ref=e58]
+          - paragraph [ref=e59]: "Nous réalisons une simulation personnalisée afin d’estimer :"
+          - generic [ref=e60]:
+            - generic [ref=e61]:
+              - img [ref=e62]
+              - generic [ref=e65]: les aides financières disponibles
+            - generic [ref=e66]:
+              - img [ref=e67]
+              - generic [ref=e70]: les travaux éligibles
+            - generic [ref=e71]:
+              - img [ref=e72]
+              - generic [ref=e75]: les économies d’énergie potentielles
+        - generic [ref=e76]:
+          - generic [ref=e77]: Accompagnement complet
+          - 'heading "CEE : transformez vos travaux en économies durables." [level=3] [ref=e78]'
+          - generic [ref=e79]:
+            - generic [ref=e80]: Étude de votre projet
+            - generic [ref=e81]: Simplification des démarches
+            - generic [ref=e82]: Optimisation des financements CEE
+          - link "Estimer mes aides" [ref=e83]:
+            - /url: /contact
+            - generic [ref=e85]: Estimer mes aides
+  - contentinfo [ref=e86]:
+    - generic [ref=e88]:
+      - generic [ref=e89]:
+        - link "Vertex Group" [ref=e90]:
+          - /url: /
+          - img "Vertex Group" [ref=e91]
+        - paragraph [ref=e92]: Bâtisseurs d'excellence en Île-de-France.
+        - generic [ref=e93]: Opérationnel · Disponible
+      - generic [ref=e95]:
+        - heading "Services" [level=4] [ref=e96]
+        - list [ref=e97]:
+          - listitem [ref=e98]:
+            - link "Maçonnerie Générale" [ref=e99]:
+              - /url: /services/maconnerie-generale
+          - listitem [ref=e100]:
+            - link "Rénovation Énergétique" [ref=e101]:
+              - /url: /services/renovation-energetique
+          - listitem [ref=e102]:
+            - link "Étanchéité & Toitures" [ref=e103]:
+              - /url: /services/etancheite-toitures
+          - listitem [ref=e104]:
+            - link "Coordination de Chantier" [ref=e105]:
+              - /url: /services/coordination-chantier
+          - listitem [ref=e106]:
+            - link "Fourniture Matériaux" [ref=e107]:
+              - /url: /services/fourniture-materiaux
+      - generic [ref=e108]:
+        - heading "Entreprise" [level=4] [ref=e109]
+        - list [ref=e110]:
+          - listitem [ref=e111]:
+            - link "À Propos" [ref=e112]:
+              - /url: /a-propos
+          - listitem [ref=e113]:
+            - link "Contact" [ref=e114]:
+              - /url: /contact
+      - generic [ref=e115]:
+        - heading "Légal" [level=4] [ref=e116]
+        - list [ref=e117]:
+          - listitem [ref=e118]:
+            - link "Mentions Légales" [ref=e119]:
+              - /url: /mentions-legales
+          - listitem [ref=e120]:
+            - link "Politique de Confidentialité" [ref=e121]:
+              - /url: /politique-de-confidentialite
+        - generic [ref=e122]:
+          - paragraph [ref=e123]: "Vertex Group · SIREN : 101 799 591"
+          - paragraph [ref=e124]: 28 Av. des Pépinières, 94260 Fresnes
+    - paragraph [ref=e126]: © 2026 Vertex Group · 28 Av. des Pépinières, 94260 Fresnes · SIREN 101 799 591

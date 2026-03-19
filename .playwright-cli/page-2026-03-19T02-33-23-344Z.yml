@@ -1,0 +1,173 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - link "Vertex Group" [ref=e5]:
+      - /url: /
+      - img "Vertex Group" [ref=e7]
+    - button "Menu" [ref=e8]:
+      - img [ref=e9]
+  - generic:
+    - generic:
+      - link "Services":
+        - /url: /services
+      - generic:
+        - link "Travaux Tous Corps d’État":
+          - /url: /services/maconnerie-generale
+        - link "Rénovation Énergétique":
+          - /url: /services/renovation-energetique
+        - link "Étanchéité & Toitures":
+          - /url: /services/etancheite-toitures
+        - link "Coordination de Chantier":
+          - /url: /services/coordination-chantier
+        - link "Fourniture de Matériaux":
+          - /url: /services/fourniture-materiaux
+    - generic:
+      - link "À Propos":
+        - /url: /a-propos
+    - generic:
+      - link "Contact":
+        - /url: /contact
+    - link "Devis Gratuit":
+      - /url: /contact
+      - generic: Devis Gratuit
+  - main [ref=e10]:
+    - generic [ref=e11]:
+      - img "Intérieur raffiné et rénové" [ref=e13]
+      - generic [ref=e15]:
+        - generic [ref=e16]: Notre Histoire
+        - heading "Rénover pour durer." [level=1] [ref=e17]
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]: Notre Mission
+        - heading "Un accompagnement complet pour vos travaux" [level=2] [ref=e23]
+        - paragraph [ref=e24]: Chaque projet est étudié avec attention afin de proposer des solutions adaptées à vos besoins et à votre budget. Notre équipe assure la coordination des différents corps de métier pour garantir un chantier organisé, sécurisé et conforme aux standards de qualité.
+        - paragraph [ref=e25]: Que ce soit pour moderniser un appartement, rénover un local commercial ou transformer un espace de vie, nous mettons notre savoir-faire au service de votre projet. Nous intervenons sur tous types de projets professionnels ou personnels.
+      - img "Projet de rénovation global par Vertex Group" [ref=e27]
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - text: Expertise
+        - heading "Pourquoi nous choisir ?" [level=2] [ref=e31]
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - img [ref=e35]
+          - heading "Interlocuteur Unique" [level=3] [ref=e37]
+          - paragraph [ref=e38]: Un seul partenaire pour simplifier la gestion de votre projet et assurer une exécution fluide et professionnelle de A à Z.
+        - generic [ref=e39]:
+          - img [ref=e41]
+          - heading "Expertise Multidisciplinaire" [level=3] [ref=e45]
+          - paragraph [ref=e46]: Maçonnerie, plomberie, électricité, peinture... Nous maîtrisons tous les corps d’état pour une cohérence parfaite.
+        - generic [ref=e47]:
+          - img [ref=e49]
+          - heading "Respect Délais & Budget" [level=3] [ref=e53]
+          - paragraph [ref=e54]: Nous garantissons un résultat de qualité dans le strict respect de vos contraintes financières et temporelles.
+        - generic [ref=e55]:
+          - img [ref=e57]
+          - heading "Travail Soigné" [level=3] [ref=e59]
+          - paragraph [ref=e60]: L’utilisation de matériaux de qualité et une exécution rigoureuse pour des finitions durables et esthétiques.
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - text: Nos Engagements
+        - heading "Des promesses concrètes" [level=2] [ref=e64]
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - generic [ref=e67]: 100%
+          - text: Devis détaillés et transparents
+        - generic [ref=e68]:
+          - generic [ref=e69]: 24h
+          - text: Réponse à toute demande
+        - generic [ref=e70]:
+          - generic [ref=e71]: IDF
+          - text: Zone d'intervention complète
+        - generic [ref=e72]:
+          - generic [ref=e73]: CEE
+          - text: Éligibilité aux aides énergétiques
+    - generic [ref=e76]:
+      - img "Travail de précision en maçonnerie" [ref=e78]
+      - generic [ref=e79]:
+        - generic [ref=e80]: Notre Expertise
+        - heading "Un savoir-faire complet pour la rénovation" [level=2] [ref=e81]
+        - generic [ref=e82]:
+          - paragraph [ref=e83]: De la maçonnerie traditionnelle aux solutions de rénovation énergétique les plus performantes, Vertex Group propose une gamme complète de services adaptés aux projets résidentiels, commerciaux et industriels.
+          - paragraph [ref=e84]: "Notre approche repose sur trois piliers fondamentaux : la qualité des matériaux, la précision de l'exécution, et le respect absolu des délais. Chaque chantier est traité comme un projet unique, avec un plan d'intervention sur mesure."
+    - generic [ref=e86]:
+      - generic [ref=e87]:
+        - text: Chronologie
+        - heading "Les étapes clés" [level=2] [ref=e88]
+      - generic [ref=e89]:
+        - generic [ref=e91]:
+          - img [ref=e93]
+          - text: Février 2026
+          - heading "Création de Vertex Group" [level=3] [ref=e95]
+          - paragraph [ref=e96]: "Naissance de l'entreprise à Fresnes (94), avec une ambition claire : bâtir avec excellence."
+        - generic [ref=e98]:
+          - img [ref=e100]
+          - text: Mars 2026
+          - heading "Immatriculation RCS Créteil" [level=3] [ref=e102]
+          - paragraph [ref=e103]: Inscription officielle au Registre du Commerce et des Sociétés.
+        - generic [ref=e105]:
+          - img [ref=e107]
+          - text: "2026"
+          - heading "Premiers chantiers IDF" [level=3] [ref=e109]
+          - paragraph [ref=e110]: Lancement de nos premiers projets de rénovation complète en Île-de-France.
+    - paragraph [ref=e113]: « La qualité n'est jamais un accident ; c'est toujours le résultat d'une intention élevée. »
+    - generic [ref=e115]:
+      - generic [ref=e116]:
+        - text: Identité Juridique
+        - heading "Informations légales" [level=2] [ref=e117]
+      - generic [ref=e118]:
+        - generic [ref=e119]:
+          - generic [ref=e120]: Entreprise
+          - generic [ref=e121]: Vertex Group
+        - generic [ref=e122]:
+          - generic [ref=e123]: SIREN
+          - generic [ref=e124]: 101 799 591
+        - generic [ref=e125]:
+          - generic [ref=e126]: Siège social
+          - generic [ref=e127]: 28 Avenue des Pépinières, 94260 Fresnes
+  - contentinfo [ref=e128]:
+    - generic [ref=e130]:
+      - generic [ref=e131]:
+        - link "Vertex Group" [ref=e132]:
+          - /url: /
+          - img "Vertex Group" [ref=e133]
+        - paragraph [ref=e134]: Bâtisseurs d'excellence en Île-de-France.
+        - generic [ref=e135]: Opérationnel · Disponible
+      - generic [ref=e137]:
+        - heading "Services" [level=4] [ref=e138]
+        - list [ref=e139]:
+          - listitem [ref=e140]:
+            - link "Maçonnerie Générale" [ref=e141]:
+              - /url: /services/maconnerie-generale
+          - listitem [ref=e142]:
+            - link "Rénovation Énergétique" [ref=e143]:
+              - /url: /services/renovation-energetique
+          - listitem [ref=e144]:
+            - link "Étanchéité & Toitures" [ref=e145]:
+              - /url: /services/etancheite-toitures
+          - listitem [ref=e146]:
+            - link "Coordination de Chantier" [ref=e147]:
+              - /url: /services/coordination-chantier
+          - listitem [ref=e148]:
+            - link "Fourniture Matériaux" [ref=e149]:
+              - /url: /services/fourniture-materiaux
+      - generic [ref=e150]:
+        - heading "Entreprise" [level=4] [ref=e151]
+        - list [ref=e152]:
+          - listitem [ref=e153]:
+            - link "À Propos" [ref=e154]:
+              - /url: /a-propos
+          - listitem [ref=e155]:
+            - link "Contact" [ref=e156]:
+              - /url: /contact
+      - generic [ref=e157]:
+        - heading "Légal" [level=4] [ref=e158]
+        - list [ref=e159]:
+          - listitem [ref=e160]:
+            - link "Mentions Légales" [ref=e161]:
+              - /url: /mentions-legales
+          - listitem [ref=e162]:
+            - link "Politique de Confidentialité" [ref=e163]:
+              - /url: /politique-de-confidentialite
+        - generic [ref=e164]:
+          - paragraph [ref=e165]: "Vertex Group · SIREN : 101 799 591"
+          - paragraph [ref=e166]: 28 Av. des Pépinières, 94260 Fresnes
+    - paragraph [ref=e168]: © 2026 Vertex Group · 28 Av. des Pépinières, 94260 Fresnes · SIREN 101 799 591

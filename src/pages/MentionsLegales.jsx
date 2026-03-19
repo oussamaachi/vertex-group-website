@@ -29,12 +29,13 @@ export default function MentionsLegales() {
           <div className="legal-block">
             <h2 className="font-heading font-bold text-2xl text-charcoal mb-4">1. Éditeur du site</h2>
             <div className="text-steel leading-relaxed space-y-2">
-              <p><strong className="text-charcoal">Raison sociale :</strong> Vertex Group</p>
-              <p><strong className="text-charcoal">SIREN :</strong> 101 799 591</p>
+              <p><strong className="text-charcoal">Raison sociale :</strong> Vertex Group, SASU au capital de 1 000,00 €</p>
+              <p><strong className="text-charcoal">Immatriculation :</strong> 101 799 591 R.C.S. Créteil</p>
+              <p><strong className="text-charcoal">TVA Intracommunautaire / EUID :</strong> FR9401.101799591</p>
               <p><strong className="text-charcoal">Siège social :</strong> 28 Avenue des Pépinières, 94260 Fresnes</p>
               <p><strong className="text-charcoal">Téléphone :</strong> 01 XX XX XX XX</p>
-              <p><strong className="text-charcoal">E-mail :</strong> contact@vertexgroup.fr</p>
-              <p><strong className="text-charcoal">Directeur de la publication :</strong> Le représentant légal de Vertex Group</p>
+              <p><strong className="text-charcoal">E-mail :</strong> contact@vertex-group.fr</p>
+              <p><strong className="text-charcoal">Directeur de la publication :</strong> M. Salim ABDALLAH, Président</p>
             </div>
           </div>
 

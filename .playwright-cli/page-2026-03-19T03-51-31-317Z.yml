@@ -1,0 +1,156 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - link "Vertex Group" [ref=e5]:
+      - /url: /
+      - img "Vertex Group" [ref=e7]
+    - button "Menu" [ref=e8]:
+      - img [ref=e9]
+  - generic:
+    - generic:
+      - link "Services":
+        - /url: /services
+      - generic:
+        - link "Travaux Tous Corps d’État":
+          - /url: /services/maconnerie-generale
+        - link "Rénovation Énergétique":
+          - /url: /services/renovation-energetique
+        - link "Étanchéité & Toitures":
+          - /url: /services/etancheite-toitures
+        - link "Coordination de Chantier":
+          - /url: /services/coordination-chantier
+        - link "Fourniture de Matériaux":
+          - /url: /services/fourniture-materiaux
+    - generic:
+      - link "À Propos":
+        - /url: /a-propos
+    - generic:
+      - link "Contact":
+        - /url: /contact
+    - link "Devis Gratuit":
+      - /url: /contact
+      - generic: Devis Gratuit
+  - main [ref=e10]:
+    - generic [ref=e17]:
+      - img [ref=e19]
+      - text: Un seul partenaire pour tous vos travaux
+      - heading "Travaux Tous Corps d'État" [level=1] [ref=e23]
+      - paragraph [ref=e24]: De la conception à la réalisation, nous prenons en charge l’ensemble de vos travaux de rénovation, d’aménagement et de construction.
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - img [ref=e28]
+          - paragraph [ref=e32]: Peinture & finitions
+        - generic [ref=e33]:
+          - img [ref=e35]
+          - paragraph [ref=e37]: Électricité & mise aux normes
+        - generic [ref=e38]:
+          - img [ref=e40]
+          - paragraph [ref=e42]: Aménagement intérieur
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - heading "Une seule équipe pour tous vos travaux" [level=2] [ref=e46]
+        - paragraph [ref=e47]: De la conception à la réalisation, nous prenons en charge l’ensemble de vos travaux de rénovation, d’aménagement et de construction.
+        - paragraph [ref=e48]: Grâce à notre expertise en tous corps d’état, nous coordonnons chaque étape du chantier afin de vous garantir un résultat de qualité, dans le respect des délais et de votre budget.
+        - paragraph [ref=e49]: "Notre objectif : vous offrir un interlocuteur unique pour simplifier la gestion de votre projet et assurer une exécution fluide et professionnelle."
+        - generic [ref=e50]:
+          - heading "Nos prestations" [level=3] [ref=e51]
+          - paragraph [ref=e52]: "Nous intervenons sur tous types de projets professionnels ou personnels, qu’il s’agisse de rénovation complète, d’aménagement intérieur ou de travaux spécifiques, notamment :"
+          - generic [ref=e53]:
+            - generic [ref=e56]: Maçonnerie et gros œuvre
+            - generic [ref=e59]: Plomberie et installations sanitaires
+            - generic [ref=e62]: Électricité et mise aux normes
+            - generic [ref=e65]: Peinture et revêtements muraux
+            - generic [ref=e68]: Carrelage et revêtements de sols
+            - generic [ref=e71]: Menuiserie intérieure et extérieure
+            - generic [ref=e74]: Cloisons, isolation et faux plafonds
+            - generic [ref=e77]: Rénovation d’appartements, maisons et locaux professionnels
+            - generic [ref=e80]: Décoration, menuiserie
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - generic [ref=e83]: Pourquoi nous choisir ?
+          - heading "Pourquoi nous choisir ?" [level=3] [ref=e84]
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - img [ref=e87]
+              - generic [ref=e89]: Expertise en travaux tous corps d’état
+            - generic [ref=e90]:
+              - img [ref=e91]
+              - generic [ref=e93]: Un interlocuteur unique pour votre chantier
+            - generic [ref=e94]:
+              - img [ref=e95]
+              - generic [ref=e97]: Respect des délais et du budget
+            - generic [ref=e98]:
+              - img [ref=e99]
+              - generic [ref=e101]: Travail soigné et matériaux de qualité
+            - generic [ref=e102]:
+              - img [ref=e103]
+              - generic [ref=e105]: Accompagnement de A à Z
+          - link "Demander un devis" [ref=e106]:
+            - /url: /contact
+            - generic [ref=e108]: Demander un devis
+        - generic [ref=e109]:
+          - generic [ref=e110]: Un accompagnement complet
+          - heading "Un accompagnement complet" [level=3] [ref=e111]
+          - paragraph [ref=e112]: Chaque projet est étudié avec attention afin de proposer des solutions adaptées à vos besoins et à votre budget.
+          - paragraph [ref=e113]: Notre équipe assure la coordination des différents corps de métier pour garantir un chantier organisé, sécurisé et conforme aux standards de qualité.
+          - paragraph [ref=e114]: Que ce soit pour moderniser un appartement, rénover un local commercial ou transformer un espace de vie, nous mettons notre savoir-faire au service de votre projet.
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - img [ref=e118]
+              - paragraph [ref=e121]: Appartements & maisons
+            - generic [ref=e122]:
+              - img [ref=e124]
+              - paragraph [ref=e128]: Bureaux & espaces tertiaires
+            - generic [ref=e129]:
+              - img [ref=e131]
+              - paragraph [ref=e134]: Hôtellerie & hébergement
+            - generic [ref=e135]:
+              - img [ref=e137]
+              - paragraph [ref=e141]: Commerces & salons
+  - contentinfo [ref=e142]:
+    - generic [ref=e144]:
+      - generic [ref=e145]:
+        - link "Vertex Group" [ref=e146]:
+          - /url: /
+          - img "Vertex Group" [ref=e147]
+        - paragraph [ref=e148]: Bâtisseurs d'excellence en Île-de-France.
+        - generic [ref=e149]: Opérationnel · Disponible
+      - generic [ref=e151]:
+        - heading "Services" [level=4] [ref=e152]
+        - list [ref=e153]:
+          - listitem [ref=e154]:
+            - link "Maçonnerie Générale" [ref=e155]:
+              - /url: /services/maconnerie-generale
+          - listitem [ref=e156]:
+            - link "Rénovation Énergétique" [ref=e157]:
+              - /url: /services/renovation-energetique
+          - listitem [ref=e158]:
+            - link "Étanchéité & Toitures" [ref=e159]:
+              - /url: /services/etancheite-toitures
+          - listitem [ref=e160]:
+            - link "Coordination de Chantier" [ref=e161]:
+              - /url: /services/coordination-chantier
+          - listitem [ref=e162]:
+            - link "Fourniture Matériaux" [ref=e163]:
+              - /url: /services/fourniture-materiaux
+      - generic [ref=e164]:
+        - heading "Entreprise" [level=4] [ref=e165]
+        - list [ref=e166]:
+          - listitem [ref=e167]:
+            - link "À Propos" [ref=e168]:
+              - /url: /a-propos
+          - listitem [ref=e169]:
+            - link "Contact" [ref=e170]:
+              - /url: /contact
+      - generic [ref=e171]:
+        - heading "Légal" [level=4] [ref=e172]
+        - list [ref=e173]:
+          - listitem [ref=e174]:
+            - link "Mentions Légales" [ref=e175]:
+              - /url: /mentions-legales
+          - listitem [ref=e176]:
+            - link "Politique de Confidentialité" [ref=e177]:
+              - /url: /politique-de-confidentialite
+        - generic [ref=e178]:
+          - paragraph [ref=e179]: "Vertex Group · SIREN : 101 799 591"
+          - paragraph [ref=e180]: 28 Av. des Pépinières, 94260 Fresnes
+    - paragraph [ref=e182]: © 2026 Vertex Group · 28 Av. des Pépinières, 94260 Fresnes · SIREN 101 799 591

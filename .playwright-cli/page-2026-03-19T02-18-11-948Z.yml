@@ -1,0 +1,778 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e5]:
+        - img "Spekit" [ref=e7]
+        - generic [ref=e9]:
+          - link "Overview" [ref=e10] [cursor=pointer]:
+            - /url: "#hero"
+          - link "Decision Matrix" [ref=e11] [cursor=pointer]:
+            - /url: "#framework"
+          - generic [ref=e12]:
+            - link "Scenarios" [ref=e13] [cursor=pointer]:
+              - /url: "#scenarios"
+              - text: Scenarios
+              - img [ref=e14]
+            - generic:
+              - 'link "Scenario 2: Outbound"':
+                - /url: "#scenarios"
+              - 'link "Scenario 3: Inbound"':
+                - /url: "#scenario-3"
+              - 'link "Scenario 5: Case Study"':
+                - /url: "#results"
+          - link "ROI Analysis" [ref=e16] [cursor=pointer]:
+            - /url: "#results"
+          - link "Appendix" [ref=e17] [cursor=pointer]:
+            - /url: "#manifesto"
+        - generic [ref=e18]:
+          - link "View Prompt" [ref=e19] [cursor=pointer]:
+            - /url: /spekit-brief.pdf
+          - link "Open PDF" [ref=e20] [cursor=pointer]:
+            - /url: /spekit-gtm-presentation-crm-first.pdf
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e23]: "> GTM_AI_ENGINEER - SPEKIT - MARCH_2026"
+        - heading "Spekit GTM AI Strategy." [level=1] [ref=e24]
+        - heading "Executive Interview Briefing" [level=2] [ref=e25]
+        - paragraph [ref=e26]:
+          - text: I structured this proposal around a
+          - strong [ref=e27]: Budget-to-Precision Matrix
+          - text: "so the AI engine scales with deal economics, data maturity, and GTM stage, while still serving the core Spekit brief: make GTM execution feel natively AI-driven, not AI-assisted on the side."
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - generic [ref=e30]: Presentation Goal
+            - paragraph [ref=e31]: Walk through the decision framework, then defend scenarios 2, 3 and 5 with concrete systems, tooling and metrics.
+          - generic [ref=e32]:
+            - generic [ref=e33]: Source Material
+            - paragraph [ref=e34]: This website mirrors the corrected PDF so I can present live, then share the same narrative afterward.
+          - generic [ref=e35]:
+            - generic [ref=e36]: Talk Track
+            - paragraph [ref=e37]: Matrix first, outbound second, inbound third, past case study fourth, with one recommended tier per tiered scenario and one historical workflow for the live case study.
+        - generic [ref=e38]:
+          - link "Start Presentation" [ref=e39] [cursor=pointer]:
+            - /url: "#framework"
+            - text: Start Presentation
+            - img [ref=e40]
+          - link "Open Submitted PDF" [ref=e42] [cursor=pointer]:
+            - /url: /spekit-gtm-presentation-crm-first.pdf
+          - link "Open Exercise Brief" [ref=e43] [cursor=pointer]:
+            - /url: /spekit-brief.pdf
+      - generic [ref=e48]: System Operational - March 2026
+      - generic [ref=e49]:
+        - text: 3 SCENARIOS
+        - text: 2 TIERED SYSTEMS
+        - text: 1 HISTORICAL CASE STUDY
+        - text: REPRESENTATIVE PUBLIC PRICING*
+    - generic [ref=e51]:
+      - heading "> DECISION_FRAMEWORK" [level=3] [ref=e52]
+      - generic [ref=e53]:
+        - paragraph [ref=e55]: "\"The right stack for a $50K max CAC is not the right stack for a $5K max CAC.\""
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - generic [ref=e58]: Variable
+            - generic [ref=e59]: What it means
+            - generic [ref=e60]: Why it matters
+          - generic [ref=e61]:
+            - generic [ref=e62]: Max CAC
+            - generic [ref=e63]: Maximum cost to acquire one customer
+            - generic [ref=e64]: Sets the ceiling for total pipeline spend
+          - generic [ref=e65]:
+            - generic [ref=e66]: Average ACV
+            - generic [ref=e67]: Annual contract value
+            - generic [ref=e68]: Higher ACV justifies more expensive, precise systems
+          - generic [ref=e69]:
+            - generic [ref=e70]: LTV
+            - generic [ref=e71]: Customer lifetime value
+            - generic [ref=e72]: LTV/CAC ratio determines how aggressive you can be
+          - generic [ref=e73]:
+            - generic [ref=e74]: Conv. Rate
+            - generic [ref=e75]: "% of leads that become customers"
+            - generic [ref=e76]: Determines the max cost per lead you can afford
+          - generic [ref=e77]:
+            - generic [ref=e78]: Data Quality
+            - generic [ref=e79]: How clean and unified your CRM data is
+            - generic [ref=e80]: Determines which AI tiers are even viable
+        - generic [ref=e82]:
+          - generic [ref=e83]: Max CPL = (LTV / Target Ratio) x end-to-end conv.
+          - generic [ref=e84]:
+            - generic [ref=e85]: "Illustrative Example:"
+            - generic [ref=e86]: "ACV: $40K"
+            - generic [ref=e87]: Assumes 24-month LTV and a 4x target LTV/CAC ratio.
+            - generic [ref=e88]: "Max CPL: $300-400"
+            - generic [ref=e89]:
+              - generic [ref=e90]: "Tier: PREMIUM"
+              - img [ref=e91]
+      - generic [ref=e95]:
+        - generic [ref=e96]:
+          - button "[T1 PREMIUM]" [ref=e97] [cursor=pointer]
+          - button "[T2 BALANCED]" [ref=e98] [cursor=pointer]
+          - button "[T3 LEAN]" [ref=e99] [cursor=pointer]
+        - generic [ref=e100]:
+          - paragraph [ref=e101]: Maximum precision, full context window AI scoring, highly targeted.
+          - paragraph [ref=e102]: "Target ACV: >$40K"
+    - generic [ref=e103]:
+      - generic [ref=e104]:
+        - heading "> SCENARIO_02 — AI_NATIVE_OUTBOUND — 200–500 ACCOUNTS" [level=3] [ref=e105]
+        - generic [ref=e106]:
+          - generic [ref=e107]:
+            - paragraph [ref=e108]: "\"The problem with traditional outbound is not volume - it is relevance.\""
+            - paragraph [ref=e109]: Each tier keeps the same Mermaid workflow structure. What changes from T1 to T3 is the depth of enrichment, the quality of intent, the scoring logic, and the activation control.
+          - generic [ref=e111]:
+            - generic [ref=e112]:
+              - generic [ref=e113]: Execution Workflow
+              - heading "T1 · Premium (Max Precision)" [level=4] [ref=e114]
+              - paragraph [ref=e115]: "This is the presenter-friendly view of the workflow: CRM first, enrichment second, scoring third, activation last."
+            - generic [ref=e117]:
+              - generic [ref=e118]:
+                - generic [ref=e119]:
+                  - generic [ref=e120]: "01"
+                  - generic [ref=e121]: Create CRM Record
+                - paragraph [ref=e122]: As soon as a target account is detected, n8n creates or updates the central CRM record with the baseline fields.
+              - generic [ref=e123]:
+                - generic [ref=e124]:
+                  - generic [ref=e125]: "02"
+                  - generic [ref=e126]: Async Enrichment
+                - paragraph [ref=e127]: Apify scrapes company pages, hiring signals, and contact context, then writes enrichment status and new fields back into the CRM.
+              - generic [ref=e128]:
+                - generic [ref=e129]:
+                  - generic [ref=e130]: "03"
+                  - generic [ref=e131]: Score From CRM Snapshot
+                - paragraph [ref=e132]: A frontier reasoning model reads the complete CRM record and writes the fit/intent score back into the same record.
+              - generic [ref=e133]:
+                - generic [ref=e134]:
+                  - generic [ref=e135]: "04"
+                  - generic [ref=e136]: Activate From CRM State
+                - paragraph [ref=e137]: Only after score and status are written back does the sequence launch and the SDR brief get attached to the CRM.
+          - generic [ref=e138]:
+            - heading "Execution Tiers Select to view" [level=4] [ref=e139]:
+              - generic [ref=e140]: Execution Tiers
+              - generic [ref=e141]: Select to view
+            - generic [ref=e142]:
+              - button "T1 / Tier 1" [ref=e143] [cursor=pointer]
+              - button "T2 / Tier 2" [ref=e144] [cursor=pointer]
+              - button "T3 / Tier 3" [ref=e145] [cursor=pointer]
+            - generic [ref=e146]:
+              - generic [ref=e147]:
+                - generic [ref=e148]:
+                  - generic [ref=e149]:
+                    - generic [ref=e150]: T1 / Tier 1 - Premium (Max Precision)
+                    - generic [ref=e151]: Full AI Stack | Max CAC >$12K
+                  - generic [ref=e153]: ~$2.3K+*/mo
+                - generic [ref=e154]:
+                  - generic [ref=e155]:
+                    - generic [ref=e156]: "Enrichment:"
+                    - text: Clay Growth ($495/mo)
+                  - generic [ref=e157]:
+                    - generic [ref=e158]: "Intent:"
+                    - text: Premium intent layer (custom)
+                  - generic [ref=e159]:
+                    - generic [ref=e160]: "Scoring:"
+                    - text: Frontier reasoning model
+                  - generic [ref=e161]:
+                    - generic [ref=e162]: "Gen:"
+                    - text: Fast lower-cost model
+                - generic [ref=e163]:
+                  - generic [ref=e164]:
+                    - generic [ref=e165]: Reply Rate
+                    - generic [ref=e166]: 4-6%
+                  - generic [ref=e167]:
+                    - generic [ref=e168]: Cost/Mtg
+                    - generic [ref=e169]: $400-900
+                  - generic [ref=e170]:
+                    - generic [ref=e171]: Cost/Opp
+                    - generic [ref=e172]: $1.5K-3K
+              - paragraph [ref=e173]: "* STACK TOTALS ARE ILLUSTRATIVE. PUBLIC ENTRY PRICING IS SHOWN WHERE AVAILABLE; ENTERPRISE INTENT VENDORS ARE USUALLY CUSTOM-PRICED."
+      - generic [ref=e174]:
+        - generic [ref=e175]:
+          - heading "4. Operationalization - The Self-Running Engine" [level=4] [ref=e176]
+          - generic [ref=e177]:
+            - generic [ref=e178]:
+              - generic [ref=e179]: Week 1
+              - generic [ref=e180]: Define ICP. Create the CRM schema and statuses first. Then connect Clay or Apollo, Apify, and n8n around that record structure.
+            - generic [ref=e181]:
+              - generic [ref=e182]: Week 2
+              - generic [ref=e183]: Validate enrichment writebacks, score fields, and stage transitions on 20 accounts before any sequence launches automatically.
+            - generic [ref=e184]:
+              - generic [ref=e185]: Week 3
+              - generic [ref=e186]: Automate the sequence for 50 accounts and monitor how score, enrichment status, and SDR ownership update inside the CRM.
+            - generic [ref=e187]:
+              - generic [ref=e188]: Week 4+
+              - generic [ref=e189]: Scale to the full account universe. Refresh the list weekly and rescore from the latest CRM snapshot rather than raw source events.
+        - generic [ref=e190]:
+          - heading "5. Measurement & Iteration" [level=4] [ref=e191]
+          - table [ref=e193]:
+            - rowgroup [ref=e194]:
+              - row "Signal Action" [ref=e195]:
+                - columnheader "Signal" [ref=e196]
+                - columnheader "Action" [ref=e197]
+            - rowgroup [ref=e198]:
+              - row "Reply rate < 1.5% Pull 50 worst emails -> LLM generates 5 new angles -> A/B test" [ref=e199]:
+                - cell "Reply rate < 1.5%" [ref=e200]
+                - cell "Pull 50 worst emails -> LLM generates 5 new angles -> A/B test" [ref=e201]
+              - row "Meeting rate < 5% Improve SDR handoff - add AI company brief & first question" [ref=e202]:
+                - cell "Meeting rate < 5%" [ref=e203]
+                - cell "Improve SDR handoff - add AI company brief & first question" [ref=e204]
+              - row "Wrong-fit > 20% Tighten ICP criteria or upgrade to intent data (Tier upgrade)" [ref=e205]:
+                - cell "Wrong-fit > 20%" [ref=e206]
+                - cell "Tighten ICP criteria or upgrade to intent data (Tier upgrade)" [ref=e207]
+              - row "LTV/CAC improves Reinvest delta into a stronger intent layer for highest-value segments" [ref=e208]:
+                - cell "LTV/CAC improves" [ref=e209]
+                - cell "Reinvest delta into a stronger intent layer for highest-value segments" [ref=e210]
+    - generic [ref=e211]:
+      - generic [ref=e212]:
+        - heading "> SCENARIO_03 — AI_INBOUND_TRIAGE" [level=3] [ref=e213]
+        - generic [ref=e214]:
+          - generic [ref=e215]:
+            - paragraph [ref=e216]: "\"The failure mode in inbound is treating all leads equally. A VP who watched a full demo replay is not the same as someone who downloaded a blog post.\""
+            - paragraph [ref=e217]: "This is the AI-first marketing point in practice: AI decides who gets speed, who gets nurture, and what message they receive based on changing signals, not just static lead-scoring rules."
+            - generic [ref=e219]:
+              - generic [ref=e221]:
+                - generic [ref=e223]:
+                  - generic [ref=e224]: Fit Score
+                  - generic [ref=e225]: 87/100
+                - generic [ref=e229]:
+                  - generic [ref=e230]: Intent Score
+                  - generic [ref=e231]: 74/100
+                - generic [ref=e235]:
+                  - generic [ref=e236]: Urgency Score
+                  - generic [ref=e237]: 91/100
+              - generic [ref=e242]: HOT - SDR ALERT
+          - generic [ref=e244]:
+            - generic [ref=e245]:
+              - generic [ref=e246]: Execution Workflow
+              - heading "T1 · Premium (Max Precision)" [level=4] [ref=e247]
+              - paragraph [ref=e248]: "This is the presenter-friendly view of the workflow: CRM first, enrichment second, scoring third, activation last."
+            - generic [ref=e250]:
+              - generic [ref=e251]:
+                - generic [ref=e252]:
+                  - generic [ref=e253]: "01"
+                  - generic [ref=e254]: Capture And Create Record
+                - paragraph [ref=e255]: Every form submit, booking, or signup creates or updates the CRM record immediately so no signal lives outside the system of record.
+              - generic [ref=e256]:
+                - generic [ref=e257]:
+                  - generic [ref=e258]: "02"
+                  - generic [ref=e259]: Unify Signal Layer
+                - paragraph [ref=e260]: Behavioral events, enrichment, and firmographics are appended to the same CRM record so fit, intent, and urgency can be evaluated together.
+              - generic [ref=e261]:
+                - generic [ref=e262]:
+                  - generic [ref=e263]: "03"
+                  - generic [ref=e264]: Score And Segment
+                - paragraph [ref=e265]: A frontier reasoning model scores the latest CRM snapshot, assigns the segment, and writes back reason codes for auditability.
+              - generic [ref=e266]:
+                - generic [ref=e267]:
+                  - generic [ref=e268]: "04"
+                  - generic [ref=e269]: Route And Personalize
+                - paragraph [ref=e270]: Hot leads trigger instant SDR action, warm leads enter personalized nurture, and cold leads move into longer-term education without manual sorting.
+          - generic [ref=e271]:
+            - heading "Execution Tiers Select to view" [level=4] [ref=e272]:
+              - generic [ref=e273]: Execution Tiers
+              - generic [ref=e274]: Select to view
+            - generic [ref=e275]:
+              - button "T1 / Tier 1" [ref=e276] [cursor=pointer]
+              - button "T2 / Tier 2" [ref=e277] [cursor=pointer]
+              - button "T3 / Tier 3" [ref=e278] [cursor=pointer]
+            - generic [ref=e279]:
+              - generic [ref=e280]:
+                - generic [ref=e281]:
+                  - generic [ref=e282]:
+                    - generic [ref=e283]: T1 / Tier 1 - Premium (Max Precision)
+                    - generic [ref=e284]: Full signal stack | fastest routing
+                  - generic [ref=e286]: ~$2.3K+*/mo
+                - generic [ref=e287]:
+                  - generic [ref=e288]:
+                    - generic [ref=e289]: "Enrichment:"
+                    - text: Clay Growth + Apify + product events
+                  - generic [ref=e290]:
+                    - generic [ref=e291]: "Intent:"
+                    - text: Premium intent + behavior signals
+                  - generic [ref=e292]:
+                    - generic [ref=e293]: "Scoring:"
+                    - text: Frontier reasoning model
+                  - generic [ref=e294]:
+                    - generic [ref=e295]: "Gen:"
+                    - text: Fast lower-cost model
+                - generic [ref=e296]:
+                  - generic [ref=e297]:
+                    - generic [ref=e298]: Speed-to-lead
+                    - generic [ref=e299]: <5 min
+                  - generic [ref=e300]:
+                    - generic [ref=e301]: Cost/Opp
+                    - generic [ref=e302]: $300-$600
+                  - generic [ref=e303]:
+                    - generic [ref=e304]: MQL->SQL
+                    - generic [ref=e305]: 25-35%
+              - paragraph [ref=e306]: "* TRIAGE SPEED, CONVERSION, AND COST RANGES ARE ILLUSTRATIVE. THEY DEPEND ON TRAFFIC MIX, SIGNAL COVERAGE, AND SDR CAPACITY."
+      - generic [ref=e307]:
+        - heading "4. Feedback Loop - How the System Gets Smarter" [level=4] [ref=e308]
+        - table [ref=e310]:
+          - rowgroup [ref=e311]:
+            - row "Signal Action Frequency" [ref=e312]:
+              - columnheader "Signal" [ref=e313]
+              - columnheader "Action" [ref=e314]
+              - columnheader "Frequency" [ref=e315]
+          - rowgroup [ref=e316]:
+            - row "Hot leads not converting False positives -> lower score threshold or add disqualifier to LLM prompt Weekly" [ref=e317]:
+              - cell "Hot leads not converting" [ref=e318]
+              - cell "False positives -> lower score threshold or add disqualifier to LLM prompt" [ref=e319]
+              - cell "Weekly" [ref=e320]
+            - row "Cold leads self-booking Identify which content drove re-engagement -> weight those signals more Bi-weekly" [ref=e321]:
+              - cell "Cold leads self-booking" [ref=e322]
+              - cell "Identify which content drove re-engagement -> weight those signals more" [ref=e323]
+              - cell "Bi-weekly" [ref=e324]
+            - row "MQL -> SQL drop-off Find where handoff breaks -> fix SDR briefing or scoring criteria Weekly" [ref=e325]:
+              - cell "MQL -> SQL drop-off" [ref=e326]
+              - cell "Find where handoff breaks -> fix SDR briefing or scoring criteria" [ref=e327]
+              - cell "Weekly" [ref=e328]
+            - row "Closed-won pattern Identify top firmographic + behavioral combos -> update LLM scoring prompt Monthly" [ref=e329]:
+              - cell "Closed-won pattern" [ref=e330]
+              - cell "Identify top firmographic + behavioral combos -> update LLM scoring prompt" [ref=e331]
+              - cell "Monthly" [ref=e332]
+            - 'row "LTV/CAC by segment Decide tier upgrade: Lean -> Balanced -> Premium Monthly" [ref=e333]':
+              - cell "LTV/CAC by segment" [ref=e334]
+              - 'cell "Decide tier upgrade: Lean -> Balanced -> Premium" [ref=e335]'
+              - cell "Monthly" [ref=e336]
+    - generic [ref=e337]:
+      - generic [ref=e338]:
+        - generic [ref=e339]:
+          - heading "> CAC_LTV_MATRIX — TIER_SELECTION_LOGIC" [level=3] [ref=e340]
+          - generic [ref=e341]:
+            - generic [ref=e342]:
+              - generic [ref=e343]: ACV / LTV
+              - generic [ref=e344]: Max CAC
+              - generic [ref=e345]: Recommended
+              - generic [ref=e346]: Exp. LTV/CAC
+            - generic [ref=e347]:
+              - generic [ref=e348]: < $5K ACV
+              - generic [ref=e349]: < $2K
+              - generic [ref=e350]: Tier 3 — Lean
+              - generic [ref=e351]: 3–5x
+            - generic [ref=e352]:
+              - generic [ref=e353]: $5K–$15K ACV
+              - generic [ref=e354]: $2K–$6K
+              - generic [ref=e355]: Tier 2 — Balanced
+              - generic [ref=e356]: 4–6x
+            - generic [ref=e357]:
+              - generic [ref=e358]: $15K–$30K ACV
+              - generic [ref=e359]: $6K–$12K
+              - generic [ref=e360]: Tier 1 — Premium
+              - generic [ref=e361]: 5–8x
+            - generic [ref=e362]:
+              - generic [ref=e363]: "> $30K ACV (illustrative enterprise band)"
+              - generic [ref=e364]: "> $12K"
+              - generic [ref=e365]: Tier 1 + ABM
+              - generic [ref=e366]: 6–10x
+          - paragraph [ref=e367]: "\"When cost per meeting stays well below projected deal value, the more precise stack becomes easier to justify.\""
+        - generic [ref=e369]:
+          - 'heading "Interactive Calculator: Max CAC & Required Tier" [level=4] [ref=e370]'
+          - generic [ref=e371]:
+            - generic [ref=e372]:
+              - generic [ref=e373]:
+                - generic [ref=e374]:
+                  - generic [ref=e375]: Average ACV
+                  - generic [ref=e376]: $40,000
+                - slider [ref=e377] [cursor=pointer]: "40000"
+              - generic [ref=e378]:
+                - generic [ref=e379]:
+                  - generic [ref=e380]: LTV (Months)
+                  - generic [ref=e381]: 36 mo
+                - slider [ref=e382] [cursor=pointer]: "36"
+              - generic [ref=e383]:
+                - generic [ref=e384]:
+                  - generic [ref=e385]: Target LTV/CAC Ratio
+                  - generic [ref=e386]: 3x
+                - slider [ref=e387] [cursor=pointer]: "3"
+              - generic [ref=e388]:
+                - generic [ref=e389]:
+                  - generic [ref=e390]: End-to-End Conv. Rate
+                  - generic [ref=e391]: 2%
+                - slider [ref=e392] [cursor=pointer]: "2"
+            - generic [ref=e393]:
+              - generic [ref=e394]:
+                - generic [ref=e395]: Estimated LTV
+                - generic [ref=e396]: $120,000
+              - generic [ref=e397]:
+                - generic [ref=e398]: Max Allowable CAC
+                - generic [ref=e399]: $40,000
+              - generic [ref=e400]:
+                - generic [ref=e401]: Target Cost Per Lead (CPL)
+                - generic [ref=e402]: $800
+              - generic [ref=e403]:
+                - generic [ref=e404]:
+                  - generic [ref=e405]: Recommended Strategy
+                  - generic [ref=e406]: Tier 1 + ABM Overlay
+                - paragraph [ref=e407]: Enterprise ACV plus enough CAC headroom to justify the full precision stack and ABM overlays.
+              - generic [ref=e408]:
+                - text: Decision Rule
+                - paragraph [ref=e409]: "Illustrative threshold: >$30K ACV and >$12K Max CAC usually supports Tier 1 plus ABM overlay."
+      - generic [ref=e411]:
+        - generic [ref=e412]:
+          - heading "> SCENARIO_05 — GENERALE_ENERGIE_GROUP — 50+ BRANDS (INTERNAL ROLLOUT)" [level=3] [ref=e413]
+          - paragraph [ref=e414]: "This section now acts as proof, not as a third full design exercise. The important point is simple: ILA26 Energie stayed the central CRM while automation, enrichment, routing, and QA operated around that core record in production."
+        - generic [ref=e415]:
+          - generic [ref=e416]:
+            - generic [ref=e417]: Proof Type
+            - generic [ref=e418]: Historical deployment
+          - generic [ref=e419]:
+            - generic [ref=e420]: Routing SLA
+            - generic [ref=e421]: <5 min
+          - generic [ref=e422]:
+            - generic [ref=e423]: Data Integrity
+            - generic [ref=e424]: 99.9%
+          - generic [ref=e425]:
+            - generic [ref=e426]: Brands Managed
+            - generic [ref=e427]: 50+
+        - generic [ref=e428]:
+          - generic [ref=e429]:
+            - paragraph [ref=e430]: "\"Schema first, intelligence second.\""
+            - paragraph [ref=e431]: This stays as one historical Mermaid workflow because it is the real production pattern I deployed. It is here to prove execution and operating discipline, not to introduce three new hypothetical tiers.
+          - generic [ref=e432]:
+            - generic [ref=e433]:
+              - generic [ref=e434]:
+                - generic [ref=e435]: Historical Workflow
+                - heading "LIVE · Historical Production Flow" [level=4] [ref=e436]
+                - paragraph [ref=e437]: "This is the historical operating flow that actually ran in production: one shared CRM record, one routing language, one feedback loop for continuous QA."
+              - button "Expand Mermaid" [ref=e440] [cursor=pointer]
+            - generic [ref=e442]:
+              - generic [ref=e443]:
+                - generic [ref=e444]:
+                  - generic [ref=e445]: "01"
+                  - generic [ref=e446]: Normalize Into ILA26
+                - paragraph [ref=e447]: Every lead from the pilot brands and later the 50+ rollout landed in one shared CRM schema before any routing decision was allowed to run.
+              - generic [ref=e448]:
+                - generic [ref=e449]:
+                  - generic [ref=e450]: "02"
+                  - generic [ref=e451]: Validate And Repair
+                - paragraph [ref=e452]: SQL checks, duplicate controls, and Python enrichment repaired or blocked bad records so routing never depended on broken payloads.
+              - generic [ref=e453]:
+                - generic [ref=e454]:
+                  - generic [ref=e455]: "03"
+                  - generic [ref=e456]: Classify And Route
+                - paragraph [ref=e457]: The model layer classified geography, service, quality, and urgency, then n8n wrote the routing decision back into ILA26 and dispatched to the right team.
+              - generic [ref=e458]:
+                - generic [ref=e459]:
+                  - generic [ref=e460]: "04"
+                  - generic [ref=e461]: Match, Monitor, Improve
+                - paragraph [ref=e462]: Historical matching, anomaly alerts, and weekly QA reviews kept assignment quality high while exposing drift before it hurt conversion.
+          - generic [ref=e463]:
+            - heading "Historical Snapshot Actual deployment" [level=4] [ref=e464]:
+              - generic [ref=e465]: Historical Snapshot
+              - generic [ref=e466]: Actual deployment
+            - generic [ref=e467]:
+              - generic [ref=e468]:
+                - generic [ref=e469]:
+                  - generic [ref=e470]: LIVE / Historical Production Flow
+                  - generic [ref=e471]: 50+ brands | ILA26 remained the system of record
+                - generic [ref=e473]: Historical internal deployment
+              - generic [ref=e474]:
+                - generic [ref=e475]:
+                  - generic [ref=e476]: "Schema:"
+                  - text: Python + Airbyte schema normalization
+                - generic [ref=e477]:
+                  - generic [ref=e478]: "Decision Logic:"
+                  - text: LLM classification across geography, service, quality, urgency
+                - generic [ref=e479]:
+                  - generic [ref=e480]: "Routing:"
+                  - text: n8n routing orchestration + Pinecone SDR matching
+                - generic [ref=e481]:
+                  - generic [ref=e482]: "QA / Feedback:"
+                  - text: Anomaly detection + weekly QA writeback
+              - generic [ref=e483]:
+                - generic [ref=e484]:
+                  - generic [ref=e485]: Routing SLA
+                  - generic [ref=e486]: <5 min
+                - generic [ref=e487]:
+                  - generic [ref=e488]: Data Integrity
+                  - generic [ref=e489]: 99.9%
+                - generic [ref=e490]:
+                  - generic [ref=e491]: Brands Managed
+                  - generic [ref=e492]: 50+
+            - paragraph [ref=e493]: "* THIS WORKFLOW REPRESENTS THE REAL HISTORICAL DEPLOYMENT. THE CARDS BELOW ARE PROOF POINTS AND LESSONS LEARNED, NOT A THIRD DESIGN TRACK."
+        - generic [ref=e494]:
+          - generic [ref=e496]:
+            - generic [ref=e497]: Case Study Breakdown
+            - paragraph [ref=e498]: "This section reads best with more space: it moves from operational chaos to architecture, then measured outcomes, without compressing the cards."
+          - generic [ref=e500]:
+            - article [ref=e501]:
+              - generic [ref=e504]:
+                - heading "The Problem" [level=4] [ref=e505]
+                - generic [ref=e506]: Before Integration
+              - generic [ref=e509]:
+                - paragraph [ref=e510]: 50+ brands were generating leads independently, with inconsistent schemas, fragmented routing rules, and no shared visibility into response speed or fit quality inside ILA26 Energie.
+                - generic [ref=e511]:
+                  - generic [ref=e512]:
+                    - generic [ref=e513]: 50+
+                    - generic [ref=e514]: Fragmented Brands
+                  - generic [ref=e515]:
+                    - generic [ref=e516]: 48h
+                    - generic [ref=e517]: Avg Response Time
+                  - generic [ref=e518]:
+                    - generic [ref=e519]: "12"
+                    - generic [ref=e520]: Field Mismatches In Pilot
+            - article [ref=e521]:
+              - generic [ref=e524]:
+                - heading "The Architecture" [level=4] [ref=e525]
+                - generic [ref=e526]: Schema First, AI Second
+              - generic [ref=e529]:
+                - generic [ref=e530]:
+                  - generic [ref=e531]:
+                    - generic [ref=e532]: ILA26 As Source Of Truth
+                    - img [ref=e533]
+                  - paragraph [ref=e537]: Every inbound lead first landed in ILA26 Energie, the proprietary CRM used by the group, before any routing or enrichment logic ran.
+                - generic [ref=e538]:
+                  - generic [ref=e539]:
+                    - generic [ref=e540]: Execution Layer Around CRM
+                    - img [ref=e541]
+                  - paragraph [ref=e546]: n8n and Python services enriched, validated, and routed records around ILA26 Energie without bypassing the CRM as system of record.
+                - generic [ref=e547]:
+                  - generic [ref=e548]:
+                    - generic [ref=e549]: Anomaly Monitoring
+                    - img [ref=e550]
+                  - paragraph [ref=e552]: Monitoring surfaced schema drift, broken payloads, and routing latency before they polluted ILA26 or downstream sales queues.
+            - article [ref=e553]:
+              - generic [ref=e556]:
+                - heading "The Results" [level=4] [ref=e557]
+                - generic [ref=e558]: System Performance
+              - generic [ref=e561]:
+                - generic [ref=e562]:
+                  - generic [ref=e563]:
+                    - generic [ref=e564]: −80%
+                    - generic [ref=e565]: SDR Workload
+                  - generic [ref=e566]:
+                    - generic [ref=e567]: +40%
+                    - generic [ref=e568]: Operational Efficiency
+                  - generic [ref=e569]:
+                    - generic [ref=e570]: +25%
+                    - generic [ref=e571]: Lead Conversion
+                  - generic [ref=e572]:
+                    - generic [ref=e573]: −60%
+                    - generic [ref=e574]: Onboarding Time
+                  - generic [ref=e575]:
+                    - generic [ref=e576]: 99.9%
+                    - generic [ref=e577]: Data Integrity
+                  - generic [ref=e578]:
+                    - generic [ref=e579]: 50+
+                    - generic [ref=e580]: Brands Managed
+                - generic [ref=e581]:
+                  - generic [ref=e582]: Why It Matters
+                  - paragraph [ref=e583]: The point of the system was not just speed. It turned ILA26 Energie into a reliable operating layer for 50+ brands, so teams worked from one record instead of reconciling disconnected lead sources. The figures shown here are internal operating results from that deployment, not universal benchmarks.
+    - generic [ref=e585]:
+      - heading "> APIFY_ACTORS - VERIFIED_SOURCES" [level=3] [ref=e586]
+      - generic [ref=e587]:
+        - generic [ref=e588]:
+          - link "bebity/linkedin-jobs-scraper" [ref=e589] [cursor=pointer]:
+            - /url: https://apify.com/bebity/linkedin-jobs-scraper
+          - generic [ref=e590]: LinkedIn job postings
+          - generic [ref=e591]:
+            - generic [ref=e592]: $29.99/mo + usage
+            - generic [ref=e593]: T1/T2
+          - generic [ref=e594]: "-> View Actor Documentation"
+        - generic [ref=e595]:
+          - link "get-leads/linkedin-scraper" [ref=e596] [cursor=pointer]:
+            - /url: https://apify.com/get-leads/linkedin-scraper
+          - generic [ref=e597]: Profiles + companies + posts
+          - generic [ref=e598]:
+            - generic [ref=e599]: Pay per result ($1-$5 / 1K, mode-dependent)
+            - generic [ref=e600]: T1
+          - generic [ref=e601]: "-> View Actor Documentation"
+        - generic [ref=e602]:
+          - link "harvestapi/linkedin-profile-posts" [ref=e603] [cursor=pointer]:
+            - /url: https://apify.com/harvestapi/linkedin-profile-posts
+          - generic [ref=e604]: Recent posts (personalization)
+          - generic [ref=e605]:
+            - generic [ref=e606]: From $1.50 / 1K posts
+            - generic [ref=e607]: T1/T2
+          - generic [ref=e608]: "-> View Actor Documentation"
+        - generic [ref=e609]:
+          - link "apify/website-content-crawler" [ref=e610] [cursor=pointer]:
+            - /url: https://apify.com/apify/website-content-crawler
+          - generic [ref=e611]: Website content & tech stack
+          - generic [ref=e612]:
+            - generic [ref=e613]: ~$0.2 / 1K HTTP pages; ~$0.5-$5 / 1K browser pages
+            - generic [ref=e614]: T1/T2/T3
+          - generic [ref=e615]: "-> View Actor Documentation"
+        - generic [ref=e616]:
+          - link "curious_coder/crunchbase-scraper" [ref=e617] [cursor=pointer]:
+            - /url: https://apify.com/curious_coder/crunchbase-scraper
+          - generic [ref=e618]: Funding & leadership news
+          - generic [ref=e619]:
+            - generic [ref=e620]: From $2.50 / 1K results
+            - generic [ref=e621]: T1/T2
+          - generic [ref=e622]: "-> View Actor Documentation"
+        - generic [ref=e623]:
+          - link "apify/web-scraper" [ref=e624] [cursor=pointer]:
+            - /url: https://apify.com/apify/web-scraper
+          - generic [ref=e625]: G2/Capterra reviews
+          - generic [ref=e626]:
+            - generic [ref=e627]: Usage-based
+            - generic [ref=e628]: T2/T3
+          - generic [ref=e629]: "-> View Actor Documentation"
+      - generic [ref=e631]:
+        - img [ref=e632]
+        - generic [ref=e634]:
+          - heading "Validation Checkpoint" [level=4] [ref=e635]
+          - paragraph [ref=e636]: "\"Apify actor pricing is usage-based and can change by actor. I always verify the actor page before launch, then add an n8n validation step so incomplete scrapes are held back before they reach the LLM.\""
+    - generic [ref=e638]:
+      - heading "> ANNEX_A — COMPLETE_TOOL_GLOSSARY" [level=3] [ref=e639]
+      - generic [ref=e640]:
+        - generic [ref=e641]:
+          - generic [ref=e642]:
+            - generic [ref=e643]:
+              - generic [ref=e644]: n8n
+              - link "→ n8n.io" [ref=e645] [cursor=pointer]:
+                - /url: https://n8n.io
+            - generic [ref=e646]: Self-host free / cloud Starter from EUR20/mo (annual)
+          - paragraph [ref=e647]: "Orchestration Layer: Listens for events, calls enrichment and LLM APIs, and writes every outcome back into the central CRM. It executes the workflow, but it is not the system of record."
+        - generic [ref=e648]:
+          - generic [ref=e649]:
+            - generic [ref=e650]:
+              - generic [ref=e651]: Clay
+              - link "→ clay.com" [ref=e652] [cursor=pointer]:
+                - /url: https://clay.com
+            - generic [ref=e653]: Free / Launch $185 / Growth $495 / Enterprise custom
+          - paragraph [ref=e654]: "Data Aggregation & ICP Management: Waterfalls across many sources to build prioritized account lists. New pricing took effect March 11, 2026, with Launch at $185/mo and Growth at $495/mo."
+        - generic [ref=e655]:
+          - generic [ref=e656]:
+            - generic [ref=e657]:
+              - generic [ref=e658]: Apollo.io
+              - link "→ apollo.io" [ref=e659] [cursor=pointer]:
+                - /url: https://apollo.io
+            - generic [ref=e660]: Free / paid from $49/user/mo
+          - paragraph [ref=e661]: "Contact Database & Prospecting: Verified emails/numbers. Serves as primary source in T2/T3, secondary in T1."
+        - generic [ref=e662]:
+          - generic [ref=e663]:
+            - generic [ref=e664]:
+              - generic [ref=e665]: Bombora
+              - link "→ bombora.com" [ref=e666] [cursor=pointer]:
+                - /url: https://bombora.com
+            - generic [ref=e667]: Custom / contact sales
+          - paragraph [ref=e668]: "B2B Intent Data: Tracks account-level research activity across a large B2B publisher network."
+        - generic [ref=e669]:
+          - generic [ref=e670]:
+            - generic [ref=e671]:
+              - generic [ref=e672]: Instantly.ai
+              - link "→ instantly.ai" [ref=e673] [cursor=pointer]:
+                - /url: https://instantly.ai
+            - generic [ref=e674]: Growth $37/mo; Hypergrowth $97/mo; Enterprise custom
+          - paragraph [ref=e675]: "Email Sequencing: Handles email infrastructure, warm-up, and cadence mapping at scale."
+        - generic [ref=e676]:
+          - generic [ref=e677]:
+            - generic [ref=e678]:
+              - generic [ref=e679]: Segment
+              - link "→ segment.com" [ref=e680] [cursor=pointer]:
+                - /url: https://segment.com
+            - generic [ref=e681]: Connections free trial / CDP contact sales
+          - paragraph [ref=e682]: "Customer Data Platform (CDP): Captures events and routes them to downstream tools."
+      - paragraph [ref=e683]: Representative public entry pricing is shown where available. Usage-based vendors and enterprise contracts vary by credits, seats, scope, and packaging.
+    - generic [ref=e685]:
+      - heading "> ANNEX_B — LLM_SELECTION (PUBLIC_PRICING_SNAPSHOT)" [level=3] [ref=e686]
+      - table [ref=e688]:
+        - rowgroup [ref=e689]:
+          - row "Model Provider Input / 1M Output / 1M Role" [ref=e690]:
+            - columnheader "Model" [ref=e691]
+            - columnheader "Provider" [ref=e692]
+            - columnheader "Input / 1M" [ref=e693]
+            - columnheader "Output / 1M" [ref=e694]
+            - columnheader "Role" [ref=e695]
+        - rowgroup [ref=e696]:
+          - row "Frontier reasoning model Anthropic / equivalent Varies Varies Complex scoring, ambiguous routing, and high-precision prioritization" [ref=e697]:
+            - cell "Frontier reasoning model" [ref=e698]
+            - cell "Anthropic / equivalent" [ref=e699]
+            - cell "Varies" [ref=e700]
+            - cell "Varies" [ref=e701]
+            - cell "Complex scoring, ambiguous routing, and high-precision prioritization" [ref=e702]
+          - row "Fast lower-cost model Anthropic / equivalent Varies Varies Personalized generation, reply classification, and mid-tier scoring" [ref=e703]:
+            - cell "Fast lower-cost model" [ref=e704]
+            - cell "Anthropic / equivalent" [ref=e705]
+            - cell "Varies" [ref=e706]
+            - cell "Varies" [ref=e707]
+            - cell "Personalized generation, reply classification, and mid-tier scoring" [ref=e708]
+          - row "DeepSeek Chat (V3.2) DeepSeek (OpenAI-compatible) $0.28 miss / $0.028 hit $0.42 Lowest-cost high-volume text generation" [ref=e709]:
+            - cell "DeepSeek Chat (V3.2)" [ref=e710]
+            - cell "DeepSeek (OpenAI-compatible)" [ref=e711]
+            - cell "$0.28 miss / $0.028 hit" [ref=e712]
+            - cell "$0.42" [ref=e713]
+            - cell "Lowest-cost high-volume text generation" [ref=e714]
+          - row "Gemini 2.5 Flash-Lite Google $0.10 std / $0.05 batch $0.40 std / $0.20 batch Budget-friendly bulk follow-up model" [ref=e715]:
+            - cell "Gemini 2.5 Flash-Lite" [ref=e716]
+            - cell "Google" [ref=e717]
+            - cell "$0.10 std / $0.05 batch" [ref=e718]
+            - cell "$0.40 std / $0.20 batch" [ref=e719]
+            - cell "Budget-friendly bulk follow-up model" [ref=e720]
+      - generic [ref=e721]: "Important note: I treat the exact Anthropic model choice as a launch-time decision after validating quality, latency, and budget. DeepSeek keeps an OpenAI-compatible API shape, and Google currently prices Flash-Lite under the 2.5 family. If Spekit wanted private deployment instead of API usage, the economics change materially, so I break that out separately below."
+    - generic [ref=e723]:
+      - heading "> ANNEX_C - SELF_HOSTED_OPEN_MODELS (INTERNAL_INFRA_ESTIMATES)" [level=3] [ref=e724]
+      - table [ref=e726]:
+        - rowgroup [ref=e727]:
+          - row "Model Model fee Representative internal infra Cloud-equivalent / mo Practical read" [ref=e728]:
+            - columnheader "Model" [ref=e729]
+            - columnheader "Model fee" [ref=e730]
+            - columnheader "Representative internal infra" [ref=e731]
+            - columnheader "Cloud-equivalent / mo" [ref=e732]
+            - columnheader "Practical read" [ref=e733]
+        - rowgroup [ref=e734]:
+          - row "OpenAI gpt-oss-20b $0 model fee 16 GB memory class; single workstation or edge GPU Prototype-friendly; can run on an existing dev box Best fit for private internal copilots or low-volume internal workflows." [ref=e735]:
+            - cell "OpenAI gpt-oss-20b" [ref=e736]
+            - cell "$0 model fee" [ref=e737]
+            - cell "16 GB memory class; single workstation or edge GPU" [ref=e738]
+            - cell "Prototype-friendly; can run on an existing dev box" [ref=e739]
+            - cell "Best fit for private internal copilots or low-volume internal workflows." [ref=e740]
+          - row "OpenAI gpt-oss-120b $0 model fee Single 80 GB GPU (H100 / MI300X class) ~$2.9k/mo cloud-equivalent on 1 x H100 The cleanest open-weight step up if privacy matters but you want to avoid a cluster." [ref=e741]:
+            - cell "OpenAI gpt-oss-120b" [ref=e742]
+            - cell "$0 model fee" [ref=e743]
+            - cell "Single 80 GB GPU (H100 / MI300X class)" [ref=e744]
+            - cell "~$2.9k/mo cloud-equivalent on 1 x H100" [ref=e745]
+            - cell "The cleanest open-weight step up if privacy matters but you want to avoid a cluster." [ref=e746]
+          - row "DeepSeek-V3.2 (self-hosted) $0 model fee Closest public reference is DeepSeek-V3 local serving on 2 x 8-GPU nodes ~$46k/mo cloud-equivalent on 16 x H100 Only makes economic sense at very high steady volume or for strict data residency." [ref=e747]:
+            - cell "DeepSeek-V3.2 (self-hosted)" [ref=e748]
+            - cell "$0 model fee" [ref=e749]
+            - cell "Closest public reference is DeepSeek-V3 local serving on 2 x 8-GPU nodes" [ref=e750]
+            - cell "~$46k/mo cloud-equivalent on 16 x H100" [ref=e751]
+            - cell "Only makes economic sense at very high steady volume or for strict data residency." [ref=e752]
+          - 'row "Kimi K2 $0 model fee Official smallest deployment unit: 16 GPUs on H200 / H20 ~$58k/mo cloud-equivalent on 16 x H200 Powerful, but clearly an enterprise infra decision rather than a lean GTM default." [ref=e753]':
+            - cell "Kimi K2" [ref=e754]
+            - cell "$0 model fee" [ref=e755]
+            - 'cell "Official smallest deployment unit: 16 GPUs on H200 / H20" [ref=e756]'
+            - cell "~$58k/mo cloud-equivalent on 16 x H200" [ref=e757]
+            - cell "Powerful, but clearly an enterprise infra decision rather than a lean GTM default." [ref=e758]
+          - 'row "Kimi K2.5 $0 model fee Official vLLM example: single H200 node with TP8 ~$29k/mo cloud-equivalent on 8 x H200 More realistic than K2, but still premium infrastructure for internal deployment." [ref=e759]':
+            - cell "Kimi K2.5" [ref=e760]
+            - cell "$0 model fee" [ref=e761]
+            - 'cell "Official vLLM example: single H200 node with TP8" [ref=e762]'
+            - cell "~$29k/mo cloud-equivalent on 8 x H200" [ref=e763]
+            - cell "More realistic than K2, but still premium infrastructure for internal deployment." [ref=e764]
+      - generic [ref=e765]:
+        - paragraph [ref=e766]: "Important note: These are self-hosted serving estimates, not training costs. Once weights are local, the real spend is GPU capacity, redundancy, storage, and ops coverage."
+        - paragraph [ref=e767]: "Assumption: I use official model deployment guidance where available, plus AWS H100/H200 pricing as a readable cloud-equivalent baseline on March 16, 2026."
+        - paragraph [ref=e768]: "Inference callout: DeepSeek Chat maps to DeepSeek-V3.2 in the API docs; the self-hosted footprint shown here is based on the public DeepSeek-V3 2 x 8-GPU local serving example, so I treat it as a representative estimate rather than a vendor-published V3.2 hosting SKU."
+    - generic [ref=e770]:
+      - paragraph [ref=e771]: Most GTM tools generate content faster.
+      - heading "I build systems that get smarter." [level=2] [ref=e772]:
+        - text: I build systems that
+        - text: get smarter.
+      - generic [ref=e773]:
+        - generic [ref=e774]:
+          - img [ref=e776]
+          - heading "MEASURABLE FROM DAY ONE" [level=4] [ref=e778]
+          - paragraph [ref=e779]: Every decision logged, scored, and auditable.
+        - generic [ref=e780]:
+          - img [ref=e782]
+          - heading "IMPROVABLE OVER TIME" [level=4] [ref=e784]
+          - paragraph [ref=e785]: Feedback loops built directly into the ML layers.
+        - generic [ref=e786]:
+          - img [ref=e788]
+          - heading "BUDGET-ADAPTIVE" [level=4] [ref=e792]
+          - paragraph [ref=e793]: Start lean, scale complexity as data justifies it.
+        - generic [ref=e794]:
+          - img [ref=e796]
+          - heading "OPERABLE BY A LEAN TEAM" [level=4] [ref=e800]
+          - paragraph [ref=e801]: No data science PhD required to maintain.
+    - contentinfo [ref=e802]:
+      - generic [ref=e803]:
+        - generic [ref=e805]:
+          - generic [ref=e806]: OM
+          - generic [ref=e808]: Oussama Maachi · GTM AI Engineer
+        - generic [ref=e809]: GTM AI Engineer Thought Exercise · March 2026
+        - generic [ref=e810]:
+          - generic [ref=e815]: System Operational
+          - generic [ref=e816]: Built with React, Tailwind v3, GSAP & Lucide
+  - img [ref=e818]

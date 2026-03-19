@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 export default function Button({ children, to, href, onClick, variant = 'safety', size = 'md', className = '', type = 'button' }) {
-  const base = 'btn-magnetic inline-flex items-center justify-center font-heading font-semibold rounded-full transition-colors';
+  const base = 'btn-magnetic inline-flex items-center justify-center font-heading font-semibold rounded-full transition-colors whitespace-nowrap';
   
   const variants = {
     safety: 'bg-safety text-paper',
@@ -21,7 +21,7 @@ export default function Button({ children, to, href, onClick, variant = 'safety'
   const inner = (
     <>
       <span className={`btn-slide rounded-full ${variant === 'outline' ? 'bg-navy' : 'bg-navy-dark'}`}></span>
-      <span className="btn-text relative z-10">{children}</span>
+      <span className="btn-text relative z-10 inline-flex items-center justify-center gap-2 whitespace-nowrap">{children}</span>
     </>
   );
 

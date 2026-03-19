@@ -1,0 +1,185 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - link "Vertex Group" [ref=e5]:
+      - /url: /
+      - img "Vertex Group" [ref=e7]
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link "Services" [ref=e10]:
+          - /url: /services
+        - generic:
+          - generic:
+            - link "Travaux Tous Corps d’État":
+              - /url: /services/maconnerie-generale
+            - link "Rénovation Énergétique":
+              - /url: /services/renovation-energetique
+            - link "Étanchéité & Toitures":
+              - /url: /services/etancheite-toitures
+            - link "Coordination de Chantier":
+              - /url: /services/coordination-chantier
+            - link "Fourniture de Matériaux":
+              - /url: /services/fourniture-materiaux
+      - link "À Propos" [ref=e12]:
+        - /url: /a-propos
+      - link "Contact" [ref=e14]:
+        - /url: /contact
+      - link "Devis Gratuit" [ref=e15]:
+        - /url: /contact
+        - generic [ref=e17]: Devis Gratuit
+  - generic:
+    - generic:
+      - link "Services":
+        - /url: /services
+      - generic:
+        - link "Travaux Tous Corps d’État":
+          - /url: /services/maconnerie-generale
+        - link "Rénovation Énergétique":
+          - /url: /services/renovation-energetique
+        - link "Étanchéité & Toitures":
+          - /url: /services/etancheite-toitures
+        - link "Coordination de Chantier":
+          - /url: /services/coordination-chantier
+        - link "Fourniture de Matériaux":
+          - /url: /services/fourniture-materiaux
+    - generic:
+      - link "À Propos":
+        - /url: /a-propos
+    - generic:
+      - link "Contact":
+        - /url: /contact
+    - link "Devis Gratuit":
+      - /url: /contact
+      - generic: Devis Gratuit
+  - main [ref=e18]:
+    - generic [ref=e19]:
+      - img "Expertises Vertex Group" [ref=e21]
+      - generic [ref=e23]:
+        - generic [ref=e24]: Nos pôles d’expertise
+        - heading "Des métiers complémentaires, un pilotage unique." [level=1] [ref=e25]:
+          - text: Des métiers complémentaires,
+          - text: un pilotage unique.
+        - paragraph [ref=e26]: "Nous intervenons sur vos projets de travaux, d’amélioration énergétique, d’étanchéité, de coordination et de logistique chantier avec une seule exigence : la qualité d’exécution."
+    - generic [ref=e28]:
+      - link "SERV_01 Travaux Tous Corps d’État Un interlocuteur unique pour vos projets de rénovation, d’aménagement intérieur et de remise à neuf. Rénovation intérieure Peinture Électricité Voir les détails" [ref=e29]:
+        - /url: /services/maconnerie-generale
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - img [ref=e33]
+            - generic [ref=e37]: SERV_01
+          - heading "Travaux Tous Corps d’État" [level=3] [ref=e38]
+          - paragraph [ref=e39]: Un interlocuteur unique pour vos projets de rénovation, d’aménagement intérieur et de remise à neuf.
+          - generic [ref=e40]:
+            - generic [ref=e41]: Rénovation intérieure
+            - generic [ref=e42]: Peinture
+            - generic [ref=e43]: Électricité
+          - generic [ref=e44]:
+            - text: Voir les détails
+            - img [ref=e45]
+      - link "SERV_02 Rénovation Énergétique CEE Optimisez vos consommations et financez une partie de vos travaux grâce aux Certificats d’Économies d’Énergie. CEE Tertiaire Financement Voir les détails" [ref=e47]:
+        - /url: /services/renovation-energetique
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - img [ref=e51]
+            - generic [ref=e53]: SERV_02
+          - heading "Rénovation Énergétique CEE" [level=3] [ref=e54]
+          - paragraph [ref=e55]: Optimisez vos consommations et financez une partie de vos travaux grâce aux Certificats d’Économies d’Énergie.
+          - generic [ref=e56]:
+            - generic [ref=e57]: CEE
+            - generic [ref=e58]: Tertiaire
+            - generic [ref=e59]: Financement
+          - generic [ref=e60]:
+            - text: Voir les détails
+            - img [ref=e61]
+      - link "SERV_03 Étanchéité & Toitures-Terrasses Protection durable des bâtiments avec des solutions d’étanchéité adaptées à chaque ouvrage. Toitures Façades Traitement Voir les détails" [ref=e63]:
+        - /url: /services/etancheite-toitures
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - img [ref=e67]
+            - generic [ref=e70]: SERV_03
+          - heading "Étanchéité & Toitures-Terrasses" [level=3] [ref=e71]
+          - paragraph [ref=e72]: Protection durable des bâtiments avec des solutions d’étanchéité adaptées à chaque ouvrage.
+          - generic [ref=e73]:
+            - generic [ref=e74]: Toitures
+            - generic [ref=e75]: Façades
+            - generic [ref=e76]: Traitement
+          - generic [ref=e77]:
+            - text: Voir les détails
+            - img [ref=e78]
+      - link "SERV_04 Coordination de Chantier Suivi global des intervenants, des délais et du budget pour une exécution maîtrisée. Planning Suivi Interlocuteur unique Voir les détails" [ref=e80]:
+        - /url: /services/coordination-chantier
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - img [ref=e84]
+            - generic [ref=e87]: SERV_04
+          - heading "Coordination de Chantier" [level=3] [ref=e88]
+          - paragraph [ref=e89]: Suivi global des intervenants, des délais et du budget pour une exécution maîtrisée.
+          - generic [ref=e90]:
+            - generic [ref=e91]: Planning
+            - generic [ref=e92]: Suivi
+            - generic [ref=e93]: Interlocuteur unique
+          - generic [ref=e94]:
+            - text: Voir les détails
+            - img [ref=e95]
+      - link "SERV_05 Fourniture & Sourcing Approvisionnement et logistique de matériaux certifiés pour sécuriser la continuité du chantier. Matériaux Logistique Traçabilité Voir les détails" [ref=e97]:
+        - /url: /services/fourniture-materiaux
+        - generic [ref=e98]:
+          - generic [ref=e99]:
+            - img [ref=e101]
+            - generic [ref=e105]: SERV_05
+          - heading "Fourniture & Sourcing" [level=3] [ref=e106]
+          - paragraph [ref=e107]: Approvisionnement et logistique de matériaux certifiés pour sécuriser la continuité du chantier.
+          - generic [ref=e108]:
+            - generic [ref=e109]: Matériaux
+            - generic [ref=e110]: Logistique
+            - generic [ref=e111]: Traçabilité
+          - generic [ref=e112]:
+            - text: Voir les détails
+            - img [ref=e113]
+  - contentinfo [ref=e115]:
+    - generic [ref=e117]:
+      - generic [ref=e118]:
+        - link "Vertex Group" [ref=e119]:
+          - /url: /
+          - img "Vertex Group" [ref=e120]
+        - paragraph [ref=e121]: Bâtisseurs d'excellence en Île-de-France.
+        - generic [ref=e122]: Opérationnel · Disponible
+      - generic [ref=e124]:
+        - heading "Services" [level=4] [ref=e125]
+        - list [ref=e126]:
+          - listitem [ref=e127]:
+            - link "Maçonnerie Générale" [ref=e128]:
+              - /url: /services/maconnerie-generale
+          - listitem [ref=e129]:
+            - link "Rénovation Énergétique" [ref=e130]:
+              - /url: /services/renovation-energetique
+          - listitem [ref=e131]:
+            - link "Étanchéité & Toitures" [ref=e132]:
+              - /url: /services/etancheite-toitures
+          - listitem [ref=e133]:
+            - link "Coordination de Chantier" [ref=e134]:
+              - /url: /services/coordination-chantier
+          - listitem [ref=e135]:
+            - link "Fourniture Matériaux" [ref=e136]:
+              - /url: /services/fourniture-materiaux
+      - generic [ref=e137]:
+        - heading "Entreprise" [level=4] [ref=e138]
+        - list [ref=e139]:
+          - listitem [ref=e140]:
+            - link "À Propos" [ref=e141]:
+              - /url: /a-propos
+          - listitem [ref=e142]:
+            - link "Contact" [ref=e143]:
+              - /url: /contact
+      - generic [ref=e144]:
+        - heading "Légal" [level=4] [ref=e145]
+        - list [ref=e146]:
+          - listitem [ref=e147]:
+            - link "Mentions Légales" [ref=e148]:
+              - /url: /mentions-legales
+          - listitem [ref=e149]:
+            - link "Politique de Confidentialité" [ref=e150]:
+              - /url: /politique-de-confidentialite
+        - generic [ref=e151]:
+          - paragraph [ref=e152]: "Vertex Group · SIREN : 101 799 591"
+          - paragraph [ref=e153]: 28 Av. des Pépinières, 94260 Fresnes
+    - paragraph [ref=e155]: © 2026 Vertex Group · 28 Av. des Pépinières, 94260 Fresnes · SIREN 101 799 591

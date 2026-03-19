@@ -1,0 +1,131 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - link "Vertex Group" [ref=e5]:
+      - /url: /
+      - img "Vertex Group" [ref=e7]
+    - button "Menu" [ref=e8]:
+      - img [ref=e9]
+  - generic:
+    - generic:
+      - link "Services":
+        - /url: /services
+      - generic:
+        - link "Travaux Tous Corps d’État":
+          - /url: /services/maconnerie-generale
+        - link "Rénovation Énergétique":
+          - /url: /services/renovation-energetique
+        - link "Étanchéité & Toitures":
+          - /url: /services/etancheite-toitures
+        - link "Coordination de Chantier":
+          - /url: /services/coordination-chantier
+        - link "Fourniture de Matériaux":
+          - /url: /services/fourniture-materiaux
+    - generic:
+      - link "À Propos":
+        - /url: /a-propos
+    - generic:
+      - link "Contact":
+        - /url: /contact
+    - link "Devis Gratuit":
+      - /url: /contact
+      - generic: Devis Gratuit
+  - main [ref=e10]:
+    - generic [ref=e11]:
+      - img "Rénovation énergétique CEE" [ref=e13]
+      - generic [ref=e15]:
+        - img [ref=e17]
+        - text: Rénovation Énergétique
+        - heading "Certificats d'Économies d'Énergie" [level=1] [ref=e19]
+        - paragraph [ref=e20]: Réduisez vos coûts énergétiques tout en finançant vos travaux.
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - heading "Rénovation Énergétique" [level=2] [ref=e24]
+        - heading "Certificats d'Économies d'Énergie" [level=3] [ref=e25]
+        - paragraph [ref=e26]: Nous accompagnons les entreprises et acteurs du secteur tertiaire dans l’obtention de primes liées aux Certificats d’Économies d’Énergie (CEE).
+        - paragraph [ref=e27]: Ce dispositif permet de financer une partie de vos travaux d’amélioration énergétique tout en diminuant durablement vos consommations.
+        - paragraph [ref=e28]: "Isolation, modernisation des équipements ou optimisation des systèmes énergétiques : ces améliorations permettent de réaliser de véritables économies sur vos factures d’énergie tout en valorisant vos bâtiments."
+        - paragraph [ref=e29]: Notre équipe vous accompagne de l’étude jusqu’à l’obtention des primes, afin de simplifier toutes les démarches et optimiser les financements liés au dispositif CEE.
+        - paragraph [ref=e30]: "CEE : transformez vos travaux en économies durables."
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - img [ref=e33]
+            - paragraph [ref=e36]: Isolation
+          - generic [ref=e37]:
+            - img [ref=e38]
+            - paragraph [ref=e41]: Modernisation des équipements
+          - generic [ref=e42]:
+            - img [ref=e43]
+            - paragraph [ref=e46]: Optimisation des systèmes énergétiques
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]: Primes & Financement
+          - heading "Primes & Financement" [level=3] [ref=e50]
+          - paragraph [ref=e51]: "Nous réalisons une simulation personnalisée afin d’estimer :"
+          - generic [ref=e52]:
+            - generic [ref=e53]:
+              - img [ref=e54]
+              - generic [ref=e57]: les aides financières disponibles
+            - generic [ref=e58]:
+              - img [ref=e59]
+              - generic [ref=e62]: les travaux éligibles
+            - generic [ref=e63]:
+              - img [ref=e64]
+              - generic [ref=e67]: les économies d’énergie potentielles
+        - generic [ref=e68]:
+          - generic [ref=e69]: Accompagnement complet
+          - 'heading "CEE : transformez vos travaux en économies durables." [level=3] [ref=e70]'
+          - generic [ref=e71]:
+            - generic [ref=e72]: Étude de votre projet
+            - generic [ref=e73]: Simplification des démarches
+            - generic [ref=e74]: Optimisation des financements CEE
+          - link "Estimer mes aides" [ref=e75]:
+            - /url: /contact
+            - generic [ref=e77]: Estimer mes aides
+  - contentinfo [ref=e78]:
+    - generic [ref=e80]:
+      - generic [ref=e81]:
+        - link "Vertex Group" [ref=e82]:
+          - /url: /
+          - img "Vertex Group" [ref=e83]
+        - paragraph [ref=e84]: Bâtisseurs d'excellence en Île-de-France.
+        - generic [ref=e85]: Opérationnel · Disponible
+      - generic [ref=e87]:
+        - heading "Services" [level=4] [ref=e88]
+        - list [ref=e89]:
+          - listitem [ref=e90]:
+            - link "Maçonnerie Générale" [ref=e91]:
+              - /url: /services/maconnerie-generale
+          - listitem [ref=e92]:
+            - link "Rénovation Énergétique" [ref=e93]:
+              - /url: /services/renovation-energetique
+          - listitem [ref=e94]:
+            - link "Étanchéité & Toitures" [ref=e95]:
+              - /url: /services/etancheite-toitures
+          - listitem [ref=e96]:
+            - link "Coordination de Chantier" [ref=e97]:
+              - /url: /services/coordination-chantier
+          - listitem [ref=e98]:
+            - link "Fourniture Matériaux" [ref=e99]:
+              - /url: /services/fourniture-materiaux
+      - generic [ref=e100]:
+        - heading "Entreprise" [level=4] [ref=e101]
+        - list [ref=e102]:
+          - listitem [ref=e103]:
+            - link "À Propos" [ref=e104]:
+              - /url: /a-propos
+          - listitem [ref=e105]:
+            - link "Contact" [ref=e106]:
+              - /url: /contact
+      - generic [ref=e107]:
+        - heading "Légal" [level=4] [ref=e108]
+        - list [ref=e109]:
+          - listitem [ref=e110]:
+            - link "Mentions Légales" [ref=e111]:
+              - /url: /mentions-legales
+          - listitem [ref=e112]:
+            - link "Politique de Confidentialité" [ref=e113]:
+              - /url: /politique-de-confidentialite
+        - generic [ref=e114]:
+          - paragraph [ref=e115]: "Vertex Group · SIREN : 101 799 591"
+          - paragraph [ref=e116]: 28 Av. des Pépinières, 94260 Fresnes
+    - paragraph [ref=e118]: © 2026 Vertex Group · 28 Av. des Pépinières, 94260 Fresnes · SIREN 101 799 591
